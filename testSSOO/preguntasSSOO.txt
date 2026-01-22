@@ -1,0 +1,3933 @@
+¿Qué tipo de dispositivos constituyen el interfaz físico del usuario?
+Dispositivos de entrada/salida
+Dispositivos de almacenamiento masivo
+Controladores DMA
+Procesadores auxiliares
+-
+
+¿Cuál es una característica de los dispositivos orientados a bloques?
+E/S mediante bloques de tamaño fijo
+Sin direccionamiento
+E/S mediante un flujo de datos
+Requieren sincronización por polling
+-
+
+¿Qué técnica de sincronización permite a la CPU continuar su ejecución mientras se espera la finalización de una operación de E/S?
+Interrupción
+Polling
+E/S controlada por programa
+DMA transparente
+-
+
+¿Cuál es una ventaja del modo de transferencia DMA transparente?
+No interfiere con la actividad de la CPU
+Toma control completo del bus hasta terminar
+Reduce el tiempo de transferencia total
+Elimina la necesidad de controladores de dispositivo
+-
+
+¿Qué tipo de canal permite transferir datos de varios dispositivos simultáneamente?
+Multiplexor
+Selector
+DMA
+Bus principal
+-
+
+¿Qué realiza un manejador de dispositivo al recibir una petición de E/S?
+Inicia la operación del dispositivo y oculta las interrupciones al sistema
+Transferencia directa de datos entre dispositivos
+Bloqueo del bus para exclusividad de operación
+Asignación de espacio en disco
+-
+
+¿Qué función ofrece el software independiente de dispositivos en UNIX?
+Asociar dispositivos a un nodo del sistema de archivos
+Gestionar interrupciones directamente
+Optimizar la velocidad de transferencia del bus
+Proteger el acceso al procesador
+-
+
+¿Qué problema resuelve el sistema de spooling?
+Asignación exclusiva de impresoras ineficiente
+Pérdida de datos en dispositivos compartidos
+Baja velocidad de transferencia en dispositivos de bloques
+Fallos en la sincronización entre CPU y dispositivos
+-
+
+¿Qué algoritmo de planificación de discos selecciona la pista más cercana en cada momento?
+SSTF (Shortest Seek Time First)
+FCFS (First Come First Served)
+SCAN
+C-LOOK
+-
+
+¿Qué diferencia principal tiene C-SCAN respecto a SCAN?
+C-SCAN reinicia el recorrido al principio tras llegar al final
+C-SCAN utiliza la pista más cercana, independientemente del sentido
+C-SCAN no considera peticiones intercaladas
+C-SCAN detiene el recorrido si no hay peticiones
+-
+
+¿Qué estrategia de asignación de dispositivos evita la mezcla de salidas entre procesos?
+Asignación exclusiva
+Asignación compartida
+Asignación dinámica
+Intercambio de contexto
+-
+
+¿Qué ventaja tiene el polling frente a las interrupciones?
+Mayor control por parte del programa
+Reducción de la sobrecarga del procesador
+Mejor manejo de múltiples dispositivos
+Mayor rapidez en sistemas multiprocesador
+-
+
+¿Cuál es una de las funciones principales del software de E/S independiente del dispositivo?
+Almacenar datos temporalmente durante transferencias
+Incrementar la velocidad de los dispositivos
+Gestionar prioridades del procesador
+Eliminar errores en la E/S
+-
+
+¿Qué describe un dispositivo orientado a caracteres?
+E/S mediante un flujo continuo de datos
+Transferencia basada en bloques fijos
+Acceso aleatorio mediante direccionamiento
+Sincronización mediante interrupciones
+-
+
+¿Qué algoritmo de planificación de discos prioriza la dirección en la que ya se está moviendo?
+SCAN
+SSTF
+C-LOOK
+FCFS
+-
+
+¿Cuál es un inconveniente de la E/S controlada por programa?
+Baja utilización del procesador
+Complejidad de los manejadores de dispositivos
+Necesidad de acceso exclusivo a los dispositivos
+Incremento en el tiempo de transferencia
+-
+
+¿Qué tipo de transferencia utiliza un controlador DMA para evitar bloquear la CPU?
+Por robo de ciclos
+Por ráfagas
+Por bloques
+Por interrupción directa
+-
+
+¿Cuál es el propósito de los algoritmos de planificación de discos?
+Reducir el tiempo medio de posicionamiento
+Optimizar el uso de la memoria principal
+Incrementar la capacidad de almacenamiento
+Minimizar el tamaño de los bloques transferidos
+-
+
+¿Qué función tienen los controladores de dispositivo en un sistema de E/S?
+Gestionar las señales y datos entre dispositivos y la CPU
+Implementar el modelo de spooling
+Eliminar errores en las transferencias
+Optimizar el uso del bus
+-
+
+¿Qué define a los dispositivos asignados para uso compartido?
+Pueden ser utilizados por varios procesos simultáneamente
+Tienen prioridad sobre los dispositivos exclusivos
+Requieren algoritmos de planificación más complejos
+Son específicos para sistemas monoprogramados
+-
+
+¿Qué etapas forman parte de la preparación para la ejecución de programas de usuario?
+Compilación, enlace, carga y ejecución.
+Compilación, análisis, ejecución y depuración.
+Diseño, implementación, prueba y despliegue.
+Carga, prueba, validación y depuración.
+-
+
+¿Qué sucede durante la transformación de direcciones en tiempo de carga?
+El cargador del sistema modifica las direcciones reubicables.
+El programador asigna manualmente las direcciones físicas.
+El sistema operativo asigna memoria aleatoriamente.
+Las direcciones físicas se convierten en direcciones lógicas.
+-
+
+¿Qué es la carga dinámica?
+Un método donde las funciones se cargan en memoria solo cuando se usan.
+La ejecución inmediata de todas las funciones en memoria.
+La optimización de las funciones cargadas en tiempo de compilación.
+Un tipo de ejecución paralelo de procesos.
+-
+
+¿Qué es un espacio de direcciones lógico?
+Una dirección generada por la CPU para acceder a datos o instrucciones.
+Una dirección asignada por la memoria física directamente.
+La ubicación en disco de un archivo ejecutable.
+La representación gráfica de un mapa de memoria.
+-
+
+¿Qué dispositivo traduce direcciones lógicas a físicas?
+La unidad de gestión de memoria (MMU).
+El procesador principal.
+El controlador de entrada/salida.
+El scheduler de procesos.
+-
+
+¿Qué es el intercambio (swapping)?
+Mover procesos entre memoria principal y almacenamiento secundario.
+Asignar memoria fija a cada proceso.
+Compartir memoria entre varios procesos simultáneamente.
+Reducir el tamaño de las tablas de páginas en memoria.
+-
+
+En la asignación contigua de memoria, ¿qué es un hueco?
+Un bloque de memoria disponible para asignación.
+La partición más pequeña en memoria.
+Un área reservada para el sistema operativo.
+Un espacio ocupado por un proceso inactivo.
+-
+
+¿Cuál es una técnica de asignación contigua de memoria?
+Primer ajuste.
+Intercambio dinámico.
+Paginación multinivel.
+Enlace estático.
+-
+
+¿Qué tipo de fragmentación ocurre cuando hay memoria libre dentro de una partición asignada?
+Fragmentación interna.
+Fragmentación externa.
+Fragmentación lógica.
+Fragmentación dinámica.
+-
+
+¿Cómo se divide la memoria física en paginación?
+En bloques de tamaño fijo llamados frames.
+En bloques de tamaño variable según el proceso.
+En segmentos asignados dinámicamente.
+En zonas reservadas para cada tipo de proceso.
+-
+
+¿Qué hace la tabla de páginas en un esquema de paginación?
+Traduce direcciones lógicas a físicas.
+Divide la memoria lógica en segmentos.
+Reubica procesos en memoria física.
+Prioriza la ejecución de procesos interactivos.
+-
+
+¿Qué es un registro base de tabla de páginas (PTBR)?
+Un registro que almacena la dirección de inicio de la tabla de páginas.
+Un registro que calcula direcciones físicas directamente.
+Un dispositivo externo para vincular segmentos.
+Un índice en una tabla de frames disponibles.
+-
+
+¿Cómo se implementa la segmentación?
+Dividiendo el espacio lógico en segmentos con significados distintos.
+Agrupando procesos en una única partición.
+Compactando la memoria física en bloques contiguos.
+Reubicando dinámicamente procesos en memoria secundaria.
+-
+
+¿Qué problema busca resolver la técnica de paginación segmentada?
+Combinar las ventajas de la paginación y la segmentación.
+Reducir el uso de memoria secundaria.
+Eliminar la fragmentación externa por completo.
+Evitar la necesidad de una tabla de páginas.
+-
+
+¿Qué es una tabla de páginas invertida?
+Un esquema donde cada entrada apunta a un proceso específico.
+Una tabla con un índice duplicado para mayor velocidad.
+Una estructura que elimina la necesidad de registros asociados.
+Un método para fusionar páginas y segmentos.
+-
+
+¿Qué técnica reduce el problema del doble acceso a memoria en paginación?
+Usar una caché llamada TLB (tabla de registros asociativos).
+Reducir el tamaño de las páginas a la mitad.
+Eliminar las tablas de páginas en tiempo de ejecución.
+Fusionar las tablas de páginas y segmentos.
+-
+
+¿Cómo se define una dirección lógica en un esquema de paginación?
+Como una combinación de número de página y desplazamiento.
+Como un índice directo en la memoria física.
+Como una referencia absoluta al sistema operativo.
+Como una dirección física reubicada en tiempo de carga.
+-
+
+¿Qué ventaja tiene el enlace dinámico sobre el estático?
+Permite cargar solo las funciones necesarias durante la ejecución.
+Asegura que todo el código esté disponible desde el inicio.
+Optimiza el espacio ocupado por las tablas de páginas.
+Reduce el tiempo de ejecución inicial del programa.
+-
+
+¿Qué solución puede reducir la fragmentación externa en asignación contigua?
+Compactación de memoria.
+Ampliar las particiones asignadas.
+Reducir el número de procesos concurrentes.
+Aumentar el tamaño de las tablas de páginas.
+-
+
+¿Qué define el tamaño de un frame en paginación?
+Es una potencia de 2, típicamente entre 512 y 8192 bytes.
+Es una fracción del tamaño total de la memoria física.
+Depende del número de procesos en ejecución.
+Es una unidad fija de 1024 bytes.
+-
+
+¿Cuál es una característica principal de los procesos concurrentes?
+Pueden ejecutarse simultáneamente en el sistema.
+Siempre dependen unos de otros.
+Comparten obligatoriamente las mismas variables.
+Nunca se afectan entre sí.
+-
+
+¿Qué define el grado de multiprogramación en un sistema?
+El número de procesos en estado de preparado, esperando o ejecutando.
+La cantidad de memoria disponible en el sistema.
+La velocidad del procesador.
+El número de usuarios concurrentes en el sistema.
+-
+
+¿Qué operación realiza la primitiva fork en UNIX?
+Crea un nuevo proceso hijo.
+Elimina un proceso existente.
+Transfiere datos entre procesos.
+Cambia el estado de un proceso a finalizado.
+-
+
+¿Qué hereda un proceso hijo de su padre al ser creado con fork?
+Los descriptores de archivo abiertos y las variables de entorno.
+La prioridad del proceso padre.
+El tiempo de CPU restante del padre.
+Nada, es completamente independiente.
+-
+
+¿Qué permite el uso de señales en UNIX?
+Notificar eventos a los procesos.
+Intercambiar datos entre procesos.
+Gestionar la memoria de procesos cooperativos.
+Evitar condiciones de carrera entre procesos.
+-
+
+¿Cuál es la señal que no puede ser ignorada y termina un proceso?
+SIGKILL.
+SIGTERM.
+SIGHUP.
+SIGALRM.
+-
+
+¿Qué tipo de planificación es la planificación FCFS?
+No apropiativa.
+Apropiativa.
+Mixta.
+Basada en prioridades.
+-
+
+¿Qué se busca minimizar con la planificación SJF?
+El tiempo medio de espera y retorno.
+El tiempo total de ejecución.
+La cantidad de procesos en espera.
+La cantidad de memoria usada.
+-
+
+¿Cuál es una desventaja de la planificación por prioridad fija?
+Puede causar inanición en procesos de baja prioridad.
+Tiene tiempos de respuesta muy altos.
+No permite planificación apropiativa.
+No es adecuada para sistemas interactivos.
+-
+
+¿Qué hace la técnica de envejecimiento en la planificación por prioridad?
+Aumenta la prioridad de los procesos con el tiempo.
+Reduce el tiempo de ejecución de los procesos.
+Mantiene la prioridad constante para todos los procesos.
+Asigna la CPU solo a procesos críticos.
+-
+
+En un sistema de colas multinivel, ¿cómo se dividen las colas típicamente?
+Por tipo de proceso (interactivo, por lotes, etc.).
+Por tamaño de memoria asignada.
+Por el tiempo de CPU requerido.
+Por la cantidad de operaciones de E/S realizadas.
+-
+
+¿Qué representa la latencia de activación (dispatcher latency)?
+El tiempo que toma el dispatcher para cambiar de un proceso a otro.
+El tiempo que un proceso espera en la cola de preparados.
+El tiempo total de ejecución de un proceso.
+El tiempo que un proceso pasa en estado de espera.
+-
+
+¿Qué significa que un proceso sea independiente?
+No afecta ni es afectado por otros procesos.
+Siempre ejecuta su propia copia del sistema operativo.
+Nunca realiza operaciones de entrada/salida.
+No utiliza memoria compartida en ningún momento.
+-
+
+¿Qué sucede si se agota el quantum de un proceso en planificación RR?
+Se coloca al final de la cola de preparados.
+Se elimina de la cola de preparados.
+Se finaliza el proceso inmediatamente.
+Se pasa a una cola de baja prioridad automáticamente.
+-
+
+¿Qué problema intenta resolver la planificación con colas multinivel con realimentación?
+Evitar que procesos de baja prioridad queden sin ejecutarse.
+Reducir los tiempos de conmutación de contexto.
+Asignar CPU solo a procesos críticos.
+Eliminar la necesidad de un scheduler.
+-
+
+¿Qué es un proceso según el ámbito de sistemas operativos?
+Conjunto de fases sucesivas de la ejecución de un programa.
+Un programa almacenado en memoria.
+Una función del sistema operativo.
+Una unidad de entrada/salida del sistema.
+-
+
+¿Cuál es la principal diferencia entre un programa y un proceso?
+Un proceso ejecuta las operaciones que el programa describe.
+Un programa es parte de un proceso.
+Un proceso es un archivo binario ejecutable.
+No hay diferencia; ambos son equivalentes.
+-
+
+¿Qué información contiene el Bloque de Control del Proceso (PCB)?
+Estado del proceso, contador de programa, registros de CPU.
+Sólo el estado del proceso y el tiempo de uso.
+Información del hardware utilizado por el proceso.
+Código fuente del proceso y su compilador.
+-
+
+¿Cuál es la finalidad del Bloque de Control del Proceso (PCB)?
+Almacenar información de gestión de cada proceso.
+Controlar las operaciones de entrada/salida.
+Definir el espacio de memoria del sistema operativo.
+Contener las funciones del kernel utilizadas por el proceso.
+-
+
+¿Qué es un cambio de contexto?
+El intercambio de ejecución entre dos procesos en la CPU.
+La carga de un nuevo programa en memoria.
+La activación de un programa en espera.
+La interrupción forzada de un proceso por el usuario.
+-
+
+¿Qué se considera una sobrecarga en un cambio de contexto?
+El tiempo empleado sin realizar trabajo útil.
+El número de instrucciones ejecutadas por el proceso.
+La cantidad de memoria utilizada por el proceso.
+El tamaño del archivo del proceso.
+-
+
+¿Qué se entiende por planificación apropiativa?
+El proceso en ejecución puede ser expulsado de la CPU.
+Los procesos no pueden ser interrumpidos mientras se ejecutan.
+Los procesos se ejecutan en el orden en que llegan.
+El sistema operativo asigna la CPU de forma aleatoria.
+-
+
+¿Cuál es un criterio de optimización en la planificación del procesador?
+Minimizar el tiempo medio de espera de la carga de trabajo.
+Maximizar la prioridad de los procesos interactivos.
+Minimizar el uso del procesador para ahorro energético.
+Asignar la CPU sólo a procesos de entrada/salida.
+-
+
+En la planificación de turno rotatorio (RR), ¿qué es el quantum de tiempo?
+La cantidad de tiempo asignada a un proceso antes de ser expulsado.
+El tiempo total de ejecución de todos los procesos.
+La duración promedio de las ráfagas de CPU.
+El intervalo de tiempo entre interrupciones del sistema.
+-
+
+¿Qué sucede si el quantum en RR es muy grande?
+La planificación se comporta como FCFS.
+Los tiempos de respuesta mejoran significativamente.
+Se reduce el número de cambios de contexto.
+El sistema entra en estado de espera prolongado.
+-
+
+¿Qué es una planificación con colas multinivel?
+Dividir los procesos en varias colas con diferentes algoritmos.
+Asignar prioridad a procesos interactivos únicamente.
+Usar exclusivamente planificación FCFS para todos los procesos.
+Evitar que un proceso sea expulsado de la CPU en cualquier momento.
+-
+
+En la planificación con colas multinivel con realimentación, ¿qué técnica se utiliza para evitar la inanición?
+Envejecimiento de procesos.
+Prioridad fija para procesos críticos.
+Bloqueo de procesos de baja prioridad.
+Asignación de un quantum mínimo obligatorio.
+-
+
+¿Cuál es la función principal del scheduler?
+Seleccionar el proceso que usará el procesador.
+Crear procesos hijos a partir de un padre.
+Gestionar la memoria compartida entre procesos.
+Monitorear el estado de los dispositivos de E/S.
+-
+
+¿Qué permite la función execve en UNIX?
+Ejecutar un nuevo programa sobre el espacio de direcciones de un proceso.
+Duplicar un proceso en ejecución.
+Interrumpir un proceso en la CPU.
+Transferir datos entre procesos concurrentes.
+-
+
+¿Qué mecanismo de comunicación en UNIX permite el intercambio de datos?
+Tuberías (pipes).
+Señales.
+Descriptores de archivo.
+Bloqueo mutuo (mutex).
+-
+
+¿Cuál es el objetivo principal de un sistema de archivos?
+Proporcionar una visión lógica y uniforme del almacenamiento
+Organizar los usuarios en grupos
+Optimizar la velocidad de los dispositivos de almacenamiento
+Eliminar archivos automáticamente cuando no se usan
+-
+
+¿Qué propiedad permite al sistema operativo abstraer las características físicas del almacenamiento?
+La abstracción
+La sincronización
+La protección
+La indexación
+-
+
+¿Cuáles son los dos tipos principales de perspectivas en los sistemas de archivos?
+Externa e interna
+Física y lógica
+Secuencial y directa
+Relativa y absoluta
+-
+
+¿Cuál de los siguientes NO es un tipo de archivo según su contenido?
+Geográficos
+Binarios
+Numéricos
+Alfanuméricos
+-
+
+¿Qué tipo de archivo está compuesto por registros con estructura interna fija?
+Formato rígido
+Formato libre
+Formato variable
+Formato binario
+-
+
+¿Cuál es un ejemplo de operación básica en la gestión de archivos?
+Crear(nombre_archivo)
+Indexar(nombre_archivo)
+Montar(nombre_archivo)
+Encriptar(nombre_archivo)
+-
+
+¿Qué método de acceso utiliza un índice para localizar bloques?
+Método indexado
+Acceso secuencial
+Acceso directo
+Acceso absoluto
+-
+
+¿Cuál es la función principal de la primitiva open en UNIX?
+Abrir o crear un archivo
+Eliminar un archivo
+Bloquear un archivo
+Renombrar un archivo
+-
+
+¿Qué operación permite hacer que un archivo tenga longitud cero?
+Truncar
+Escribir
+Leer
+Reubicar
+-
+
+En UNIX, ¿cuál es el tamaño máximo permitido para el nombre de un archivo?
+255 caracteres
+512 caracteres
+1024 caracteres
+128 caracteres
+-
+
+¿Cuál es la característica principal de un directorio de un solo nivel?
+Todos los archivos se guardan en el mismo directorio
+Cada usuario tiene su propio directorio independiente
+Los directorios están organizados en un grafo acíclico
+El directorio raíz está oculto
+-
+
+¿Qué tipo de directorio permite compartir archivos entre usuarios manteniendo varios nombres para un mismo archivo?
+Directorios de grafo acíclico
+Directorios de un solo nivel
+Directorios de estructura de árbol
+Directorios de dos niveles
+-
+
+¿Cuál de las siguientes operaciones NO se puede realizar en un directorio?
+Ejecutar el directorio
+Cambiar el nombre de un archivo
+Listar los archivos del directorio
+Eliminar un archivo
+-
+
+¿Qué representa el comando mkdir en UNIX?
+Crear un directorio
+Cambiar el directorio actual
+Eliminar un directorio
+Listar el contenido de un directorio
+-
+
+¿Qué primitiva se utiliza para cambiar el directorio raíz?
+chroot
+getcwd
+chdir
+fchdir
+-
+
+¿Cuál es el objetivo principal de la primitiva chmod?
+Cambiar los permisos de un archivo o directorio
+Obtener los atributos de un archivo
+Duplicar un descriptor de archivo
+Eliminar un archivo
+-
+
+¿Qué indica el bit 'w' en los permisos de un archivo en UNIX?
+Permite la escritura en el archivo
+Permite la lectura del archivo
+Permite la ejecución del archivo
+Restringe el acceso al archivo
+-
+
+¿Cuál es una característica de los enlaces simbólicos?
+Se almacena la trayectoria absoluta o relativa del archivo
+Duplican físicamente el archivo
+Son exclusivos para sistemas monousuario
+Son más rápidos que los enlaces duros
+-
+
+¿Qué ocurre al realizar la operación de unlink en un archivo?
+Se elimina un nombre asociado al archivo
+Se elimina físicamente el archivo
+Se bloquea el archivo
+Se reubica el archivo
+-
+
+En UNIX, ¿qué primitiva permite obtener el directorio de trabajo actual?
+getcwd
+opendir
+chdir
+fchdir
+-
+
+¿Cuál es el objetivo de la primitiva stat?
+Obtener información de atributos de un archivo o directorio
+Modificar los atributos de un archivo
+Eliminar un archivo
+Renombrar un archivo
+-
+
+¿Qué sistema operativo mencionado soporta un único tipo de archivo compuesto por registros de un byte?
+UNIX
+IBM Mainframe
+MS-DOS
+Linux
+-
+
+¿Qué tipo de acceso permite leer o escribir en registros sin orden?
+Acceso directo
+Acceso secuencial
+Acceso absoluto
+Acceso relativo
+-
+
+¿Cuál es el objetivo principal de la primitiva dup en UNIX?
+Duplicar un descriptor de archivo
+Eliminar un archivo
+Cambiar los permisos de un archivo
+Abrir un directorio
+-
+
+En un directorio con estructura de árbol, ¿qué tipo de camino inicia desde la raíz?
+Camino absoluto
+Camino relativo
+Camino indexado
+Camino lógico
+-
+
+¿Qué primitiva es utilizada para montar un sistema de archivos?
+mount
+sync
+umount
+link
+-
+
+¿Qué propiedad de los sistemas de archivos permite garantizar la no modificación por usuarios no autorizados?
+Protección
+Indexación
+Confiabilidad
+Abstracción
+-
+
+¿Cuál de los siguientes es un modo de acceso permitido en un sistema multiusuario?
+Lectura, escritura y ejecución
+Ejecución, lectura y eliminación
+Escritura, acceso absoluto y anexión
+Eliminación, escritura y indexación
+-
+
+En UNIX, ¿qué significa el bit 'x' en los permisos de un directorio?
+Permite la búsqueda dentro del directorio
+Permite listar los archivos del directorio
+Permite modificar los atributos del directorio
+Restringe el acceso al directorio
+-
+
+¿Qué hace el comando rmdir en UNIX?
+Elimina un directorio vacío
+Cambia los permisos de un directorio
+Crea un directorio
+Enumera los archivos de un directorio
+-
+
+¿Cuál es el resultado de ejecutar la primitiva chown?
+Cambia el propietario y grupo de un archivo
+Crea un enlace simbólico
+Elimina un archivo
+Obtiene el identificador del usuario
+-
+
+¿Qué técnica evita punteros colgantes al eliminar un archivo con múltiples referencias?
+Contar las referencias al archivo y eliminarlo cuando no queden
+Eliminar el archivo de inmediato
+Almacenar referencias en un archivo auxiliar
+No permitir múltiples referencias a un archivo
+-
+
+¿Qué primitiva en UNIX actualiza el estado del disco según la caché de buffers?
+sync
+umount
+chmod
+unlink
+-
+
+¿Qué primitiva es utilizada para abrir un stream asociado a un directorio?
+opendir
+readdir
+mkdir
+closedir
+-
+
+¿Cuál es la función principal de la primitiva fchmod?
+Cambiar los permisos de un nodo usando su descriptor de archivo
+Cambiar el propietario de un nodo
+Eliminar un nodo
+Bloquear un nodo
+-
+
+¿Cuál es la máscara predeterminada utilizada al crear archivos en UNIX?
+umask
+chmod
+stat
+chroot
+-
+
+Las llamadas al sistema operativo
+Permiten a un programador realizar peticiones al sistema
+No se pueden hacer desde lenguajes de alto nivel
+Son los comandos de un sistema operativo
+Permiten al usuario realizar peticiones al sistema operativo desde el intérprete de comandos
+Permiten escribir un sistema operativo
+
+¿Cuál de las siguientes tareas no es responsabilidad del componente de gestión de la memoria principal de un sistema operativo?
+Gestionar el almacenamiento temporal de entrada/salida
+Conocer qué partes de la memoria están utilizadas y por quién
+Ninguna de las otras respuestas es correcta
+Decidir si hay o no espacio disponible para cargar un proceso determinado
+Asignar y reclamar espacio de memoria cuando sea necesario
+
+El monitor residente
+Está compuesto de cargador de programas, intérprete de comandos y biblioteca de ''drivers'' de entrada/salida
+Se carga en memoria principal cuando finaliza un programa, se produce una interrupción hardware o una ejecución incorrecta del programa.
+No tiene la propiedad de la independencia de dispositivos
+Divide la memoria principal para la carfa de varios programas para su ejecución simultánea
+Divide la memoria principal para la carga de varios programas para su ejecución concurrente
+
+El diseño de un sistema operativo con mayor rapidez en susmistrar servicios corresponde a 
+Un sistema operativo monlítico
+Un sistema operativo multiprogramado
+Un sistema operativo basado en un micronúcleo
+El diseño no influye en el tiempo necesario para suministrar servicios
+Un sistema operativo multiprogramado
+
+Cuando se realiza una llamada al sistema operativo
+Se cambia el modo de ejecución del procesador
+Se desbloquean las interrupciones de hardware
+Se produce una excepción en el procesador
+Se produce una interrupcion de hardware
+Se aborta la ejecución de la instruccion-maquina actual
+
+El concepto de archivo no permite
+Utilizar distintas colecciones de información interrelacionadas con el mismo nombre
+Abstraerse de las caracteristicas físicas de los dispositivos de almacenamiento
+Tener una visión uniforme del almacenamiento
+Que múltiples procesos utilicen de forma concurrente un mismo archivo con diferentes métodos de acceso
+Almacenar informarmación con un ciclo de vida más largo que la aplicación que lo creó
+
+Un sistema de archivos con estructura de grafo acíclico permite
+Tener varios nombres asociados a un mismo archivo
+Acelerar los accesos secuenciales de datos dentro de un archivo
+Implementar los métodos de acceso indexados en los archivos
+Acelerar los accesos directos de datos dentro de un archivo
+Tener nombres de archivos de longitud limitada
+
+Un esquema de recolección de basura permite
+Recuperar el espacio en disco ocupado por archivos que ya no pueden ser accedidos
+Recuperar el espacio utilizado en directorios por archivos que han sido eliminados
+Recuperar el espacio interno de los archivos que no se está utilizando
+Obtener la lista de bloques defectuosos de un dispositivo de almacenamiento por bloques
+Recuperar el espacio no ocupado en la tabla de i-nodos de un sistema UNIX
+
+El método de acceso directo a los archivo es más rápido que el método de acceso secuencial en
+Las operaciones de lectura/escritura a zonas arbitrarias del archivo
+La anexión de datos al final de archivo
+La búsqueda de un contenido en el archivo
+Ningún caso. Se diferencias por el soporte físico utilizado para el almacenamiento de los archivos
+La lectura completa de un archivo
+
+Los atributos de un archivo son meta-información asociada al
+Archivo
+Nombre de un archivo
+Directorio de un archivo
+Método de acceso al archivo
+Proceso creador del archivo
+
+El proceso que lee de una tubería UNIX
+Se puede bloquear si la tubería está vacía
+Debe cerrar previamente su entrada estándar
+Recibe una señal SIGPIPE cuando la tubería está vacía
+Debe crear un duplicado del descriptor de lectura de la tubería
+Recibe una señal SIGPIPE cuando la tubería está llena
+
+¿Cuántos procesos de usuario pueden como máximo estar simultáneamente en el estado de ejecución?
+El nº de procesadores o núcleos de ejecución del sistema
+Todos los procesos menos el nº de procesadores o núcleos de ejecución del sistema
+Todos los procesos
+Todos los procesos menos el nº de procesos expulsados temporalmente de memoria principal
+Un solo proceso
+
+En un sistema operativo multiprogramado genérico
+De un programa pueden generarse n procesos concurrentes y un proceso sólo puede estar asociado a un programa
+De un programa pueden generarse n procesos concurrentes y un proceso puede estar asociado a n programas
+Sólo los programas multihilo pueden generar n procesos concurrentes y un proceso multihilo puede estar asociado a n programas
+Sólo los programas con múltiples pilas de memoria pueden generar n procesos concurrentes
+De un programa sólo se puede generar un proceso concurrente y un proceso sólo puede estar asociado a un programa
+
+La llamada al sistema kill
+Envía una señal a un proceso
+Solicita al sistema operativo la terminación del proceso indicado
+Envía a un proceso la petición de terminar una tubería compartida
+Solicita al sistema operativo la terminación del proceso solicitante
+Termina el proceso solicitante con un código de terminación de error
+
+Dada la siguiente carga de trabajo (las unidades de tiempo son arbitrarias y la E/S puede ser realizada por varios procesos simultáneamente) y utilizando una planificación SJF no apropiativa: Trabajo{1,2,3}, T. de Llegada{0,1,2}, Rf. 1 de CPU{3,1,1}, Rf de E/S{3,2,2}, Rf. 2 de CPU{1,1,3}. ¿Cuál es el tiempo de espera del trabajo 2?
+2
+0
+3
+5
+1
+
+Supongamos que el tiempo medio que el brazo de un disco tarda en cambiar de posición desde una pista a otra adyacente es 1 ms. El disco tiene 200 pistas numeradas de 0 a 199. El brazo del disco se encuentra colocado sobre la pista 50 y la última vez se ha movido en sentido ascendente (hacia las pistas de índice mayor). Al manejador del disco le han llegado, por este orden, peticiones para operaciones en las pistas siguientes: 30, 90 y 150. ¿Cuál es el tiempo total necesario para satisfacer todas las operaciones con el algoritmo de planificación LOOK?
+220 ms
+140 ms
+170 ms
+318 ms
+378 ms
+
+La traducción de direcciones de memoria en tiempo de compilación
+Implica conocer las direcciones físicas en el momento de la compilación
+Implica tener una unidad de gestión de memoria
+Implica utilizar lenguaje-máquina para la codificación de los programas
+Implica que el enlazador debe modificar el registro de reubicación de la unidad de gestión de memoria cuando se produce la compilación del programa
+Implica que el cargador del sistema operativo debe conocer las direcciones físicas
+
+Considerar la siguiente tabla de segmentos: Segmento{0, 1, 2, 3, 4}, Base{219,2300,90,1327,1952}, Longitud{600,14,100,580,96}. ¿Cuál es la dirección física correspondiente a la dirección lógica (2, 95) que tiene el formato (página, desplazamiento) con números en base decimal?
+185
+95
+195
+285
+Excepción
+
+Un proceso en un sistema UNIX que desee utilizar un dispositivo de entrada/salida debe utilizar la siguiente llamada al sistema
+open
+iopen
+mknod
+fopen
+ioctl
+
+Las técnicas de asignación no contigua de memoria
+Consisten en la asignación de tantos huecos libres de memoria como sean necesarios para satisfacer el tamaño solicitado
+Consisten en cargar un proceso en memoria en una única zona de memoria física
+Permiten ejecutar simultáneamente más programas que los que cabrían en la memoria disponible
+Tienen una fragmentación interna que aumenta de forma proporcional al nº de particiones de la memoria
+Sólo se pueden utilizar en sistemas operativos monoprogramados
+
+Si quiero que la salida estándar muestre el mensaje "Señal recibida!". ¿Dónde tendría que escribir la línea signal(SIGINT,manejador);? \n#include <stdio.h> \n#include <stdlib.h> \n #include <unistd.h> \n #include <signal.h> \n\n void manejador(int num){ \n \t if(num==SIGINT){ \n \t\t printf("Señal recibida! \-n"); \n \t } \n } int main(){ \n\n \t switch(fork()){ \n \t\t case -1: \n \t\t\t /* A */ \n \t\t\t fprintf(stderr, "Error al crear el proceso hijo \-n"); \n \t\t\t exit(EXIT_FAILURE);  \n \t\t case 0: \n \t\t\t sleep(2) \n \t\t\t /* B */ \n \t\t\t kill(getppid(), SIGINT);  \n \t\t default: \n \t\t\t /* C */ \n \t\t\t printf("Esperando la señal en el proceso padre...\-n"); \n \t\t\t pause(); \n \t } \n\t /* D */ \n\t return EXIT_SUCCESS; \n }
+En C
+En A
+En B
+En D
+-
+
+El software independiente del dispositivo de entrada/salida
+Ninguna de las otras resupuestas es correcta
+Bloquea el dispositivo mediante interrupciones que genera el controlador
+Desbloquea el dispositivo mediante interrupciones que genera el controlador
+Se encarga de reservar y liberar dispositivos compartidos
+-
+
+El disoacher es
+La parte del sistema operativo que se ocupa de realizar el cambio del proceso que usa el procesador por el determinado en el planificador
+La parte del sistema operativo que se ocupa de seleccionar el proceso que debe pasar a usar el procesador
+El tiempo que se gasta para la ejecución de yn proceso y reanudar la ejecución del otro
+La parte del sistema operativo que se ocupa de la reactivación de los procesos cuando termina la operacion de entrada/salida solicitada
+Ninguna de las anteriores
+
+El problema de la inanición en la planificación de procesos
+Ocurre en la programación por prioridades cuando las prioridades asignadas son constantes
+Sólo se produce en la planificación cooperativa
+Ocurre cuando un proceso es eliminado de la cola por baja prioridad
+Sólo se produce en el algoritmo FCFS
+-
+
+Supongamos un sistema de paginación con una tabla de páginas de un nivel en la memoria principal. Si cada referencia a memoria se realiza en 10 nanosegundos, ¿cuánto tiempo en nanosegundos se necesita para acceder a una posición concreta a través de una dirección de memoria paginada?
+20
+40
+5
+10
+-
+
+El sistema operativo actúa como:
+Un intermediario entre el hardware y el usuario.
+Un conjunto de periféricos externos.
+Una aplicación de edición de texto.
+Un programa de traducción de lenguajes de programación.
+-
+
+Uno de los principales objetivos de un sistema operativo es:
+Proporcionar comodidad en el uso del sistema.
+Garantizar el acceso directo al hardware.
+Eliminar el uso de memoria virtual.
+Restringir el acceso a aplicaciones de usuario.
+-
+
+El concepto de "máquina extendida" en sistemas operativos se refiere a:
+Proveer una interfaz cómoda al programador ocultando los detalles del hardware.
+El desarrollo de programas en lenguaje ensamblador.
+La sustitución del hardware por software de emulación.
+El uso exclusivo de la memoria secundaria para almacenar programas.
+-
+
+Una interrupción es:
+Una señal de hardware que indica la necesidad de atención del sistema operativo.
+Un error lógico en el programa de aplicación.
+Una operación realizada directamente por la memoria secundaria.
+Un procedimiento manual para corregir fallos del sistema.
+-
+
+El sistema operativo realiza la gestión de procesos al:
+Crear y destruir procesos, detener y reanudar procesos.
+Eliminar los procesos inactivos del sistema de archivos.
+Modificar directamente las aplicaciones en ejecución.
+Reemplazar el uso de memoria secundaria con memoria primaria.
+-
+
+La multiprogramación en sistemas operativos permite:
+Ejecutar varios programas simultáneamente utilizando la CPU.
+El uso exclusivo de memoria caché.
+Evitar la utilización de dispositivos de entrada/salida.
+Reemplazar procesos antiguos sin interrupción.
+-
+
+El principal propósito de las llamadas al sistema es:
+Facilitar la comunicación entre aplicaciones y el sistema operativo.
+Permitir el acceso directo al hardware.
+Implementar interfaces gráficas complejas.
+Eliminar la necesidad de controladores de dispositivo.
+-
+
+La memoria principal es:
+Un almacén de datos volátil que permite un acceso rápido.
+El medio de almacenamiento principal para datos permanentes.
+Una extensión del almacenamiento secundario.
+Exclusiva para sistemas operativos distribuidos.
+-
+
+Un sistema operativo monolítico se caracteriza por:
+Tener todos sus componentes en un único programa.
+Separar cada componente en procesos independientes.
+No permitir la comunicación entre aplicaciones.
+Requerir más memoria secundaria que otros tipos de sistemas.
+-
+
+El sistema de archivos es responsable de:
+Crear y destruir archivos y directorios, y manipularlos.
+El acceso directo a dispositivos de entrada/salida.
+Modificar el sistema de protección del hardware.
+Asegurar la ejecución simultánea de aplicaciones distribuidas.
+-
+
+El concepto de "spooling" en sistemas operativos implica:
+El uso de discos para mejorar el rendimiento en E/S.
+Eliminar el almacenamiento temporal de datos.
+Reemplazar los dispositivos rápidos por lentos.
+Crear conexiones virtuales para aplicaciones distribuidas.
+-
+
+Un ejemplo de excepción en sistemas operativos es:
+Intentar dividir por cero en un programa.
+Completar una operación de entrada/salida con éxito.
+Ejecutar un ciclo infinito en una aplicación.
+Guardar un archivo en un directorio protegido.
+-
+
+El sistema operativo gestiona la entrada/salida mediante:
+Interfaz general de manejadores de dispositivos y cache.
+Eliminación de los controladores específicos.
+Acceso directo a la CPU por dispositivos de E/S.
+Sustitución de interrupciones por buffers.
+-
+
+Un sistema operativo distribuido permite:
+Extenderse sobre varias máquinas para ofrecer servicios integrados.
+Eliminar la necesidad de hardware dedicado.
+Reemplazar sistemas monousuario por sistemas multiusuario.
+Acceder a dispositivos físicos exclusivamente.
+-
+
+El propósito principal de la normalización de interfaces es:
+Garantizar la portabilidad de aplicaciones entre diferentes sistemas operativos.
+Eliminar la necesidad de lenguajes de programación de alto nivel.
+Aumentar la dependencia de los sistemas propietarios.
+Reducir el tiempo de ejecución de procesos en memoria secundaria.
+-
+
+La gestión de la memoria principal incluye:
+Decidir qué procesos se cargan en memoria y asignar espacio.
+Eliminar los datos almacenados en discos duros.
+Controlar el acceso exclusivo a los dispositivos de entrada/salida.
+Permitir el uso ilimitado de memoria virtual.
+-
+
+Un sistema operativo basado en micronúcleos:
+Se centra en funciones básicas delegando otras a procesos auxiliares.
+Reúne todas las funciones en un único programa.
+No permite la comunicación entre procesos del sistema.
+Es exclusivo para sistemas monousuario.
+-
+
+El shell o intérprete de comandos:
+Es el componente principal del sistema operativo utilizado por el usuario.
+Unifica todos los sistemas de protección disponibles.
+Proporciona un entorno exclusivo para el almacenamiento secundario.
+Gestiona las operaciones de hardware directamente.
+-
+
+La protección en sistemas operativos controla:
+El acceso a los recursos por parte de programas y usuarios.
+La velocidad de procesamiento en la CPU.
+La compatibilidad entre diferentes lenguajes de programación.
+La sincronización entre dispositivos de entrada/salida.
+-
+
+Un sistema operativo multiprocesador:
+Trabaja sobre máquinas con varios procesadores que comparten memoria.
+Exige que cada aplicación tenga su propio procesador dedicado.
+Reemplaza la memoria primaria por memoria secundaria.
+Restringe el uso de recursos a un solo usuario por vez.
+-
+
+El diseño de sistemas operativos persigue objetivos como:
+Facilidad de uso, seguridad, y eficiencia.
+Eliminar los componentes de red.
+Restringir el acceso a los recursos de almacenamiento.
+Reemplazar todos los procesos con tareas manuales.
+-
+
+La biblioteca de interfaz de llamadas al sistema permite:
+Realizar llamadas al sistema desde lenguajes de alto nivel.
+Eliminar la necesidad de una memoria secundaria.
+Ejecutar todas las operaciones en modo supervisor.
+Restringir las operaciones de entrada/salida.
+-
+
+El tratamiento de una interrupción depende de:
+El dispositivo de entrada/salida que la causó.
+El tipo de memoria utilizado en el sistema.
+La cantidad de procesos en ejecución.
+La versión del sistema operativo.
+-
+
+Un sistema operativo de red se distingue por:
+Proveer servicios a aplicaciones remotas en otras máquinas.
+Eliminar la necesidad de memoria principal.
+Restringir las conexiones a interfaces locales.
+Centralizar todos los procesos en una sola máquina.
+-
+
+El mecanismo de buffers en sistemas operativos:
+Permite solapar operaciones de E/S con cálculos.
+Reemplaza la necesidad de memoria secundaria.
+Reduce la importancia de las interrupciones.
+Garantiza acceso directo al hardware sin restricciones.
+-
+
+La implementación de sistemas operativos modernos se realiza:
+Principalmente en lenguajes de alto nivel.
+Exclusivamente en lenguaje ensamblador.
+Usando únicamente herramientas de hardware.
+Eliminando la dependencia de la memoria virtual.
+-
+
+Una excepción se lanza cuando:
+La CPU encuentra un error al intentar ejecutar una instrucción.
+Un dispositivo de entrada/salida completa su operación.
+El usuario interrumpe manualmente un proceso.
+Un programa finaliza sin errores.
+-
+
+La separación entre mecanismos y políticas es importante porque:
+Facilita la flexibilidad si cambian las políticas.
+Elimina la necesidad de protección en el sistema.
+Garantiza el acceso directo al hardware.
+Permite usar cualquier lenguaje de programación.
+-
+
+Los sistemas operativos multiprogramados necesitan:
+Administrar memoria, CPU y dispositivos de E/S.
+Eliminar las interrupciones causadas por el hardware.
+Garantizar que cada proceso utilice exclusivamente la CPU.
+Restringir el acceso a la memoria secundaria.
+-
+
+La principal función del sistema de archivos es:
+Proveer herramientas para crear, destruir y manipular archivos y directorios.
+Controlar la ejecución de procesos en memoria primaria.
+Sincronizar dispositivos de entrada/salida.
+Permitir el acceso exclusivo al hardware de almacenamiento.
+-
+
+La llamada al sistema fchown permite
+Cambiar el usuario propietario y el grupo propietario de un nodo del sistema de archivos indicando un descriptor de archivo válido
+Cambiar la máscara de creación de archivos para el proceso solicitante
+Cambiar el usuario propietario y el grupo propietario de un nodo del sistema de archivos indicando el nombre del nodo
+Cambiar los permisos de un nodo del sistema de archivos indicando el nombre del nodo
+Cambiar el usuario propietario y el grupo propietario de un enlace simbólico (sin seguir el enlace) indicando el nombre del enlace
+
+Un proceso UNIX
+Tiene una única tabla de archivos abiertos aunque tenga múltiples hilos de ejecución
+Puede crear múltiples tuberías anónimas de comunicación con su proceso padre
+Con múltiples hilos de ejecución tiene una única pila y múltiples zonas de datos
+Está asociado a un único programa que es compartido obligatoriamente con todos sus procesos hijos
+Ninguna de las otras respuestas es correcta
+
+La fragmentación externa de memoria
+Es la memoria no asignada a procesos que no puede ser utilizada porque está dispersa
+Disminuye utilizando un sistema de segmentación de memoria
+Es la división interna de la memoria asignada a un proceso en las zonas de código, datos y pila
+Se reduce dividiendo los huecos libres de memoria
+Es la memoria libre dentro de una partición asignada a un proceso
+
+En UNIX, la llamada al sistema operativo unlink elimina físicamente un archivo
+Cuando el archivo tiene un único enlace físico
+Cuando el archivo tiene un único enlace simbólico
+Cuando el archivo tiene un único enlace físico en cada partición del sistema
+Cuando el archivo tiene un único enlace físico o un único enlace simbólico
+Cuando el usuario del proceso solicitante es el propietario del archivo
+
+Un proceso necesita de los siguientes recursos del sistema
+Tiempo de CPU, memoria, archivos y dispositivos de entrada/salida
+Programa, registros del procesador y pila
+Programa y tiempo de CPU
+Programa y pila
+Tiempo de CPU
+
+El tratamiento de excepciones por parte del sistema operativo permite
+Recuperar el control del sistema cuando se produzca un mal funcionamiento de los programas
+Recuperar el control del sistema cuando se produzca un mal funcionamiento de los dispositivos de entrada/salida
+Tratar las peticiones de los usuarios para abortar programas
+Gestionar las solicitudes de los dispositivos de entrada/salida
+Planificar el uso del procesador en un sistema operativo multiprogramado
+
+Cuando queramos obtener información sobre los procesos dependientes de un shell, y en particular los números de trabajo, nombres de los ejecutables y estado en que se encuentra cada uno (ejecutando en segundo plano o suspendido) debemos usar la orden
+jobs
+kill
+nohup
+bg
+fg
+
+Dada la siguiente carga de trabajo (las unidades de tiempo son arbitrarias y la E/S puede ser realizada por varios procesos simultáneamente): Trabajo{1,2,3}, T. de Llegada{0,1,2}, Rf. 1 de CPU{3,1,1}, Rf. de E/S{3,3,2}, Rf. 2 de CPU{1,1,3}. Y utilizando una planificación por turno rotatorio (valor del quantum de tiempo Q = 1). ¿Cuál es el porcentaje de utilización del procesador?
+100%
+0%
+90,9% (10/11*100)
+83,3% (10/12*100)
+30% (3/10*100)
+
+Un sistema operativo es
+Un programa que controla todos los recursos del computador y establece la base sobre la que pueden escribirse los programas de aplicación
+Un programa de sistema para optimizar el uso del procesador, la memoria y la entrada/salida
+El interfaz del usuario de la computadora
+Un programa de sistema para ofrecer una máquina virtual al desarrollador de aplicaciones
+El mecanismo de protección basado en software para el uso de un computador
+
+El spooling de impresoras
+Permite que varios procesos que necesitan de una impresora puedan progresar concurrentemente sin bloquearse por el uso de la impresora
+Acelera la impresión por la transferencia directa de datos entre la memoria principal y el controlador de la impresora
+Sólo es aplicable en sistemas monoprogramados
+Elimina el bucle de espera activa en el manejador de las impresoras
+Sólo es necesario cuando el sistema tiene más de una impresora
+
+Un sistema operativo para un ordenador personal no necesita obligatoriamente de
+La multiprogramación
+Un interprete de comandos
+Un cargador de programas
+Un gestor de entrada/salida
+Un gestor de memoria principal
+
+La fragmentación interna de la memoria puede reducirse
+Asignando menos memoria para la pila de los procesos
+Utilizando bibliotecas de enlace dinámico
+Compactando los huecos libres
+Utilizando un sistema de paginación de memoria
+Asignando más memoria a los procesos
+
+El diseño de sistema operativo con mayor rapidez en suministrar servicios corresponde a
+Un sistema operativo monalítico
+Un sistema operativo basado en un micronúcleo
+Un sistema operativo monoprogramado
+Un sistema operativo multiprogramado
+El diseño no influye en el tiempo necesario para suministrar servicios
+
+La llamada al sistema dup de UNIX permite
+Crear un duplicado del descriptor del archivo indicado
+Crear un duplicado del archivo indicado
+Asignar la entrada estándar al descriptor del archivo indicado
+Crear un proceso hijo que es un duplicado del proceso padre
+Asignar un nuevo nombre al archivo indicado
+
+Típicamente, ¿qué servicios ofrece un microkernel?
+Gestión de memoria y procesos minima, además de un mecanismo de comunicaciones
+Exclusivamente un mecanismo de comunicaciones
+Exclusivamente un cargador de programas
+Un cargador de programas y un intérprete de comandos
+Una abstracción del hardware de la computadora formando varios entornos de ejecución diferentes
+
+La orden del shell ps
+Permite obtener información del estado de todos los procesos si se usa con la opción -e
+Sólo permite obtener información sobre el estado de los procesos de un usuario que dependan del terminal cuando se usa la opción -h
+La utiliza el superusuario para cancelar los procesos que desea
+Se usa para enviar una señal a un proceso
+Permite al usuario obtener la misma información que la orden jobs pero con más opciones de formato
+
+La llamada al sistema kill
+Envía una señal a un proceso
+Solicita al sistema operativo la terminación del proceso indicado
+Termina el proceso solicitante con un código de terminación de error
+Solicita al sistema operativo la terminación del proceso solicitante
+Envía a un proceso la petición de terminar una tubería compartida
+
+El cambio de estado de un proceso de bloqueado a ejecución
+No es posible en ninguna circunstancia
+Sólo es posible con planificación no apropiativa
+Sólo es posible con planificación apropiativa
+Sólo es posible con planificadores de medio plazo
+Sólo es posible en computadores con un temporizador hardware
+
+En UNIX cuando un proceso padre termina
+El sistema operativo hace que todos sus procesos hijos sean adoptados por el proceso init (pid = 1)
+Todos sus procesos hijos reciben la señal SIGCHLD
+El proceso recibe la señal SIGCHLD si tiene algún proceso hijo
+El proceso pasa al estado zombie hasta que todos sus procesos hijos terminen
+Todos sus procesos hijos terminan
+
+Sea un espacio de direcciones lógicas de 128 páginas de 512 palabras cada una, traducidas a una memoria física de un tamaño máximo de 64 marcos. ¿Cuántos bits tiene una dirección del espacio lógico de direcciones?
+16
+9
+15
+7
+14
+
+El sistema de archivos UNIX
+Permite nombres de archivos de como máximo 255 caracteres
+Tiene una estructura
+Se puede utilizar el carácter / en el nombre siempre que se use doble // para distinguirlo del carácter separado
+El  grupo al que pertenece un archivo debe coincidir con el grupo al que pertenece el propietario
+-
+
+¿Puede un proceso hijo seguir ejecutándose cuando un proceso padre finaliza?
+Sí, si el sistema operativo lo permite
+No, el código del padre siempre debe incluir la terminación de los procesos hijo
+No, siempre se finalizan todos los procesos hijo cuando el padre finaliza.
+Sí un proceso hijo suele tener un ciclo de vida superior al del proceso padre
+-
+
+En un sistema de memoria paginada cuyas traducciones se realizan mediante tablas de páginas organizadas en dos niveles, con carácter general, para un acceso a memoria física se requiere realizar
+Tres accesos a memoria principal
+Dos accesos a memoria principal
+Un acceso a memoria principal
+Cuatro accesos a memoria principal
+-
+
+¿Qué comando nos permite obtener las últimas líneas de un archivo dado?
+tail
+finish
+head (con la opción -i)
+end
+-
+
+La distinción entre el uso autorizado y no autorizado de un nodo del sistema de archivos es una responsabilidad
+Del sistema de protección del sistema operativo
+Del administrador del sistema
+Del programador de sistemas 
+Del controlador del dispositivo
+-
+
+La llamada al sistema stat en UNIX permite
+Obtener la información sobre los atributos de un nodo del sistema de archivos
+Obtener el nombre de un nodo del sistema de archivos
+Obtener el número de entrada en la tabla de archivos abiertos de un proceso
+Obtener la lista de archivos contenidos dentro de un directorio 
+-
+
+La planificación a largo plazo del uso del procesador
+Controla el grado de multiprogramación del sistema
+Suspende o reanuda la ejecución de procesos
+Gestiona la cola de procesos listos
+Implementa un algoritmo de programación de la CPU basado en colas multinivel con retroalimentación
+-
+
+¿Qué ocurre al ejecutar el siguiente programa en C?: \n #include <stdio.h> \n int main(void){ \n int a=5, *b; \n b=&a; \n *b=a+1; \n printf("A=%d, B=%d\n", a, *b); \n return 0; \n }
+El programa imprime en salida estándar A=6, B=6
+El programa da un error de compilación en la linea del printf
+El programa da un Segmentation Fault en la linea b=&a; 
+El programa imprime en salida estándar A=5, B=6 
+-
+
+¿Qué comando sería más adecuado para mostrar el contenido de un archivo en UNIX?
+cat
+echo
+touch
+mv
+-
+
+Dada la información de la tabla carga de trabajo del sistema (las unidades de tiempo son arbitrarias, el sistema tiene 2 procesadores, la entrada/salida (E/S) puede ser realizada por varios procesos simultáneamente y en caso de empate se elije el trabajo con PID menor) y utilizando una planificación del procesador FCFS, el tiempo de espera total es: PID{1,2,3,4,5}, T. de Llegada{0,1,2,3,4}, Rf. 1 CPU{2,1,3,3,2}, R. E/S{1,2,1,3,2}, Rf. 2 CPU{1,2,3,2,2} ¿Cuál es el tiempo de retorno del trabajo 5?
+6
+5
+7
+8
+-
+
+Para hacer viable as algoritmo de planificación SJF
+Se debe estimar o predecir la duración de las ráfagas de CPU de los procesos en base al pasado cercano
+Se debe ordenar los procesos por lineas de código para ejecutar los más cortos primero
+Se debe analizar el código para calcular el tiempo exacto de CPU que requieren
+El algoritmo SJF es puramente teórico
+-
+
+El método de acceso directo a un archivo
+Permite acceso aleatorio y direccionado de sus registros
+Impide la implementación de un mecanismo de acceso secuencial
+No es compatible con el acceso indexado
+Está totalmente en desuso en la actualidad
+-
+
+La estructura de datos del sistema operativo en la que se almacenan la información para el control de un proceso se denomina
+Dispatcher
+Bloque de Control del Proceso
+i-nodo
+Tabla de Procesos
+-
+
+Dada la información de la tabla carga de trabajo del sistema (las unidades de tiempo son arbitrarias, el sistema tiene 2 procesadores, la entrada/salida (E/S) puede ser realizada por varios procesos simultáneamente y en caso de empate se elije el trabajo con PID menor) y utilizando una planificación del procesador FCFS, el tiempo de espera del trabajo con PID 4 es: PID{1,2,3,4,5}, T. de Llegada{0,1,2,3,4}, Rf. 1 CPU{2,1,3,3,2}, R. E/S{1,2,1,3,2}, Rf. 2 CPU{1,2,3,2,2} ¿Cuál es el tiempo de llegada del trabajo 2?
+1
+3
+0
+2
+-
+
+¿Qué comando sería el más adecuado para crear un archivo vacío en UNIX?
+touch
+vi
+echo
+cat
+-
+
+Respecto a las llamadas al sistema, es cierto que
+Cada sistema operativo implementa su propio conjunto de llamadas al sistema
+Pueden ser usadas libremente por las aplicaciones sin intervención del sistema operativo
+Deben cumplir el estándar POSIX
+Todos los sistemas operativos tienen un conjunto común de llamadas al sistema para lograr interoperabilidad
+-
+
+El componente denominado unidad de gestión de memoria se encarga de
+La traducción de direcciones lógicas a direcciones físicas de memoria
+La traducción de direcciones de memoria en tiempo de enlace
+La traducción de direcciones física a direcciones lógicas de memoria
+La traducción de direcciones de memoria en tiempo de compilación
+-
+
+¿Dónde se almacena la información de la dirección de comienzo de la tabla de páginas asociada a un proceso en estado de preparado?
+En el PCB del proceso
+En la tabla de descriptores del proceso
+En la unidad de gestión de memoria
+En los registros asociativos (TLB)
+-
+
+Si quiero que mi proceso hijo ejecute un programa para conocer los propietarios de una serie de archivos pasados por la línea de órdenes, ¿cuál de las siguientes primitivas sería la adecuada? 
+execlp("ls", "ls", "-l", argv[i], NULL)
+execve ("ls", "ls", "-1", argv[i], NULL)
+execl ("ls", "-l", argv[1], NULL)
+execl ("ls", "ls", "-l", argv[i], NULL)
+-
+
+Considerando la información de la tabla de traducción de segmentos. ¿Cuál es la dirección física correspondiente a la dirección lógica (4,0) siendo el formato utilizado (n° segmento, desplazamiento)? Segmento{0,1,2,3,4}, Base{1050,500,3640,7180,0}, Longitud{345,235,1220,2310,167}
+0
+171
+Segmentation Fault
+4
+-
+
+Cual de las siguientes situaciones NO es directamente provocada por la ejecución de una instrucción-máquina
+Una interrupción
+Una excepción
+Una llanzada al sistema
+Una llamada de función
+-
+
+La entrada/salida mediante un flujo de datos es característica de
+Ninguna de las otras respuestas es correcta
+Dispositivos orientados a bloques
+Dispositivos orientados a flujos
+Tanto en dispositivos orientados a flujos como a bloques
+-
+
+La estructura stat contiene, entre otra, información sobre
+Los permisos del archivo
+El pid de los procesos que tienen abierto el archivo
+El contenido del archivo
+El password de acceso al archivo
+-
+
+¿Qué sucede cuando se elimina un archivo en un sistema de archivos tipo UNIX?
+Si ningún proceso tiene abierto ese archivo, el i-nodo del archivo se marca como libre y el espacio en disco se libera
+El archivo se oculta y no se puede acceder a él
+Cualquier operación de cualquier proceso genera un error
+El archivo se mueve a una papelera de reciclaje y se elimina después de un tiempo
+-
+
+¿En qué consiste truncar un archivo?
+Modifica el tamaño del archivo a una longitud cero
+Bloquea la escritura pero no la lectura del archivo
+Ninguna de las otras respuestas es correcta
+Elimina los n bytes finales del archivo manteniendo el resto del contenido
+-
+
+En UNIX, la llamada al sistema link se utiliza para
+La creación de un nuevo enlace fisico para un archivo
+La creación de un nuevo enlace simbólico para un archivo
+La conexión entre dos nodos del sistema de archivo
+El establecimiento de una mueva conexión entre procesos y archivos
+-
+
+El algoritmo de planificación de uso de un manejador de disco, cuando es de tipo C-SCAN
+Es igual que el SCAN, pero no invierte su sentido al llegar a la pista final, sino que una vez que se alcanza dicha pista final vuelve a situarse en la pista inicial para atender peticiones por el principio
+Es igual que el SCAN, pero invierte su sentido si no hay más peticiones pendientes en el sentido de recorrido actual sin necesidad de llegar a la pista final, atendiendo peticiones en el nuevo sentido
+Es igual que el SCAN, pero invierte su sentido si no hay más peticiones pendientes en el sentido de recorrido actual sin necesidad de llegar a la pista final y vuelve a situarse en la pista inicial para atender peticiones por el principio
+Difiere del SCAN en que siempre se elige como siguiente petición a atender, la que corresponda a la pista más próxima a la posición actual de la cabeza, con independencia del sentido de desplazamiento
+-
+
+Dado el siguiente programa, ¿cuál de las siguientes salidas es posible obtener?: \n #include <stdio.h> \n #include <unistd.h> \n int main(){ \n int a=5; \n if(fork() != 0){ \n a++; \n printf("%d",a); \n } \n else{ \n printf("%d", a); \n } \n printf("0"); \n return 0; \n }
+El programa imprime en salída estándar 5060
+El programa imprime en salida estándar 660
+El programa imprime en salída estándar 605
+El programa imprime en salída estándar 6060
+-
+
+Para liberar recursos del sistema, en ocasiones se pueden suspender procesos que estén en estado
+Esperando o Preparado
+Solo Preparados
+Sola Ejecutándose
+Solo Esperando
+-
+
+Para poder utilizar las mismas instrucciones para acceder a los registros de un controlador de dispositivo que para acceder a cualquier dirección de memoria, se requiere
+Soporte a entrada/salida localizada en memoria
+Soporte a entrada/salida mediante interrupciones
+Soporte a entrada/salida basada en acceso directo a memoria
+Soporte a entrada/salida mediante canales especílicos
+-
+
+En ocasiones el hardware necesita realizar una llamada al sistema operativo y esta llamada generalmente
+No figura en el programa que se encuentra en ejecución
+Está registrada en el PCB del proceso que está utilizando la CPU
+Está invocada por el programa de aplicación que está en ejecución
+Se formula mediante lo que se denomina una llamada al sistema para solicitud de servicios del sistema operativo
+-
+
+La operación de apertura y cierre de archivos permite
+Reducir el problema de búsquedas continuas en el directorio
+Que dos procesos puedan tener abierto el mismo archivo
+Aumentar la multiprogramación del sistema
+Implementar políticas de acceso al sistema de archivos
+-
+
+En UNIX, cuando un proceso solicita una operación de escritura en una tubería que está llena
+El proceso se bloqueará
+El proceso continuará su ejecución
+El proceso finalizará generando un error de desbordamiento
+Se produce una excepción, pero continúa la ejecución del proceso
+-
+
+Supongamos que el tiempo medio que el brazo de un disco tarda en cambiar de posición desde una pista a otra adyacente es 2 ms. El disco tiene 100 pistas numeradas de 0 a 99. El brazo del disco se encuentra colocado sobre la pista 35 y la última vez se ha movido en sentido ascendente (hacia las pistas de indice mayor). Al manejador de disco le han llegado, por este orden, peticiones para operaciones en las pistas siguientes: 30, 60 y 90. ¿Cual es el tiempo total necesario para satisfacer todas las operaciones con el algoritmo de planificación C-LOOK?
+230 ms
+386 ms
+193 ms
+115 ms
+-
+
+Las aplicaciones no saben dónde están situadas las rutinas de servicio del sistema operativo
+Esto justifica el uso de llamadas al sistema para que las aplicaciones soliciten servicios del sistema operativo
+Esto justifica el uso de funciones para que las aplicaciones soliciten servicios del sistema operativo
+Esta es la razón fundamental por la que el sistema debe tener dos modos de funcionamiento: usuario y super visor
+Esto justifica el uso de bibliotecas de funciones para las llamadas al sistema
+-
+
+¿Cuál de los siguientes pasos de mensajes entre subsistemas de entrada/salida no tiene sentido?
+Manejador de los dispositivos al manejador de interrupciones
+Manejador de dispositivos al software independiente del dispositivo
+Software independiente del dispositivo al manejador de dispositivos
+Manejador de interrupciones al manejador de los dispositivos
+-
+
+Uno de los principales hitos que transformó los monitores residentes en los primeros sistemas operativos actuales fue
+Multiprogramación
+Spooling
+Interprete de comandos
+Gestión de trabajos por lotes
+-
+
+¿Qué operador se utiliza para acceder al valor almacenado en la dimcción de memoria apuntada por un puntero?
+Operador: *
+Operador: ->
+Operador: &
+Operador: .
+-
+
+Dada la información de la tabla carga de trabajo del sistema (las unidades de tiempo son arbitrarias, el sistema tiene 2 procesadores, la entrada/salida (E/S) puede ser realizada por varios procesos simultáneamente y en caso de empate se elije el trabajo con PID memor) y utilizando una planificación del procesador FCFS, la tasa de utilización de los procesadores es: PID{1,2,3,4,5}, T. de Llegada{0,1,2,3,4}, Rf. 1 CPU{2,1,3,3,2}, R. E/S{1,2,1,3,2}, Rf. 2 CPU{1,2,3,2,2} ¿Cuál es el porcentaje de utilización del procesador?
+100*(21/26)%
+20%
+80%
+100%
+-
+
+¿Cómo que se denomina la tabla de simbolos que traduce nombres de archivos en referencias a sus atributos?
+Directorio
+Grafo acíclico
+Tabla de archivos abiertos
+Partición d Directorio
+-
+
+En un sistema de memoria paginada, para lograr que dos procesos diferentes compartan memoria
+Las tablas de páginas de los procesos tendrán entradas que apuntan a los mismos frames de página
+Deben tener tablas de páginas totalmente duplicadas
+Deben ejecutar necesariamente el mismo código
+Deben realizar la traducción de las páginas mediante tablas hash
+-
+
+Dada la información de la tabla carga de trabajo del sistema (las unidades de tiempo son arbitrarias, el sistema tiene 2 procesadores, la entrada/salida (E/S) puede ser realizada por varios procesos simultáneamente y en caso de empate se elije el trabajo con PID menor) y utilizando una planificación del procesador FCFS, el tiempo de retorno del trabajo con PID 5 es: PID{1,2,3,4,5}, T. de Llegada{0,1,2,3,4}, Rf. 1 CPU{2,1,3,3,2}, R. E/S{1,2,1,3,2}, Rf. 2 CPU{1,2,3,2,2} ¿Cuál es el tiempo de finalización del trabajo 3?
+9
+13
+4
+6
+-
+
+Si compilamos el siguiente programa C como ejemplo y lo ejecutamos con ./ejemplo Winter is coming. ¿qué tendremos en la salida estándar?: \n #include <stdio.h> \n int main(int argc, char **argv){ \n int i; \n for(i=1;i<argc;i++) \n printf("c ",argv[i][0]); \n return 0; \n }
+El programa imprime se la salida estándar W i c
+El programa imprime en la salida estándar . Wic
+El programa imprime on le salida estándar ./ejemplo
+El programa da un Segmentation Fault en el bucle for
+-
+
+¿Cuál de las siguientes afirmaciones es INCORRECTA
+El sistema operativo solo utiliza el hardware por demanda de las aplicaciones
+El sistema operativo se sitúa entre el hardware y las aplicaciones
+El sistema operativo oculta al programador los detalles del hardware
+Los dispositivos de entrada/salida pueden solicitar la atención del sistema operativo a través de una interrupción
+-
+
+Considerando una memoria con un espacio de direcciones lógicas que tiene 32 páginas de 1024 palabras, y una memoria fisica con 64 frames como máximo. ¿Cuántos bits debe tener una dirección lógica?
+15
+32
+5
+16
+-
+
+Para implementar el soporte a procesos multihilo se requiere
+Que cada hilo disponga de un espacio de pila independiente del mismo de los hilos
+Que los hilos puedan compartir el registro contador de programa del proceso principal
+Que los recursos del proceso puedan protegerse para uso exclusivo
+Que estos procesos pundan disponer de un tiempo de uso de la CPU mayor que el resto de los procesos
+-
+
+Supongamos que el tiempo medio que el brazo de un disco tarda en cambiar de posición desde una pista a otra adyacente es 1 ms. El disco tiene 200 pistas numeradas de 0 a 199. El brazo del disco se encuentra colocado sobre la pista 50 y la última vez se ha movido en sentido ascendente (hacia las pistas de indice mayor). Al manejador del disco le han llegado, por este orden, peticiones para operaciones en las pistas siguientes: 30, 90 y 150. ¿Cuál es el tiempo total necesario para satisfacer todas las operaciones con el algoritmo de planificación SSTF?
+140 ms
+170 ms
+318 ms
+220 ms
+378 ms
+
+Queremos enviar el indice del contenido de un fichero serial.tgz creado mediante la utilidad tar sin deserializarlo ni descomprimirio al final de un archivo denominado informe.txt. La orden que deberá usarse es
+tar-tf serial.tgz >> informe.txt
+tar -f serial.tgz || informe.txt
+tar tv informe.txt << serial.tgz
+tar -t serial.tgz informe.txt
+tar -tf serial.tgz informe.txt
+
+La técnica de "buffering" permite
+Ninguna de las otras respuestas es correcta
+Acelerar la velocidad de los dispositivos de entrada/salida
+Ahorrar memoria en las transferencias de datos a los dispositivos de entrada/salida
+Utilizar dispositivos compartidos entre varios usuarios
+Cambiar los dispositivos de un sistema sin cambiar el código de las aplicaciones
+
+Si quiero preprocesar un archivo fuente ejercicio.c y generar código ensamblador a partir del código fuente pero no ensamblar, debo ejecutar
+gcc -S ejercicio.c
+gcc -Wall ejercicio.c
+gcc -c ejercicio.c
+gcc -g ejercicio.c -o ejercicio
+gcc -E ejercicio.c o ejercicio
+
+La llamada al sistema write devuelve
+El número de bytes escritos o -1 en caso de error
+El valor O si se han escrito en el archivo correctamente todos los bytes o -1 en caso de error
+Ninguna de las otras respuestas es correcta
+El desplazamiento actual del puntero de escritura contado desde el comienzo del archivo o -1 en caso de error
+Un puntero a la zona de memoria que se ha escrito en el archivo o el puntero nulo en caso de error
+
+La planificación a largo plazo del procesador
+Controla el grado de multiprogramación del sistema
+Debe consumir muy poco tiempo pues se ejecuta con mucha frecuencia
+Selecciona un proceso de la lista de procesos preparados al que se le cederá el uso del procesador
+Expulsa temporalmente de memoria a algunos procesos para cargar otros
+Expulsa del procesador a aquellos procesos que consumen más tiempo del asignado
+
+Supongamos que el tiempo medio que el brazo de un disco tarda en cambiar de posición desde una pista a otra adyacente es 1 ms. El disco tiene 200 pistas numeradas de 0 a 199. El brazo del disco se encuentra colocado sobre la pista 50 y la última vez se ha movido en sentido ascendente (hacia las pistas de indice mayori. Al manejador del disco le han llegado, por este orden, peticiones para operaciones en las pistas siguientes: 30, 90 y 150 ¿Cuál es el tiempo total necesario para satisfacer todas las operaciones con el algoritmo de planificación LOOK?
+220 ms
+318 ms
+140 ms
+170 ms
+378 ms
+
+Para realizar el empaquetado y compresión del directorio /home/usuario y todo su contenido deberia ejecutarse el siguiente comando
+tar cvfz prueba.tar.gz /home/usuario
+tar cvfw prueba.tar.gz /home/usuario
+tar cvf prueba.tar.gz /home/usuario
+Ninguna de las otras respuestas es correcta
+tar xvfz prueba.tar.gz /home/usuario
+
+En un sistema paginado se quiere compartir una zona de memoria entre dos procesos. Esto implica
+Que varias entradas de la tabla de páginas de cada proceso apuntan a los mismos marcos
+Que el registro de reubicación de la unidad de gestión de memoria (MMU) tiene el mismo valor para los dos procesos
+Que el cargador del sistema operativo debe reservar una zona contigua en memoria física para asignarlo a esa memoria compartida
+Que la tabla de páginas es compartida por los dos procesos
+Que el cargador del sistema operativo debe asignar el mismo espacio de direcciones lógico a la zona de memoria compartida
+
+La primitiva pause
+Pide al sistema operativo que bloquee al proceso hasta que a éste le sea enviada una señal
+Sólo la pueden usar los procesos del superusuario
+Instala un manejador para una señal SIGPAUSE
+Permite notificar al usuario un error fatal
+Sirve para que un proceso envie señales de pausa a sus hijos
+
+¿Cuál de las siguientes acciones se puede ejecutar en cualquier modo de ejecución del procesador (usuario o supervisor)?
+Utilizar las operaciones aritméticas con números en coma flotante del procesador
+Establecer el reloj de hora del día
+Escribir en los registros del módulo hardware de gestión de memoria
+Desactivar las interrupciones hardware
+Utilizar las instrucciones-máquina para realizar entrada/salida con los dispositivos
+
+¿Qué son los demonios de un sistema?
+Son procesos especiales correspondientes a programas de sistema que reciben conexiones de otros procesos
+Son los procesos que el administrador utiliza para monitorizar el sistema
+Es el interfaz de llamadas al sistema operativo en UNIX
+Es el componente del sistema operativo encargado de la gestión de los periféricos
+Es una clase de software malicioso
+
+La fragmentación externa de la memoria se reduce
+Compactando los huecos libres
+Asignando menos memoria para la pila de los procesos
+Utilizando librerías de enlace dinámico
+Utilizando un sistema de segmentación de memoria
+Asignando más memoria a los procesos
+
+El spooling de disco permite
+Solapar el cálculo de un trabajo con la entrada/salida de otro trabajo
+Solapar la entrada/salida de varios trabajos
+Solapar el cálculo de varios trabajos
+La multiprogramación
+El concepto de archivo
+
+Si al utilizar el gestor de compilación gcc para procesar un archivo fuente programa.c necesitamos especificar un directorio en el que buscar ciertas cabeceras, debemos usar la(s) opción(es)
+-I
+-S
+-c -L
+-L
+-l -O
+
+Cuando se realiza una llamada al sistema operativo
+Se cambia el modo de ejecución del procesador
+Se desbloquean las interrupciones hardware
+Se produce una excepción en el procesador
+Se aborta la ejecución de la instrucción-máquina actual
+Se produce una interrupción hardware
+
+Un programa de sistema permite
+Utilizar los servicios del sistema operativo sin programar
+Gestionar dispositivos de entrada/salida no previstos inicialmente por el sistema operativo
+La carga de programas a petición de los usuarios
+Ofrecer un interfaz de programación del sistema operativo para las aplicaciones
+Acceder al núcleo del sistema operativo de una forma homogénea
+
+Supongamos que el tiempo medio que el brazo de un disco tarda en cambiar de posición desde una pista a otra adyacente es 1 ms. El disco tiene 200 pistas numeradas de 0 a 199. El brazo del disco se encuentra colocado sobre la pista 50 y la última vez se ha movido en sentido ascendente (hacia las pistas de indice mayor). Al manejador del disco le han llegado, por este orden, peticiones para operaciones en las pistas siguientes: 30, 90 y 150. ¿Cuál es el tiempo total necesario para satisfacer todas las operaciones con el algoritmo de planificación C-LOOK?
+220 ms
+140 ms
+378 ms
+318 ms
+170 ms
+
+La llamada pipe nos permite
+Crear una tubería que contiene dos descriptores, uno para la escritura y otro para la lectura
+Únicamente comunicar un proceso padre con un proceso hijo
+Crear un canal para la duplicación del espacio de memoria del proceso padre, generando así un proceso hijo
+Configurar la entrada y la salida estándar de un proceso
+Tomar como argumento una matriz de enteros, asignando descriptores para la lectura, escritura y la salida de error
+
+El objetivo de la llamada al sistema operativo para la apertura de un archivo es
+Ninguna de las otras respuestas es correcta
+Bloquear el acceso de otros procesos al archivo
+Compartir el archivo con los procesos hijos
+Acelerar la lectura/escritura física de los datos del archivo
+Cargar el archivo en memoria principal para su acceso más rápido
+
+La utilización de los servicios del sistema operativo se realiza a través de
+Las llamadas al sistema
+El interfaz de las operaciones de entrada/salida
+Los drivers de dispositivos
+Las sentencias del lenguaje de programación utilizado
+Las subrutinas de tratamiento de interrupciones hardware
+
+Dada la siguiente carga de trabajo (las unidades de tiempo son arbitrarias y la E/S puede ser realizada por varios procesos simultáneamente) y utilizando una planificación SJF no apropiativa: Trabajo{1,2,3}, T. de Llegada{0,1,2}, Rf. 1 de CPU{3,1,1}, Rf. de E/S{3,3,2}, Rf. 2 de CPU{1,1,3} ¿Cuál es el tiempo de espera del trabajo 2?
+2
+4
+1
+3
+-
+
+¿Qué clase de sistema operativo es necesario para un computador con un procesador de dos núcleos y múltiples usuarios que usan terminales alfanuméricos o gráficos? Elija el sistema operativo con la menor complejidad posible para atender las necesidades indicadas.
+Sistema operativo multiprocesador
+Sistema operativo distribuido
+Sistema operativo de red
+Sistema operativo localizado
+Sistema operativo basado en middleware
+
+En un sistema UNIX, el número de i-nodo
+Sirve para referenciar de forma única un archivo en una unidad de almacenamiento
+Es el número del primer bloque de datos utilizado por un archivo
+Es el indice en la tabla de archivos abiertos de un proceso que sirve para referenciar el archivo en las operaciones realizadas por los procesos
+Es el puntero a una estructura interna a un proceso que sirve para referenciar a un archivo en las operaciones realizadas por el proceso
+Es el contador del número de nombres asociados a un archivo
+
+¿Dónde está el código de las órdenes que el intérprete de comandos tiene que ejecutar?
+Algunos intérpretes contienen el código de las órdenes a ejecutar y otros sistemas implementan la mayoría de las órdenes a través de una serie de programas del sistema
+En la distribución del sistema operativo
+En programas del sistema que son llamados por el intérprete
+En el núcleo del sistema operativo
+En el intérprete de comandos
+
+Habitualmente ¿con qué coinciden las dos primeras entradas de un directorio?
+Con el directorio actual . y el directorio padre ..
+No hay un orden preestablecido
+Con los dos primeros ficheros colocados alfabéticamente que vemos al ejecutar un 1s en la linea de ordenes.
+Con los dos ficheros que se hubieran modificado en último lugar
+Con los dos ficheros de mayor tamaño
+
+En una planificación de turno rotatorio, si se reduce demasiado el quantum de tiempo
+La eficiencia de uso del procesador se reduce
+Se tienen características semejantes a la planificación de promedio exponencial
+Se tienen caracteristicas semejantes a la planificación FCFS
+Se tienen caracteristicas semejantes a la planificación SRTF
+La eficiencia de uso del procesador aumenta
+
+Una partición de un sistema de archivos
+Es una división lógica de las unidades de almacenamiento de memoria secundaria que no requiere de ningún soporte hardware especial
+No puede contener un área con los datos de los archivos incluidos en la partición
+Permite tener archivos de tamaño ilimitado
+Permite tener varios nombres asociados a un mismo archivo
+Permite acelerar los accesos secuenciales de datos dentro de los archivos
+
+Respecto a la seguridad
+El sistema operativo proporciona los mecanismos de seguridad y el administrador del sistema define las políticas de seguridad
+El sistema operativo define las políticas de seguridad y el administrador del sistema elige los mecanismos de seguridad
+El usuario define las politicas de seguridad y el administrador del sistema elige los mecanismos de seguridad
+El sistema operativo define las políticas de seguridad y los mecanismos de seguridad
+El administrador del sistema define las políticas de seguridad y los mecanismos de seguridad
+
+¿Qué es más sencillo, simular un acceso secuencial utilizando un acceso directo o viceversa?
+Simular un acceso secuencial utilizando un acceso directo
+Depende de la estructura de directorio utilizada
+Simular un acceso directo utilizando un acceso secuencial
+No es posible simular un tipo de acceso con el otro tipo de acceso
+Es igual de sencillo
+
+Un sistema de procesamiento por lotes se caracteriza por
+La falta de interacción entre el usuario y el trabajo mientras éste se ejecuta
+La programación de trabajos por hojas de reserva
+El solapamiento del cálculo de varios trabajos
+La gestión de forma simultánea de múltiples trabajos con un solo procesador
+La clasificación de trabajos por usuario
+
+Sea un sistema de memoria paginada con direcciones físicas y lógicas de 8 bits. La máquina usa palabras de 1 byte y el tamaño de una página es de 16 palabras. Para almacenar las tablas de páginas de los procesos no se emplean más bits de los estrictamente necesarios. En un momento dado, el contenido de una parte de la memoria principal corresponde a los valores de la siguiente tabla, donde todos los datos se expresan en hexadecimal: Dirección{00, 08, 10, 18, 20, 28, 30, 38, 40}, +0{29, 2A, D4, 98, 44, 55, 33, 38, F3}, +1{1A, 3F, 19, 76, 92, 77, 87, 52, B7}, +2{43, ED, 57, 8A, B5, 34, 69, ED, 88}, +3{8E, 77, 98, A4, 76, 21, 6C, 32, 95}, +4{23, 45, 8A, 43, 43, 98, 43, EE, B3}, +5{9F, 01, 12, 90, 92, 76, 7E, 89, 64}, +6{12, 10, 55, 64, C9, 56, A5, 0F, D4}, +7{89, 57, 43, 44, 65, 43, C3, F4 FF} ¿Cuál es el contenido de la dirección lógica 2A para el proceso actual? La tabla de páginas del proceso actual empieza en la dirección de memoria 08 (hex)
+ED
+B5
+01
+87
+Es una dirección lógica ilegal
+
+La técnica de buffering permite
+Amortiguar los picos en las tasas de solicitudes de entrada/salida
+Ninguna de las otras respuestas es correcta
+Utilizar dispositivos compartidos a varios usuarios
+Utilizar dispositivos a una velocidad media superior a la de su funcionamiento
+Efectuar las transferencias sobre un dispositivo virtual (disco) en lugar de hacerlo sobre el real
+
+Qué genera la orden gcc -O2 prueba.c
+Un archivo ejecutable a.out con un nivel 2 de optimización
+Sólo se obtiene el fichero prueba.o pero no el ejecutable
+Un fichero ejecutable a.out ignorando los errores de nivel 2
+El compilador pedirá que le demos el nombre del fichero objeto para poder compilar
+Nada. Se producirá un error de compilación
+
+Un sistema operativo de tiempo compartido no es posible en
+Un sistema operativo monoprogramado
+Un sistema operativo multiprogramado
+Un sistema operativo dirigido por interrupciones
+Un sistema operativo multiprocesador
+Un sistema operativo multiusuario
+
+Los nombres de los archivos en UNIX
+Ninguna de las otras respuestas es correcta
+No pueden contener el carácter del espacio en blanco
+Son identificadores únicos de cada archivo
+No pueden contener caracteres acentuados
+Se almacenan en el i-nodo del archivo
+
+El sistema operativo
+Oculta al programador los detalles del hardware y le proporciona una interfaz cómoda para utilizar el sistema
+Usa los servicios ofrecidos por las aplicaciones servidoras del sistema
+Activa la aceleración de instrucciones-máquina del procesador
+Implementa instrucciones especiales en el procesador para su uso por las aplicaciones
+Ofrece un lenguaje de alto nivel para su uso por los programadores
+
+Cuando el sistema operativo realiza una operación de entrada/salida ¿cuál es la forma más eficiente de conocer cuándo se ha realizado la operación?
+Generando una interrupción hardware asociada a la operación
+Leyendo repetidamente el registro de estado del controlador del dispositivo hasta que la operación termina
+A través de instrucciones-máquina específicas para esta tarea
+Esperando que el procesador genere una interrupción hardware asociada a la operación
+A través de la unidad de gestión de memoria
+
+El problema de la inanición en la planificación por prioridad
+Sólo se produce cuando las prioridades asignadas son constantes
+Sólo se produce en sistemas con procesos acotados por el procesador
+Sólo se produce en la planificación apropiativa
+Sólo se produce en la planificación no apropiativa
+Sólo se produce en las planificaciones con una única cola de procesos preparados
+
+La ejecución de programas por parte del administrador de un sistema
+Se realiza en modo usuario del procesador
+Se realiza en modo supervisor del procesador
+Se realiza de forma indistinta en modo usuario o supervisor del procesador pues el administrador puede acceder a todos los recursos del sistema
+Se realiza en modo supervisor del procesador salvo que de forma voluntaria el administrador active el modo usuario del procesador
+Se realiza en modo usuario del procesador y cuando necesita privilegios especiales activa el modo supervisor del procesador
+
+La estructura de un sistema operativo que permite la mayor velocidad en la prestación de servicios es
+La de los sistemas monoliticos
+La de los sistemas estructurados en niveles
+La de los sistemas basados en micronúcleos
+La de los sistemas de máquina virtual
+Una estructura mixta entre sistemas basados en micronúcleos y de máquina virtual
+
+El modo de funcionamiento de un controlador DMA por ráfagas
+Toma el control del bus y no lo libera hasta que termina la operación de transferencia
+Está diseñado para utilizar ciclos sólo cuando el procesador no necesita el bus del sistema
+Toma el control del bus durante un solo cicio
+Transfiere datos de varias operaciones a diferentes dispositivos intercalándolos entre sí
+Está diseñado para sistemas operativos monoprogramados
+
+La primitiva dup2
+Permite especificar cuál es el descriptor que se quiere hacer equivalente al que se pasa como primer argumento
+No permite especificar cuál es el descriptor que se quiere hacer equivalente al que se pasa como argumento
+Permite duplicar el contenido de un archivo cuyo descriptor se pasa en el primer argumento
+Sólo puede usarse cuando el primer argumento es uno de los descriptores 0, 1 ó 2
+Informará de un error si el segundo argumento es un descriptor que está abierto
+
+La combinación de teclas que debemos pulsar en un terminal UNIX cuando queremos suspender un proceso que se está ejecutando en primer plano es
+CTRL-Z
+CTRL-C
+CTRL-A
+CTRL-M
+CTRL-H
+
+Si el propietario del archivo miarchivo ejecuta la llamada al sistema chmod("miarchivo", 426);
+El archivo pasaría a tener los permisos rw-r-x-w-
+El archivo pasaría a tener los permisos x-w-xw-
+Ninguna de las otras respuestas es correcta
+Se obtendría un error porque los permisos deberían ponerse en octal
+El archivo pasaría a tener los permisos r---wrw-
+
+En las bibliotecas de enlace dinámico
+Existe código para localizar las funciones de la biblioteca en memoria que es sustituido por la dirección en memoria de la función
+Se expulsa a los procesos a memoria secundaria para cargar nuevos procesos
+Se reduce la fragmentación interna de la memoria
+Se ejecutan más rápido las funciones que en las bibliotecas estáticas
+Se ejecutan funciones del proceso del usuario en modo supervisor-
+
+¿Cuáles son las ventajas del modelo de memoria compartida para la comunicación entre procesos
+La facilidad en su utilización y la velocidad de comunicación
+La facilidad de su implementación
+La ausencia de problemas de coordinación entre procesos
+La velocidad de comunicación en sistemas distribuidos
+La facilidad de su implementación y que no existen problemas en la coordinación entre procesos
+
+La orden gCc -Ipracticas fuente.c
+Intentará generar un ejecutable tomando los archivos de cabecera necesarios preferentemente del directorio practicas
+Buscará las bibliotecas necesarias en el directorio practicas
+No generará un ejecutable porque no se ha indicado un nombre para él
+No se se podrá ejecutar correctamente porque debe haber un espacio en blanco después del carácter "I"
+Producirá exclusivamente un archivo preprocesado denominado practicas a partir del archivo fuente.c
+
+Dada la siguiente carga de trabajo (las unidades de tiempo son arbitrarias y la E/S puede ser realizada por varios procesos simultáneamente) y utilizando una planificación SJF no apropiativa: Trabajo{1,2,3}, T. de Llegada{0,1,2}, Rf. 1 de CPU{3,1,1}, Rf. de E/S{3,3,2}, Rf. 2 de CPU{1,1,3} 
+0
+3
+4
+2
+1
+
+Se dispone de un enlace simbólico sym1 apuntando al archivo destino. Se desea crear un nuevo enlace simbólico sym2 que apunte a sym1. La orden adecuada del shell sería
+ln -s sym1 sym2
+ln -s sym2 sym1
+ln sym1 sym2
+ls sym1 sym2
+No se puede establecer un enlace simbólico apuntando a otro enlace simbólico
+
+Supóngase que estamos ejecutando cierto programa en una sesión de depuración y la siguiente linea a ejecutar es una Ilamada a una función. Si quisiéramos entrar a depurar la función deberemos introducir el comando
+s
+n
+l
+c
+i
+
+Cuál de los siquientes elementos no es un componente de un proceso
+El código del programa en lenguaje de alto nivel
+La sección de datos con variables estáticas
+La pila en memoria con datos temporales
+El código-máquina del programa
+La actividad actual (representada normalmente en registros del procesador) e información de control del proceso
+
+Si se desea obtener información sobre la cantidad de memoria física disponible, la orden del shell adecuada es
+free
+head
+tar
+tree
+env
+
+El programa almacenado en ROM que se encarga de localizar el sistema operativo, cargarlo en memoria principal e Iniciar su ejecución es 
+El programa de arranque de un computador
+El cargador de programas del sistema operativo
+El núcleo del sistema operativo
+El micronúcleo del sistema operativo
+La tabla de vectores de interrupción
+
+En un sistema de paginación con una tabla de páginas de dos niveles almacenada en memoria, si una referencia a memoria física se efectúa en 60 nanosegundos, ¿en cuántos nanosegundos se realizará una referencia a memoria paginada?
+180
+20
+120
+30
+60
+
+La orden gcc -E problema.c
+Generará, si no hay errores, un archivo preprocesado, con el código correspondiente al archivo problema.c que será enviado a la salida estándar
+Generará, si no hay errores, un archivo en ensamblador, con el código correspondiente al archivo problema.c
+Generará, si no hay errores, un archivo objeto de nombre problema.o
+Producirá, si no hay errores, un archivo ejecutable sin generar ningún informe de errores o warnings
+Intentará producir, si no hay errores, un archivo ejecutable sin usar ninguna biblioteca y sin incluir ninguna cabecera
+
+El concepto de directorio inicial es común
+En las estructuras de directorio de árbol, de grafo acíclico y de grafo general
+En sistemas operativos sin sistema de protección de archivos
+Ninguna de las otras respuestas es correcta
+En sistemas operativos multiprogramados
+En sistemas operativos monoprogramados
+
+Una diferencia entre el mecanismo de una llamada a función y una llamada al sistema es
+La llamada a función no cambia el modo de ejecución del procesador
+Las llamadas a función no conocen la dirección de la subrutina llamada
+La llamada al sistema no cambia el modo de ejecución del procesador
+Las llamadas al sistema alteran la pila del programa
+Ninguna de las otras respuestas es correcta
+
+Una función típica del nivel de manejador del dispositivo es
+Enviar comandos al controlador del dispositivo
+Informar a los procesos de los errores producidos en una operación de entrada/salida
+Cambiar el formato de los datos para realizar la operación de entrada/salida
+Reservar y liberar dispositivos dedicados
+Almacenar datos temporalmente en las transferencias de entrada/salida
+
+Las llamadas getpid() y getppid()
+Se utilizan para obtener los identificadores de los procesos actual y padre
+Se utilizan para hacer llamadas al shell de UNIX X
+Forman parte de la estructura de datos propia del sistema de tratamiento de ficheros en UNIX
+Se utilizan para crear una tubería
+Se deben colocar siempre delante de la llamada fork para reservar un espacio de memoria en el que ubicar los procesos padre e hijo
+
+Si la variable a contiene una estructura de tipo struct stat correspondiente a un determinado archivo de datos, la siguiente operación alterará el valor del campo a.st_ctime
+Crear un nuevo enlace físico al archivo
+Ninguna de las otras respuestas es correcta
+Eliminar un enlace simbólico que apunta al archivo
+Leer todos los registros del archivo
+Leer las entradas del directorio en el que se encuentra el archivo
+
+Tipicamente, ¿cómo se entera el procesador de que el controlador DMA ha terminado una transferencia de datos?
+Por una interrupción hardware
+Por la consulta al registro de estado del controlador DMA
+Por el manejador del controlador DMA
+Por la activación de una línea del bus del sistema
+Depende del tipo de controlador: por una ráfaga, por un robo de ciclo o de forma transparente
+
+Si quiero detectar todos los posibles warnings al compilar archivos fuente ¿qué opción debo pasar al gestor de compilación gcc?
+-Wall
+Ninguna especial .gcc me informará de todos los warnings por defecto
+-c
+-S
+-g
+
+Para la función opendir(): DIR "opendir(const char "nombre"); es falso que
+Lee la primera entrada de un directorio
+Abre un flujo de directorio correspondiente al directorio nombre
+El flujo se sitúa en la primera entrada del directorio
+Devuelve un puntero al flujo de directorio
+En caso de error devuelve NULL
+
+Una partición de un sistema de archivos no puede
+Ninguna de las otras respuestas es correcta
+Contener un área con metadatos de los archivos incluidos en la partición
+Unir dos discos en una única entidad lógica
+Contener un área con los datos de los archivos incluidos en la partición
+Coexistir en el mismo disco con otras particiones lógicamente independientes
+
+Si al utilizar el gestor de compilación gcc para procesar un archivo fuente ejemplo.c necesitamos obtener una salida que sea el código ensamblador equivalente pero no el archivo objeto, debemos usar la(s) opción(es)
+-S
+-g -o
+-O
+-std
+-I -l
+
+De las siguientes líneas de salida del comando ls -l ¿cuál describe un enlace simbólico a un fichero?
+lrwxr-xr-x 2 santiago informa 40960 2004-10-27 08:11 docu...
+brwxr--r-- 2 santiago informa 1532 2004-11-15 19:57 test...
+-rw------- 1 santiago informa 121861 2004-09-22 13:52 seguridad...
+srwxr-xr-x 2 santiago informa 40968 2004-10-27 08:11 otro...
+drwxr-xr-x 2 santiago informa 4096 2004-10-27 08:11 sindicato...
+
+Si queremos crear un archivo nuevo con permisos r--r----- (supóngase que la máscara de creación de archivos lo permite) denominado Nuevo.txt en nuestro directorio de trabajo actual y obtener un descriptor de archivo a leer y escribir en él pero deseamos que no se haga nada si el archivo ya existe, debemos usar la llamada al sistema
+open("Nuevo.txt", O_CREAT | O_EXCL | O_RDWR, 288)
+open ("Nuevo.txt", O_EXCL | O_RDWR, 0440)
+open("Nuevo.txt ", O_CREAT | O_EXCL | O_RDONLY, S_IRUSR | S_IRGRP)
+open("Nuevo.txt", O_CREAT | O_WRONLY, 0440)
+Esa operación no puede realizarse porque queremos escribir en el archivo pero no tenemos permisos para ello
+
+Al ejecutar la orden gcc -E prueba.c
+Se produce (si no hay errores) a partir de un archivo fuente prueba.c un archivo preprocesado que se envía a la salida estándar
+Se realiza una compilación de prueba.c produciendo un archivo objeto si no hay errores
+Se crea un archivo ensamblador con los módulos de la biblioteca estándar que sean necesarios ya incorporados
+Se produce (si no hay errores) un archivo de cabecera denominado prueba.h
+Se genera un archivo ejecutable a partir de prueba. c sin enlazar
+
+El programa de arranque de un computador
+Se ejecuta en modo supervisor del procesador
+Se ejecuta en modo usuario del procesador
+Se ejecuta en modo de inicialización del procesador
+No tiene ningún modo de ejecución definido hasta que el sistema operativo lo asigne
+Se ejecuta indiferentemente en modo usuario o supervisor del procesador
+
+En una regla perteneciente a un archivo makefile de la orden make, la línea de cabecera de la regla
+Puede contener una lista de objetivos correspondientes a otras reglas diferentes
+Tiene que ir seguida necesariamente por lineas que especifican las acciones a realizar durante el disparo de la regla
+Ninguna de las otras respuestas es correcta
+La lista de dependencias no puede ser vacía
+Sólo puede ir seguida de otra única línea que indique las acciones a realizar durante el disparo de la regla
+
+La traducción de direcciones de memoria en tiempo de compilación
+Implica conocer las direcciones fisicas en el momento de la compilación
+Implica utilizar lenguaje-máquina para la codificación de los programas
+Implica que el cargador del sistema operativo debe conocer las direcciones físicas
+Implica que el enlazador debe modificar el registro de reubicación de la unidad de gestión de memoria cuando se produce la compilación del programa
+Implica tener una unidad de gestión de memoria
+
+La primitiva lseek
+Permite posicionarse en un archivo de modo que la siguiente escritura pueda tener lugar más allá del final actual del archivo
+Permite determinar el carácter de un archivo que se encuentra en una determinada posición´
+Devuelve como resultado el número de bytes que hay en el archivo contados desde la posición actual del cursor hasta el final del archivo
+Necesita ser utilizada si se quiere realizar un proceso secuencial de un archivo completo
+No permite usar desplazamientos negativos del cursor de un archivo cuando se utiliza el argumento SEEK_CUR
+
+Las técnicas de asignación contigua de memoria
+No permiten compartir memoria entre procesos
+Sólo se pueden utilizar en sistemas operativos monoprogramados
+Permiten compartir memoria entre procesos si tienen una unidad de gestión de memoria (MMU) con soporte para esta función
+Tienen menor fragmentación externa que las técnicas de asignación dispersa de memoria
+Tienen mayor fragmentación interna que las técnicas de asignación dispersa de memoria
+
+La llamada al sistema stat permite
+Obtener información sobre los atributos de un nodo del sistema de archivos
+Modificar los atributos de un nodo del sistema de archivos
+Conocer si un nodo del sistema de archivos es un enlace simbólico
+Acceder a un archivo conociendo el i-nodo de éste
+Conocer los métodos de acceso a un archivo
+
+La llamada al sistema alarm
+Envía al proceso solicitante una señal SIGALRM al cabo del tiempo indicado
+Envia a un proceso hijo una señal SIGALRM al cabo del tiempo indicado
+Desbloquea al proceso solicitante al cabo del tiempo indicado
+Termina la ejecución de un proceso al cabo del tiempo indicado
+Solicita un cambio de prioridad en el uso del procesador para el proceso solicitante
+
+Una llamada al sistema operativo para la apertura de un archivo permite
+Evitar múltiples búsquedas del nombre del archivo en el directorio
+Establecer el puntero de lectura/escritura en el inicio del archivo si estaba apuntando a otro lugar
+Cargar el archivo en memoria principal para su lectura/escritura
+La lectura/escritura de un archivo utilizando el método de acceso secuencial
+Compartir el archivo entre múltiples procesos
+
+La adaptación del sistema a las distintas velocidades de los dispositivos de entrada/salida se consigue con
+La técnica de bufferingl
+El monitor residente por primera vez
+Un sistema operativo multiprogramado
+El mecanismo de excepciones del procesador
+Los sistemas de operación fuera de linea
+
+Cuando el sistema operativo realiza una operación de entrada/salida. ¿Cuál es la forma más sencilla y universal de conocer cuándo se ha realizado la operación?
+Leyendo repetidamente el registro de estado del controlador del dispositivo hasta que la operación termina
+Esperar a que se desbloquee la llamada al sistema que solicitó la operación
+Esperar que el controlador DMA genere la interrupción hardware de fin de operación
+Consultar si la variable global errno tiene el valor de 0
+Esperar que el procesador genere la interrupción hardware de fin de operación
+
+Si varias entradas de la tabla de páginas de dos procesos apuntan a los mismos marcos esto implica que
+Los dos procesos comparten esa zona de memoria aunque no coincidan sus direcciones lógicas
+Es imposible, pues se produciría un bucle en la asignación de memoria física
+El registro de reubicación de la unidad de gestión de memoria (MMU) tiene el mismo valor para los dos procesos
+La tabla de páginas de los dos procesos es más pequeña pues se comparten algunos marcos
+Se está utilizando la técnica de gestión de memoria conocida como carga dinámica
+
+Para ejecutar directamente un programa compilado, que está escrito en el lenguaje A y para el sistema operativo X, en otra máquina de la misma arquitectura hardware pero con sistema operativo Y, es necesario que:
+El sistema operativo Y tenga el mismo interfaz de llamadas al sistema que X
+Utilicemos una biblioteca de portabilidad del sistema operativo X en el sistema operativo Y
+Utilicemos un programa interprete
+El compilador del lenguaje A tenga un modo dual de ejecución para los dos sistemas operativos
+Ningún cambio es necesario pues tienen la misma arquitectura hardware
+
+Todo sistema operativo
+Facilita la ejecución de programas del usuario
+Gestiona terminales para la interacción con los usuarios
+Mantiene una tabla con los nombres y claves de acceso de los usuarios autorizados
+Gestiona el modo dual de ejecución del procesador
+Ninguna de las otras respuestas es correcta
+
+Supongamos que en la línea de órdenes del shell se ejecuta la orden ./programa argumento otro mas \n Suponiendo que argv es el segundo argumento recibido por la función main del programa programa escrito en C y que su valor no ha sido modificado, el valor de la expresión **++argv
+Es el caracter 'a'
+Es el caracter 'o'
+Es la cadena de caracteres 'otro'
+Es un puntero que apunta a una posición de memoria que contiene el carácter 'a'
+Depende del compilador utilizado porque se trata de una expresión ambigua
+
+Un sistema de memoria paginada se le añade soporte para memoria virtual. Con esto
+Aumenta el número de marcos disponibles para los procesos según el tamaño del área de intercambio en disco
+Se permite disminuir el grado de multiprogramación del sistema
+Se aumenta la fragmentación externa del sistema
+Se reduce el número de procesos en estado de espera
+Se permite la implementación de un sistema de segmentación paginada
+
+Dada la siguiente carga de trabajo (las unidades de tiempo son arbitrarias y la E/S puede ser realizada por varios procesos simúltaneamente) y utilizando una planificación SFJ no apropiativa: Trabajo{1,2,3}, T. de Llegada{0,1,2}, Rf. 1 de CPU{3,1,1}, Rf. de E/S{3,3,2}, Rf. 2 de CPU{1,1,3} ¿Cuál es el tiempo de espera del trabajo 3?
+3
+9
+0
+1
+7
+
+Una diferencia entre una instrucción de llamada a función y una de llamada al sistema es
+Las instrucciones de llamada al sistema no conocen la dirección de la subrutina llamada
+Las instrucciones de llamada a función son más lentas que las de llamada al sistema
+Ninguna de las otras respuestas es correcta
+Las instrucciones de llamada a función no alteran la pila
+Las instrucciones de llamada al sistema alteran el contador de programa y las de llamada a función o no
+
+¿Cuál de los siguientes elementos no es típico del componente de gestión de E/S de un sistema operativo?
+Gestión del espacio libre en los discos magneticos
+Ninguna de las otras es correcta
+Un interfaz general de manejadores de dispositivos
+Manejador para los dispositivos hardware concretos
+Un sistema de almacenamiento temporal
+
+En el sistema de tiempo compartido, el tiempo que tarda en ejecutarse un proceso depende
+Del número de procesos existentes en el sistema
+De la cantidad de memoria que necesite el proceso
+De la memoria total del sistema
+De la distribución de procesos en la memoria del sistema
+Del número de terminales del sistema
+
+Los primeros sistemas utilizaban una planificación por hojas de reserva y por tanto
+Tenían una alta ineficiencia en la utilización del sistema
+Sólo podrían gestionar un número reducido de terminales alfanumericos
+Tenían una baja velocidad del procesador respecto a los dispositivos de entrada/salida
+Tenían un tiempo medio entre fallos hardware mucho menor que los sistemas actuales
+Utilizaban un sistema automático rudimentario de carga de programas en el sistema
+
+Una llamada al sistema operativo para el cierre de un archivo permite
+Ninguna de las otras respuestas es correcta
+Es una llamada innecesaria pues se puede desarrollar cualquier aplicación con acceso a archivos sin obligación de utilizar esta llamada al sistema
+Restablecer el valor del puntero de lectura/escritura del archivo
+Evitar múltiples búsquedas del nombre del archivo en el directorio
+Mandar una señal al proceso padre indicando la liberación del archivo
+
+Un archivo es
+Una colección de información relacionada, definida por su creador
+Una generalización del concepto de independencia de dispositivo
+Un conjunto de bloques secuenciales para un proposito concreto
+La serialización de un objeto del sistema operativo en un dispositivo de almacenamiento
+La representación en un dispositivo de almacenamiento secundario de una estructura de datos utilizada por un programa
+
+El método de acceso directo a los archivos es más rápido que el método de acceso secuencial en
+Las operaciones de lectura/escritura a zonas arbitrarias del archivo
+La lectura completa de un archivo
+La anexión de datos al final del archivo
+La búsqueda de un contenido en el archivo
+Ningún caso. Se diferencian por el soporte físico utilizado para el almacenamiento de los archivos
+
+La orden del shell chmod 640 .. || cat > salida.txt
+Cambiará los permisos del directorio padre actual, y si ello no es posible, enviará el contenido de la entrada estándar al archivo salida.txt
+Cambiará los permisos del directorio padre actual y enviará la salida de la orden chmod a la orden cat para concatenarla con el archivo salida.txt
+Puede ser ejecutada por caualquier usuario normal (no root) si tiene permiso de escritura en el directorio padre del actual
+Concatenará la entrada estándar con el archivo de salida.txt del directorio padre del actual y luego cambiará los permisos de éste
+Cambiará los permisos del directorio padre del actual si el archivo salida.txt existe
+
+Si necesitamos cambiar la fecha y hora del último acceso al archivo ejemplo.txt, presente en nuestro directorio de trabajo actual, para que pasen a ser la fecha y hora actuales, la orden del shell que debemos utilizar es
+touch -a ejemplo.txt
+change -a ejemplo.txt
+change -m ejemplo.txt
+change -t ejemplo.txt
+touch -m ejemplo.txt
+
+El registro de reubicación de una unidad de gestión de memoria principal (MMU) tiene un valor
+Que es cargado por el código del sistema operativo con un valor que depende del programa que se va a ejecutar
+Que es calculado por el enlazador cuando se genera el archivo con el código reubicable del programa que se va a ejecutar
+Que es calculado por el compilador para el programa que se va a ejecutar
+Que es cargado por la parte del código del sistema operativo que se ejecuta en la unidad de gestión de memoria principal (MMU), con el valor que depende del programa que se va a ejecutar
+Que es fijo en un sistema operativo multiprogramado y sólo depende del tamaño del núcleo del sistema operativo
+
+El cambio de modo de ejecución del procesador desde el modo usuario al modo supervisor
+Tiene lugar en el caso de las llamadas al sistema, en las interrupciones y también en las excepciones
+Tiene lugar en el caso de las excepciones y en las llamadas al sistema, pero no en las interrupciones
+Tiene lugar en el caso de las llamadas al sistema y en las interrupciones, pero no en las excepciones
+Tiene lugar en el caso de las interrupciones y en las excepciones, pero no en las llamadas al sistema
+Tiene lugar en el caso de las llamadas al sistema y en las llamadas de función, pero no en las excepciones
+
+Un sistema con múltiples tipos de archivos permite
+Adecuar el proceso del archivo con la finalidad de éste
+Simplificar la implementación del sistema de archivos
+Asignar múltiples nombres a un archivo
+Un acceso concurrente a los archivos más eficiente
+Cambiar la estructura interna del archivo según las necesidades de los procesos
+
+Considérese que la siguiente linea de órdenes se ejecuta desde el shell ./ejemplo linea de ordenes Suponiendo que argv es el segundo argumento recibido por la función main del programa ejemplo escrito en C y que su valor no ha sido modificado, el valor de la expresión*++argv
+Es la cadena de caracteres "de"
+Es el carácter contenido en la posición de memoria siguiente a la apuntada por argv[0]
+No puede calcularse porque es una expresión sintácticamente incorrecta
+Es un puntero que apunta a una posición de memoria que contiene el carácter 'l'
+Es el carácter 'i'
+
+Una partición de un sistema de archivos
+Puede coexistir en el mismo disco con otras particiones lógicamente independientes
+No permite tener archivos con varios métodos de acceso
+No permite tener varios nombres asociados a un mismo archivo
+Necesita de un temporizador hardware para su implementación
+No puede contener un área con los metadatos de los archivos incluidos en la partición
+
+Si queremos encontrar los archivos que contienen (en su interior) una frase determinada debemos utilizar la orden del shell
+grep
+find
+locate
+tee
+which
+
+Una biblioteca de interfaz de llamadas al sistema
+Es la definición de funciones en lenguaje de alto nivel que realizan las llamadas al sistema
+Ninguna de las otras respuestas es correcta
+Permite que el código binario de una aplicación utilice las llamadas al sistema
+Permite ejecutar las llamadas al sistema independientemente del modo de ejecución del procesador
+Permite acelerar la velocidad de ejecución de las llamadas al sistema
+
+El campo st_nlink de la estructura de tipo stat representa
+El número de enlaces físicos del nodo
+El número de enlaces del nodo sin importar su tipo
+El campo st_nlink no es un campo válido de las estructuras de tipo stat
+El número de usuarios del grupo del nodo enlazados al nodo en un momento dado
+El número de usuarios que están enlazados al nodo en un momento dado
+
+En UNIX, un proceso hijo hereda del proceso padre
+Una copia del espacio de direcciones en memoria principal, los descriptores de archivo abiertos por el padre y las variables de entorno
+El uso compartido del espacio de direcciones en memoria principal
+Una copia del espacio de direcciones en memoria principal y los descriptores de archivo abiertos por el padre
+Una copia del espacio de direcciones en memoria principal, los descriptores de archivo abiertos por el padre, las variables de entorno y una tubería de comunicación entre el proceso padre y el hijo
+Aquellos recursos indicados por los flags que se pasan en la llamada de creación del proceso hijo
+
+La ventaja principal del funcionamiento fuera de linea era
+Que el computador no estaba limitado por la velocidad de los lectores de tarjetas e impresoras sino sólo por la de las unidades de cinta magnética
+La alta capacidad de almacenamiento de las cintas magnéticas respecto de las tarjetas perforadas
+La utilización de dispositivos de acceso aleatorio como los discos magnéticos para permitir la multiprogramación
+Aumentar la eficiencia de la técnica de buffering
+El bajo coste de las unidades auxiliares
+
+La llamada al sistema chown permite
+Cambiar el propietario y el grupo de un nodo del sistema de archivos indicando el nombre del nodo
+Cambiar el propietario y el grupo de un enlace simbólico (sin seguir el enlace) indicando el nombre del enlace
+Cambiar la máscara de creación de archivos para el proceso solicitante
+Cambiar el propietario y el grupo de un nodo del sistema de archivos indicando un descriptor de archivo válido
+Cambiar los permisos de un nodo del sistema de archivos indicando el nombre del nodo
+
+El planificador a corto plazo no suele ejecutarse cuando
+Ninguna de las otras respuestas es correcta
+Un proceso solicita una llamada al sistema
+Un proceso termina su ejecución
+Un proceso pide realizar una operación de entrada/salida
+Se produce una excepción en la ejecución de una instrucción-máquina
+
+Las técnicas de asignación no contigua de memoria
+Consisten en la asignación de tantos huecos libres de memoria como sean necesarios para satisfacer el tamaño solicitado
+Consisten en cargar un proceso en memoria en una única zona de memoria física
+Sólo se pueden utilizar en sistemas operativos monoprogramados
+Permiten ejecutar simultáneamente más programas que los que cabrían en la memoria disponible
+Tienen una fragmentación interna que aumenta de forma proporcional al nº de particiones de la memoria
+
+¿Cuántos procesos del usuario pueden como máximo estar simultáneamente en el estado de espera?
+Todos los procesos
+Todos los procesos menos el nº de dispositivos de entrada/salida
+El nº de procesadores del sistema
+El nº de procesadores o núcleos de ejecución del sistema
+Un solo proceso
+
+La llamada al sistema creat
+Especifica los permisos de acceso al archivo creado según la máscara de creación de archivos del proceso solicitante
+Bloquea el acceso al nuevo archivo a otros procesos hasta que el proceso creador cierre el archivo
+Permite crear duplicados de archivos según los flags utilizados
+Permite truncar archivos según los flags utilizados
+Devuelve 0 en caso de éxito o -1 en caso de error
+
+Si ejecutamos la orden gcc -Inuevo -Lantiguo otrodir/ejemplo.c archivo.c -lm
+Se buscarán las cabeceras necesarias en primer lugar en el directorio nuevo
+Se buscarán las bibliotecas necesarias en primer lugar en el directorio nuevo
+Se obtendrá un error porque se está intentando compilar más de un archivo fuente
+Se obtendrá un error debido a que no se ha usado la opción -ansi
+Se obtendrá un error porque no se ha especificado un nombre para el archivo de salida
+
+Normalmente, no es una razón para utilizar la cooperación entre procesos
+Tener un sistema multiprocesador
+Acelerar los cálculos de una aplicación
+Compartir información
+Comodidad para el usuario para realizar múltiples tareas
+Modularidad en el diseño de las aplicaciones
+
+¿Para qué sirve la llamada al sistema rewinddir?
+Reinicia la posición de un flujo de directorio, poniéndola al principio del flujo
+No hace nada, porque no existe
+Modifica la posición de un flujo de directorio, poniéndola apuntando al registro anterior del flujo
+Ninguna de las otras respuestas es correcta
+Reinicia la posición de un flujo de directorio, poniéndola al final del flujo
+
+La llamada al sistema execve
+Ejecuta un nuevo programa sobre el espacio de direcciones del proceso solicitante
+Ejecuta un nuevo programa en el espacio de direcciones de un proceso hijo creado por el proceso solicitante
+Devuelve el identificador del proceso hijo al proceso padre y un 0 al proceso hijo
+Ejecuta un nuevo programa sobre el espacio de direcciones de un nuevo proceso
+Crea un proceso hijo que ejecuta un programa con los argumentos y las variables de entorno indicados en la llamada al sistema a través de matrices de punteros a cadenas de caracteres
+
+¿Cuál de los siguientes enunciados corresponde a una característica de los sistemas distribuidos?
+Ausencia de memoria común
+No permiten un crecimiento incremental de los recursos
+Son independientes de los sistemas de comunicación
+La potencia de cálculo es un recurso critico
+No existe paralelismo real
+
+La diferencia entre las llamadas al sistema execlp y execv para el recubrimiento de procesos en UNIX
+Consiste en la utilización de una lista en vez de una matriz de punteros para pasar los argumentos y en la utilización de la variable de entorno PATH para la búsqueda del nuevo programa
+Consiste en el cierre de todos los descriptores de archivo antes de la ejecución del nuevo programa
+Consiste en la utilización de una lista en vez de una matriz de punteros para pasar los argumentos y la definición de las variables de entorno del nuevo programa
+Consiste en la comprobación de los permisos de ejecución del nuevo programa
+Consiste en la utilización de una lista en vez de una matriz de punteros para pasar los argumentos y utilizar los mismos valores de las variables de entorno para el nuevo programa
+
+El proceso que lee de una tubería UNIX
+Obtiene los datos en el mismo orden en que se escribieron
+Obtiene un valor de error si el descriptor de escritura ha sido cerrado
+Debe realizar el mismo número de lecturas que el de escrituras realizado por el proceso emisor
+Recibe una señal SIGPIPE cuando la tubería está cerrada
+Debe crear un duplicado del descriptor de lectura de la tubería 
+
+La orden del shell adecuada para crear un archivo serializado y comprimido denominado etc.tgz en el directorio home del usuario, con el contenido del directorio /etc recorrido recursivamente es
+tar cvfz/etc.tgz/etc
+tar cvfz/etc $HOME/etc.tgz
+tar xvfz/etc.tgz/etc
+tar cxfz./etc.tgz /etc
+tar xvfz./etc.tgz/etc
+
+Dado el programa Conpal y sus funciones main, procesar e imprimir, ¿con qué comando del gdb puedo establecer un punto de ruptura en la función procesar una vez iniciada la sesión del depurador?
+br procesar
+l procesar
+br main:procesar
+run procesar
+No se pueden establecer puntos de ruptura sobre funciones
+
+El método de acceso directo a los archivos
+No se puede utilizar en sistemas operativos monoprogramados
+Permite el acceso a los registros del archivo a través del nº del registro
+Permite el acceso a los registros del archivo a través del valor de un campo del registro
+Permite el acceso concurrente a los datos de los archivos
+Es más lento en las operaciones de lectura/escritura estrictamente secuenciales
+
+La orden del shell: find salida -type fa (perm 755 -o size +256c) exec chmod 444 {} \;
+Explorará recursivamente el directorio salida y concederá permiso de lectura a todos los usuarios del sistema para cada archivo cuyo tamaño sea mayor de 256 bytes
+Explorará recursivamente el directorio salida y concederá permiso de escritura al propietario para cada archivo cuyo tamaño sea igual a 256 bytes
+Explorará recursivamente el directorio salida y concederá permiso de lectura a todos los usuarios del sistema para los archivos en los cuales los usuarios del grupo del archivo respectivo tengan permiso de escritura y además el archivo ocupe más de 256 bytes
+Explorará recursivamente el directorio salida y concederá permiso de lectura al propietario para cada archivo cuyo tamaño sea menor de 256 Kilobytes
+No podrá ejecutarse porque contiene errores sintácticos
+
+El sistema operativo da servicio
+A las aplicaciones y al hardware del computador
+Al hardware del computador
+A las aplicaciones
+Al intérprete de comandos utilizado por los usuarios
+A las bibliotecas de interfaz de llamadas al sistema
+
+Una diferencia en la implementación de una llamada a función y una llamada al sistema es:
+La utilización de distintas instrucciones-máquina para realizar las llamadas a función y las llamadas al sistema
+Las llamadas a función alteran el contador de programa
+Ninguna de las otras respuestas es correcta
+Las llamadas al sistema sólo se pueden realizar en modo de ejecución supervisor del procesador
+Las llamadas al sistema son más rápidas que las llamadas a función
+
+El algoritmo de asignación de memoria del primer ajuste
+Asigna la primera partición libre suficientemente grande
+Asigna la primera partición libre que genere un hueco suficientemente grande para el tamaño solicitado
+Ninguna de las otras respuestas es correcta
+Asigna el mayor hueco suficientemente grande
+Asigna la primera partición libre que genere un hueco menor que el tamaño solicitado
+
+Generalmente, cuando se termina el tratamiento de una excepción
+Se termina el programa interrumpido
+Se ejecuta la siguiente instrucción-máquina del programa interrumpido
+Se ejecuta la instrucción-máquina del programa interrumpido
+Se ejecuta la instrucción-máquina indicada en la tabla de vectores de interrupción
+Ninguna de las otras respuestas es correcta
+
+La primitiva signal
+Permite instalar un manejador de señal
+Sirve para que nuestro proceso se bloquee hasta recibir una señal
+Sirve para manejar una señal procedente de un proceso aunque éste no sea del mismo usuario
+No permite instalar como manejadores ni SIG_DFL ni SIG_IGN
+Sirve para enviar una señal a un proceso
+
+Una excepción es producida
+Por la ejecución incorrecta de una instrucción-máquina
+Por la solicitud incorrecta de un servicio al sistema operativo
+Por la ejecución incorrecta de una instrucción-máquina o por el mal funcionamiento de un dispositivo de entrada/salida
+Ninguna de las otras respuestas es correcta
+Por el mal funcionamiento de un dispositivo de entrada/salida
+
+La llamada al sistema dup2 permite
+Duplicar un descriptor de archivo
+Duplicar el tamaño máximo del archivo
+Duplicar el descriptor de archivo cerrando el descriptor original (el primer argumento de la primitiva)
+Crear dos descriptores de archivo
+Duplicar el nº de procesos que pueden acceder concurrentemente a un archivo
+
+¿Cuál de los siguientes componentes no es típico de un sistema operativo?
+Editor de texto ASCII
+Comunicaciones de red
+Gestión del sistema de entrada/salida
+Gestión de almacenamiento secundario
+Sistema de protección
+
+¿Cuál de las siguientes tareas no es responsabilidad del sistema de protección de un sistema operativo?
+Definir la política de seguridad del sistema
+Especificar los controles a realizar
+Realizar la autentificación de usuarios
+Forzar el uso de los mecanismos de protección
+Realizar un registro de los recursos utilizados
+
+¿Cuál de las siguientes tareas no es responsabilidad del sistema de protección de un sistema operativo?
+Especificar qué usuarios son administradores del sistema operativo
+Específicar los controles a realizarç
+Forzar el uso de los mecanismos de protección
+Distinguir entre uso autorizado y no autorizado
+Ninguna de las otras respuestas es correcta
+
+La orden gcc c fuente.c problema.c
+Generará, si no hay errores, los archivos objeto correspondientes a la compilación y ensamblaje posterior de los archivos fuente.c y problema.c
+Generará, si no hay errores, como resultado un único archivo en ensamblador con el código correspondiente a los dos archivos fuente.c y problema.c
+Generará, si no hay errores, un único archivo preprocesado con el código correspondiente a los archivos fuente.c y problema.c
+Generará, si no hay errores, un ejecutable conteniendo el código necesario para la depuración correspondiente
+Generará, si no hay errores, un ejecutable y no emitirá ningún informe de los warnings encontrados
+
+Un objetivo de la tabla de archivos abiertos es:
+Evitar los múltiples accesos a la estructura de directorios en las operaciones con un archivo
+Evitar que se asignen dos nombres de archivos idénticos en un mismo directorio
+Gestionar el espacio libre de los dispositivos de almacenamiento
+Implementar el método de acceso indexado a los archivos
+Evitar que varios procesos accedan simultáneamente a un archivo
+
+Si necesitamos forzar la cancelación de un proceso de identificador PID utilizaríamos
+kill -9 PID
+ps -u %1
+kill -f PID
+kill jobs PID
+kill %1
+
+Un esquema de recolección de basura permite:
+Recuperar el espacio en disco ocupado por archivos que ya no pueden ser accedidos
+Recuperar el espacio no ocupado en la tabla de i-nodos de un sistema UNIX
+Obtener la lista de bloques defectuosos de un dispositivo de almacenamiento por bloques
+Recuperar el espacio interno de los archivos que no se está utilizando
+Recuperar el espacio utilizado en directorios por archivos que han sido eliminados
+
+Necesitamos cambiar el propietario y el grupo del archivo ArchivoPrueba para que sean respectivamente alumno y users. Si hemos abierto la sesión como el usuario root, la orden del shell que debemos ejecutar es:
+chown alumno:users ArchivoPrueba
+chown alumno, users ArchivoPrueba
+No puede hacerse ese trabajo mediante una sola orden. Se necesitan dos distintas
+chmod alumno users ArchivoPrueba
+chprgr alumno users ArchivoPrueba
+
+El código de un manejador de dispositivo
+Depende del controlador del dispositivo y del sistema operativo
+Gestiona la asignación de espacio en dispositivos de bloques
+Es llamado directamente por la interrupción hardware asociada al dispositivo
+Realiza el control de acceso a los dispositivos por parte de los procesos
+Depende exclusivamente del controlador del dispositivo´
+
+Supongamos que el tiempo medio que el brazo de un disco tarda en cambiar de posición desde una pista a otra adyacente es 1 ms. El disco tiene 200 pistas numeradas de 0 a 199. El brazo del disco se encuentra colocado sobre la pista 50 y la última vez se ha movido en sentido ascendente (hacia las pistas de índice mayor). Al manejador del disco le han llegado, por este orden, peticiones para operaciones en las pistas siguientes: 30, 90 y 150. ¿Cuál es el tiempo total necesario para satisfacer todas las operaciones con el algoritmo de planificación SCAN?
+318 ms
+220 ms
+140 ms
+170 ms
+378 ms
+
+Para implementar un programa que muestre por la salida estándar los atributos de los archivos contenidos en un directorio ¿qué secuencia debería seguir?
+Abrir el directorio con opendir, luego realizar la lectura de las entradas del directorio abierto con readdir y a cada lectura obtener el nombre del fichero y pasárselo a stat para obtener los atributos
+Abrir el directorio con fopen, pasarle el descriptor de archivo a fstat y mostrar los atributos de los archivos
+Ninguna de las otras respuestas es correcta
+Abrir el directorio con opendir, luego realizar la lectura de las entradas del directorio abierto con telldir y a cada lectura obtener el nombre del fichero y pasárselo a stat para obtener los atributos
+Abrir el directorio con opendir, utilizar la funciones seekdir y rewindir para posicionarnos y con stat mostrar los atributos
+
+¿Cuál es el objetivo principal de diseño del sistema operativo para un ordenador personal?
+Facilidad de uso prestando cierta atención al rendimiento (del usuario) y ninguna a la utilización de recursos
+Ofrecer soporte para la multiprogramación
+La eficiencia en el uso del hardware
+La facilidad de uso para interactuar fácilmente con el computador con el fin de ejecutar programas
+Llegar a un compromiso entre la usabilidad individual y la utilización de recursos
+
+En la estructura stat el campo st atime indica
+La hora del último acceso
+Los permisos de protección
+La hora de la última modificación
+El i-nodo
+La hora del último cambio de atributos
+
+Complete la siguiente frase: Las primitivas de tipo exec son una familia de llamadas al sistema, cada una de las cuales realiza la misma función:
+La transformación de un proceso mediante el recubrimiento de su espacio de memoria con un nuevo programa
+El rearranque de un proceso padre que espera la terminación de un hijo
+La sincronización de procesos mediante un sistema rudimentario
+La creación de procesos mediante la duplicación del proceso llamador
+La identificación de un proceso (PID) con un numero entero
+
+Un sistema de planificación de colas multinivel
+Divide la cola de procesos preparados en varias colas y cada cola tiene su propio algoritmo de planificación
+No tiene el problema de la inanición de procesos
+Es un modelo teórico de planificación que no es posible de implementar
+Consiste en la asignación de los procesos a varios niveles en función de su prioridad
+Consta de planificación a largo plazo, planificación a medio plazo y planificación a corto plazo
+
+¿Cuál de las siguientes tareas no es responsabilidad del componente de gestión de la memoria principal de un sistema operativo?
+Gestionar el almacenamiento temporal de entrada/salida
+Conocer qué partes de la memoria están utilizadas y por quién
+Asignar y reclamar espacio de memoria cuando sea necesario
+Ninguna de las otras respuestas es correcta
+Decidir si hay o no espacio disponible para cargar un proceso determinado
+
+El acceso a los registros de un controlador de dispositivo a través de un direccionamiento distinto a la memoria da lugar a:
+Un mejor sistema de protección en la utilización de los dispositivos por parte de los procesos de usuario
+No poder utilizar transferencias de datos con un mecanismo basado en DMA
+Una mayor velocidad de transferencia de datos entre procesador y controlador de dispositivo
+La utilización de la mismas instrucciones-máquina para acceder a los registros que a cualquier dato en memoria
+Utilizar los dispositivos de forma sincrona con el procesador
+
+La capacidad de cambiar los dispositivos de entrada/salida sin modificar el código de las aplicaciones:
+Se denomina independencia de dispositivos
+Se consigue con el mecanismo de interrupciones hardware
+Se denomina bufferingl
+Se consiguió por primera vez con la técnica de spooling
+Se consigue exclusivamentecon un sistema operativo multiprogramado
+
+La independencia de dispositivos
+Permite cambiar los dispositivos de un sistema sin cambiar el código de las aplicaciones
+Es la adaptación del sistema a las distintas velocidades de los dispositivos
+Es la capacidad del sistema de instalar o desinstalar dispositivos sin apagar el sistema
+Permite utilizar dispositivos de otros sistemas como dispositivos locales
+Es la capacidad del sistema de gestionar dispositivos semejantes de distintos fabricantes
+
+La llamada al sistema link
+Crea un nuevo enlace fisico para un archivo
+Comprueba si existe un enlace físico para un archivo x
+Crea un nuevo enlace fisico o simbólico para un archivo según la opción elegida
+Crea un enlace entre dos nombres de un mismo archivo
+Devuelve el número de enlaces de un archivo
+
+Un sistema operativo multiprogramado se caracteriza por:
+Solapar el cálculo de varios trabajos que se mantienen en memoria de forma simultánea
+La ejecución simultánea de varios trabajos
+La división de la memoria en una zona para el sistema operativo y otra zona para la ejecución de programas de usuario
+Soportar la independencia de dispositivos para las aplicaciones
+La existencia de múltiples usuarios que ejecutan cada uno de ellos un programa potencialmente distinto
+
+Una diferencia entre una interrupción hardware y una excepción es:
+En una excepción se aborta la instrucción-máquina en ejecución y en una interrupción no
+En una excepción se almacena el registro de estado del procesador en la pila y en una interrupción no
+En una interrupción se cambia automáticamente al modo supervisor de ejecución del procesador y en una excepción no
+En una interrupción hardware se almacena el registro de estado del procesador en la pila y en una excepción no
+Ninguna de las otras respuestas es correcta
+
+Si ejecutamos la orden gcc ejemplo.o -lm y no hay errores
+Se generará un ejecutable enlazando ejemplo.o con la biblioteca matemática estándar
+Se generará un archivo ejecutable denominado ejemplo.exe sin usar la biblioteca estándar
+Ninguna de las otras respuestas es correcta
+Se actualizará la biblioteca libm.a con el contenido del archivo ejemplo.o
+Se obtendrá un nuevo archivo objeto incorporando el módulo mal archivo ejemplo.o
+
+El modelo de programación de entrada/salida controlada por programa
+Tiene un bucle de espera activa para comprobar la finalización de la entrada/salida
+Es adecuado para sistemas operativos multiprogramados
+Tiene un alto rendimiento de utilización del procesador
+Necesita de un hardware especializado para su utilización por el sistema operativo
+Permite el manejo de múltiples dispositivos de forma natural
+
+En un sistema operativo multiprogramado genérico
+De un programa pueden generarse n procesos concurrentes y un proceso sólo puede estar asociado a un programa
+Sólo los programas con múltiples pilas de memoria pueden generar n procesos concurrentes
+De un programa pueden generarse n procesos concurrentes y un proceso puede estar asociado a n programas
+Sólo los programas multihilo pueden generar n procesos concurrentes y un proceso multihilo puede estar asociado a n programas
+De un programa sólo se puede generar un proceso concurrente y un proceso sólo puede estar asociado a un programa
+
+Si se desea eliminar un directorio que no está vacío debe usarse la orden del shell
+rm
+tar
+tail
+rmdir
+mv
+
+Si queremos saber el valor de una variable del shell debemos usar la orden
+echo
+which
+export
+who
+tee
+
+La orden del shell para obtener el tamaño total del directorio practicas en Kilobytes sería
+du -h practicas
+ls -a practicas
+df -h practicas
+sort -u practicas
+ls -l practicas
+
+¿Cuál es la orden del shell que nos permite saber qué tipos de sistemas de archivos se están utilizando en el sistema?
+df -T
+du -T
+df -t
+du -type
+du -t
+
+La planificación de dispositivos compartidos
+Consiste en mantener una cola de peticiones pendientes de ejecutar y aplicar un algoritmo de ordenación para su ejecución
+Permite no bloquear a los procesos que utilizan concurrentemente un dispositivo x
+Consiste en utilizar una técnica de spooling
+Es utilizada por el sistema operativo para la gestión de procesos en el estado de ejecución
+Asigna el uso del dispositivo al proceso solicitante con mayor prioridad
+
+Cuando al compilar un programa mediante la orden gcc -Wall -ansi -g -c ejemplo.c se muestran solamente warnings pero ningún error
+Se termina la compilación, pero no se genera ningún fichero ejecutable
+Se aborta la compilación
+Se genera el programa ejecutable, aunque se recomienda corregir los warnings
+Es un problema del compilador, nuestro programa está correcto
+No se genera el ejecutable porque un warning es igual que un error, pero más grave
+
+La llamada al sistema umask permite
+Cambiar la máscara de creación de archivos para el proceso solicitante
+Cambiar los permisos de un nodo del sistema de archivos indicando el nombre del nodo
+Cambiar el propietario y el grupo de un nodo del sistema de archivos indicando un descriptor de archivo válido
+Cambiar el propietario y el grupo de un enlace simbólico (sin seguir el enlace) indicando el nombre del enlace
+Cambiar el propietario y el grupo de un nodo del sistema de archivos indicando el nombre del nodo
+
+¿Cuál de los siguientes componentes no es típico de un sistema operativo?
+Depurador de aplicaciones
+Comunicaciones de red
+Sistema de protección
+Gestión de memoria principal
+Gestión de procesos
+
+El intercambio de un proceso en memoria por otro suspendido en disco (swapping)
+Permite ejecutar simultáneamente más programas que los que cabrían en la memoria disponible
+Reduce el número de procesos en estado de espera
+Disminuye la fragmentación interna
+Aumenta la fragmentación externa del sistema
+Permite disminuir el grado de multiprogramación del sistema
+
+La fragmentación interna:
+Es la memoria libre dentro de una partición asignada a un proceso
+Se reduce compactando los huecos libres
+Es la división interna de la memoria asignada a un proceso en las zonas de código, datos y pila
+Aumenta utilizando un sistema de segmentación de memoria
+Es la memoria disponible no utilizada porque está dispersa
+
+La orden del shell chmod 440 ejemplo.txt && cat ejemplo.txt > salida.txt
+Intentará cambiar los permisos del archivo ejemplo.txt, y si ello es posible, enviará el contenido de ese archivo al archivo salida.txt
+Cambiará los permisos del archivo ejemplo.txt si el archivo salida.txt no existe
+Cambiará los permisos del archivo ejemplo.txt y enviará la salida de la orden chmod al archivo salida.txt
+Concatenará el archivo ejemplo.txt con el archivo salida.txt y luego cambiará los permisos de ejemplo.txt
+Fallará si el archivo salida.txt no existe
+
+De entre los siguientes, el algoritmo de planificación con mayor eficiencia de uso del procesador para una carga de trabajo dada es:
+FCFS
+Turno rotatorio con un cuanto cercano a cero
+Turno rotatorio con un cuanto menor al tiempo medio de las ráfagas de CPU
+SJF apropiativo
+Cualquier planificador de tiempo real estricto (duro)
+
+Cómo ejecutarias el fichero creado con la orden gcc -g -o prueba prueba.c
+./prueba
+./a.out
+La orden generaría un error. Por lo tanto no se generaría fichero alguno
+../prueba.out
+./prueba.out
+
+La orden del shell para obtener el nombre completo del directorio actual seria
+pwd
+dir
+ls
+passwd
+ls -d
+
+Sea un sistema de memoria paginada con direcciones físicas y lógicas de 8 bits. La máquina usa palabras de 1 byte y el tamaño de una página es de 16 palabras. Para almacenar las tablas de páginas de los procesos no se emplean más bits de los estrictamente necesarios. En un momento dado, el contenido de una parte de la memoria principal corresponde a los valores de la siguiente tabla, donde todos los datos se expresan en hexadecimal ¿Cuál es el tamaño máximo en palabras de la tabla de páginas de un proceso? Tabla: Dirección{00,  08, 10, 18, 20, 28, 30, 38, 40}, +0{29, 2A, D4, 98, 44, 55, 33, 38, F3}, +1{1A, 3F, 19, 76, 92, 77, 87, 52, B7}, +2{43, ED, 57, 8A, B5, 34, 69, ED, 88}, +3{8E, 77, 98, A4, 76, 21, 6C, 32, 95}, +4{23, 45, 8A, 43, 43, 98, 43, EE, B3}, +5{9F, 01, 12, 90, 92, 76, 7E, 89, 64}, +6{12, 10, 55, 64, C9, 56, A5, 0F, D4}, +7{89, 57, 43, 44, 65, 43, C3, F4, FF}
+8
+16
+4
+2
+248
+
+Si a partir de un archivo fuente ejemplo.c queremos generar un archivo preprocesado y enviarlo a la salida estándar, la orden que debemos usar es:
+gcc -E ejemplo.c
+gcc -L ejemplo.c
+gcc -V ejemplo.c
+gcc -I ejemplo.c
+gcc -C ejemplo.c
+
+La técnica de gestión de memoria basada en superposiciones (Overlays)
+Consiste en mantener en memoria sólo las instrucciones y datos que son necesarios en cada momento
+Es la técnica más fácil de implementar
+Consiste en expulsar procesos a memoria secundaria para cargar nuevos procesos
+Consiste en código para localizar las funciones de la biblioteca en memoria que es sustituido por la dirección en memoria de la función
+Necesita, para su implementación, un soporte complejo por parte del sistema operativo
+
+El algoritmo de asignación de memoria de peor ajuste
+Asigna el mayor hueco suficientemente grande
+Es utilizado en los sistemas de asignación no contigua de memoria
+Minimiza la fragmentación interna de la memoria
+Es el algoritmo óptimo de los planificadores no apropiativos
+Permite una planificación de procesos a medio plazo
+
+Dada la siguiente carga de trabajo (las unidades de tiempo son arbitrarias y la E/S puede ser realizada por varios procesos simultáneamente) y utilizando una planificación SJF no apropiativa ¿Cuál es el tiempo de trabajo 2? Tabla: Trabajo{1, 2, 3}, T. de Llegada{0, 1, 2}, Rf. 1 de CPU{3, 1, 1}, Rf. de E/S{3, 3, 2}, Rf. 2 de CPU{1, 1, 3}
+7
+6
+8
+4
+2
+
+Un sistema operativo basado en un micronúcleo:
+Delega en varios procesos auxiliares para realizar muchas tareas típicas del sistema operativo
+Ninguna de las otras respuestas es correcta
+Se utiliza en sistemas de tiempo real con procesadores de 8 bits
+Consta de un pequeño núcleo escrito en lenguaje-máquina que está siempre residente en memoria
+Utiliza una memoria EPROM que contiene el micronúcleo para cargar el resto del sistema operativo
+
+¿Qué clase de sistema operativo ofrece una mejor protección entre aplicaciones?
+Un sistema operativo basado en máquinas virtuales
+Un sistema operativo monolítico
+Cualquier clase de sistema operativo
+Un sistema operativo estructurado en niveles
+Un sistema operativo basado en un micronúcleo
+
+POSIX especifica
+El interfaz de llamadas al sistema operativo
+La utilización del lenguaje C en programas para un sistema operativo Unix
+Una fusión del sistema operativo BSD Unix y UNIX System V
+El nombre estandarizado por ISO para el sistema operativo Unix
+El diseño del núcleo de un sistema operativo
+
+Un proceso en un sistema UNIX que desee utilizar un dispositivo de entrada/salida debe utilizar la siguiente llamada al sistema
+open
+mknod
+iopen
+fopen
+ioctl
+
+En un sistema de paginación con una tabla de páginas de un nivel almacenada en memoria, si una referencia a memoria paginada se efectúa en 80 nanosegundos. ¿En cuántos nanosegundos se realizará una referencia a memoria física?
+40
+120
+80
+240
+160
+
+El monitor residente
+Está compuesto de cargador de programas, intérprete de comandos y biblioteca de "drivers" de entrada/salida
+Se carga en memoria principal cuando finaliza un programa, se produce una interrupción hardware o una ejecución incorrecta del programa
+No tiene la propiedad de la independencia de dispositivos
+Divide la memoria principal para la carga de varios programas para su ejecución concurrente
+Divide la memoria principal para la carga de varios programas para su ejecución simultánea
+
+Si acabamos de iniciar una sesión de depuración de un ejecutable mediante el depurador gdb y tenemos que pasarle al programa una serie de argumentos de la línea de órdenes
+Podemos hacerlo mediante la orden run
+Podemos hacerlo mediante la orden br
+Tenemos que hacerlo mediante la orden set args
+Podemos hacerlo mediante la orden args
+Ninguna de las otras respuestas es correcta
+
+La acción setuid (getuid()) realizada por un proceso:
+Sólo puede ser ejecutada por un proceso con uid 0
+Sólo puede ser ejecutada por un proceso con las señales bloqueadas
+Activa la recepción de señales bloqueadas o ignoradas
+Cambia el identificador del proceso solicitante
+Devuelve el identificador de usuario del proceso solicitante
+
+En un sistema UNIX, un proceso que desee enviar datos a un dispositivo de entrada/salida debe utilizar la siguiente llamada al sistema
+write
+read
+ioctl
+sendmsg
+iowrite
+
+Un programador en UNIX utiliza en un programa la llamada al sistema exec antes que la llamada fork
+Ninguna de las otras respuestas es correcta
+Cuando desea que el proceso hijo ejecute el programa indicado en la llamada exec
+Cuando desea que el proceso padre se prepare para utilizar un archivo para comunicarse con el hijo que va a crear mediante la llamada a fork
+Para preparar la creación de una tubería entre los dos procesos
+Para crear un nuevo hilo de ejecución
+
+El modo de funcionamiento de un controlador DMA transparente
+Está diseñado para robar ciclos sólo cuando el procesador no necesita el bus del sistema
+Transfiere datos de varias operaciones a diferentes dispositivos intercalándolos entre sí
+Toma el control del bus y no lo libera hasta que termina la operación de transferencia
+Está diseñado para sistemas operativos monoprogramados
+Toma el control del bus durante un solo ciclo
+
+En los sistemas de gestión de memoria mediante asignación contigua ¿en que zona de memoria se encuentra normalmente el sistema operativo y por qué?
+En la zona baja de memoria para coincidir con la zona habitual de asignación del vector de interrupciones por parte del procesador
+En la zona baja de memoria para proteger al sistema operativo de los accesos de los procesos de usuario
+En la zona alta de memoria para dejar el resto de memoria libre para los procesos de usuarios
+En la zona alta de memoria para facilitar la asignación contigua de memoria a los procesos
+En cualquier zona de memoria pues es irrelevante
+
+Las estructuras de directorio usadas más comunmente para la organización de un número elevado de archivos son:
+La estructura de árbol, la de grafo acíclico y la de grafo general
+Un sólo nivel
+Grafo general
+Grafo acíclico o grafo general
+Todas las estructuras son igualmente eficientes para organizar un número elevado de archivos
+
+El efecto convoy en una planificación del procesador:
+Consiste en un aumento del tiempo medio de espera y de retorno si se ejecutan las ráfagas largas antes que las cortas
+Es el algoritmo óptimo respecto al tiempo de respuesta para cualquier carga de trabajo
+Aumenta el tiempo medio de espera y de retorno pero disminuye el tiempo medio de respuesta
+Se produce por una carga de trabajo con muchos procesos acotados por el procesador
+No se produce en los planificadores que usan el algoritmo FCFS
+
+La técnica de gestión de memoria basada en intercambios (swap-in-swap-out):
+Consiste en expulsar procesos a memoria secundaria para cargar nuevos procesos
+Consiste en código para localizar las funciones de la biblioteca en memoria que es sustituido por la dirección en memoria de la función
+Consiste en mantener en memoria sólo las instrucciones y datos que son necesarios en cada momento x
+No necesita el soporte del sistema operativo para su implementación
+Permite disminuir el grado de multiprogramación del sistema
+
+La utilización de un operador en los primeros sistemas permitió:
+Aumentar la productividad de los sistemas por la mayor pericia de los operadores en el montaje de cintas y el agrupamiento en lotes de los trabajos
+La aparición de lenguajes de programación como Fortran y Cobol
+La utilización de drivers de dispositivos en los programas de usuario
+Una mayor facilidad en la depuración de los errores de programación
+Que el sistema trabajase 24 horas al día
+
+¿Qué clase de sistema operativo es necesario para un computador con un procesador, un único usuario que usa un terminal gráfico y aplicaciones que necesitan utilizar métodos Java de aplicaciones de otros computadores? Elija el sistema operativo con la menor complejidad posible para atender las necesidades indicadas.
+Sistema operativo basado en middleware
+Sistema operativo de tiempo real
+Sistema operativo distribuido
+Sistema operativo localizado
+Sistema operativo de red
+
+Si en la línea de órdenes del shell ejecutamos: grep -n VBox /etc/[a-c]* obtendremos:
+Las líneas (con su número de línea) de los archivos del directorio /etc cuyo nombre comienza por cualquiera de las letras 'a', 'b', o 'c' que contengan la palabra VBox
+Las líneas (con su número de línea) de los archivos del directorio /etc cuyo nombre comienza por cualquiera de los caracteres 'a', '-', o 'c' que contengan la palabra VBox
+Las líneas (con su número de línea) de los archivos del directorio /etc, recorrido recursivamente, cuyo nombre comienza por cualquiera de las letras 'a', 'b', o 'c' que contengan la palabra VBox
+Las líneas (con su número de línea) de los archivos del directorio /etc, recorrido recursivamente, cuyo nombre comienza por cualquiera de las letras 'a', '-', o 'c' que contengan la palabra VBox
+Un error, porque el patrón de búsqueda VBox debería ir entre comillas simples
+
+Una función típica del nivel de manejador de interrupciones de un sistema de entrada/salida es:
+La reactivación del manejador del dispositivo cuando se completa una operación de entrada/salida
+La lectura y escritura en los registros de los controladores
+El control de acceso a los dispositivos por parte de los procesos
+Seleccionar el siguiente proceso que va a utilizar un dispositivo con entrada/salida controlada por interrupciones
+Manejar la concurrencia de procesos en el uso del dispositivo
+
+Una biblioteca de interfaz de llamadas al sistema:
+Permite que una aplicación utilice una función del lenguaje de la aplicación para realizar una llamada al sistema
+Permite ejecutar una aplicación cambiando la arquitectura del sistema (no el sistema operativo) sin tener que modificar la aplicación
+Es la implementación de las llamadas al sistema operativo en un computador
+Es la definición de funciones en lenguaje de alto nivel con el mismo servicio que las llamadas al sistema
+Ninguna de las otras respuestas es correcta
+
+Si se desea un sistema capaz de ejecutar concurrentemente aplicaciones de distintos sistemas operativos es aconsejable utilizar:
+Un sistema operativo basado en máquinas virtuales
+Un sistema operativo estructurado en niveles
+Un sistema operativo distribuido
+Un sistema operativo monolítico
+Un sistema operativo basado en un micronúcleo
+
+Queremos establecer como argumentos para la ejecución del programa las cadenas "-m" y "fichero.out". Si ya hemos abierto una sesión con el depurador, deberemos introducir el siguiente comando antes comenzar a ejecutar el programa
+set args -m fichero.out
+setargs -m fichero.out
+No es posible establecer argumentos en una sesión de depuración
+args set -m fichero.out
+args -m fichero.out
+
+Los atributos de un archivo son meta-información asociada al:
+Archivo
+Proceso creador del archivo
+Método de acceso al archivo
+Nombre de un archivo
+Dirección de un archivo
+
+El desmontaje de un sistema de archivos en UNIX es:
+La operación por la cual el sistema de archivos de un dispositivo de almacenamiento no es accesible a los procesos de un sistema a partir de ese momento
+La operación por la cual, en la finalización del sistema operativo, se reorganizan los bloques físicos de un dispositivo de almacenamiento para disminuir el tiempo medio de acceso a los archivos
+La operación física de retirar un dispositivo de almacenamiento de un sistema UNIX a través del interruptor correspondiente
+La preparación de un dispositivo de almacenamiento para su utilización en UNIX
+La operación por la cual se eliminan las estructuras de datos necesarias para almacenar archivos en un dispositivo de almacenamiento
+
+La llamada al sistema lchown permite:
+Cambiar el usuario propietario y el grupo de un enlace simbólico (sin seguir el enlace) indicando el nombre del enlace
+Cambiar el usuario propietario y el grupo de cualquier nodo del sistema de archivos indicando el nombre del nodo
+Cambiar los permisos de un nodo del sistema de archivos indicando el nombre del nodo
+Cambiar el usuario propietario y el grupo de un nodo del sistema de archivos indicando un descriptor de archivo válido
+Cambiar la máscara de creación de archivos para el proceso solicitante
+
+Si se ejecuta en el terminal la orden gcc -L. prueba.s
+Se generará, si no hay errores, un ejecutable a partir del archivo en ensamblador prueba.s
+Se producirá, si no hay errores, un archivo objeto denominado prueba.o
+Se compilará el archivo prueba.s pero no se enlazará
+Se producirá un error porque el archivo citado en la orden debería llamarse prueba.c
+Se producirá, si no hay errores, un archivo preprocesado de nombre prueba.h
+
+Un proceso en un sistema UNIX que desee recibir datos de un dispositivo de entrada/salida debe utilizar la siguiente llamada al sistema:
+read
+ioctl
+iowrite
+sendmsg
+write
+
+¿Para qué sirve la función telldir?
+Devuelve la posición actual asociada a un flujo de directorio
+Ajusta la posición actual asociada a un flujo de directorio apuntando a la posición inicial
+Determina el tamaño total de un flujo de directorio
+Ninguna de las otras respuestas es correcta
+No hace nada, porque no existe
+
+Estamos escribiendo un programa en ANSI C para UNIX que debe manejar señales utilizando la primitiva signal(). El programa debe manejar la señal SIGINT para mostrar un mensaje. ¿Cuál de las siguientes afirmaciones es correcta sobre el uso de signal() en este contexto?
+signal() restablece el manejador de la señal a su comportamiento predeterminado después de que se recibe la señal
+signal() es la única forma de manejar señales en un programa en C
+signal() puede establecer un manejador para múltiples señales al mismo tiempo
+signal() no permite ignorar señales
+-
+
+Cuando expira el tiempo de uso de CPU de un proceso, ¿qué transición de estado se produce?
+De ejecución a preparado
+De esperando a completado
+De esperando a preparado
+De ejecución a completado
+-
+
+Considere un sistema de memoria segmentada con una tabla de segmentos organizada en 2 niveles y almacenada en memoria principal. La memoria principal tiene un tiempo de acceso de M nanosegundos. Además, se dispone de un TLB con una tasa de acierto del 90% y tiempo de acceso de t nanosegundos. ¿Cuántos nanosegundos serán necesarios para resolver un acceso completo a la posición de memoria deseada con esta configuración en el peor de los casos?
+t+3*M
+t+M
+3*M
+t+2*M
+-
+
+Supongamos que hemos ejecutado en la línea de órdenes ./run tres dos uno. Así mismo, argv es el segundo argumento recibido por la función main del programa run escrito en Lenguaje C y que su valor no ha sido modificado. ¿Qué valor proporciona la expresión *++argv?
+Proporciona un puntero apuntando a la posición de memoria que contiene el carácter 't'
+Proporciona un puntero apuntando a la posición de memoria que contiene el carácter 'd'
+Es el carácter almacenado en argv[0]
+Proporcionaría un error de "segmentation fault"
+-
+
+¿Qué función se utiliza para obtener información detallada sobre un archivo, incluyendo su tamaño y permisos?
+stat
+open
+readdir
+f_stat
+-
+
+Respecto a la responsabilidad del sistema operativo como sistema de protección, es cierto que:
+El sistema operativo debe distinguir entre un uso autorizado y no autorizado de recursos
+El sistema operativo debe proponer mecanismos de protección y forzar su uso
+El sistema operativo define tanto la política como los mecanismos de protección
+El sistema operativo define la política de protección del sistema de archivos
+-
+
+¿Qué sucede si se intenta acceder a un puntero no inicializado en Lenguaje C?
+Se puede acceder a una dirección de memoria aleatoria, lo que puede causar un comportamiento indefinido e indebido
+El programa se ejecuta normalmente y puntero tiene un valor predeterminado
+Se produce un error de compilación
+El puntero se inicializa por defecto con NULL
+-
+
+¿Qué destacaría como razón que justifique el uso de las llamadas al sistema para que las aplicaciones soliciten servicios del sistema operativo?
+Las aplicaciones no saben dónde están situadas las rutinas de servicio del sistema operativo
+Los servicios del sistema pueden ejecutarse en modo usuario
+Porque es necesario que se produzca un cambio de modo de ejecución de modo supervisor a modo usuario
+Para así poder guardar automáticamente ciertos valores en el espacio de pila del sistema
+-
+
+La instrucción en curso, típicamente, es abortada en el siguiente caso:
+Cuando se produce una excepción en su ejecución
+Nunca se aborta la instrucción en curso, se completa antes de atender cualquier tipo de incidencia
+Cuando un dispositivo de Entrada/Salida envía una interrupción
+Cuando tenemos una planificación de procesos no cooperativa
+-
+
+Si queremos buscar archivos en el directorio ~/practicas que contengan la cadena "archivo p2" en su interior, ¿cuál de las siguientes órdenes es más adecuada en UNIX?
+grep -r 'archivo p2' ~/practicas
+find ~/practicas -name '*archivo p2*'
+search 'archivo p2' ~/practicas
+locate 'archivo p2'
+-
+
+¿Cómo se denominaba la parte de código de los primeros sistemas operativos que permanecía cargada en memoria de forma permanente?
+Monitor residente
+Scheduler
+Biblioteca de drivers
+Dispatcher
+-
+
+Para el acceso aleatorio a los registros de un archivo se utiliza el método de acceso
+Directo
+Secuencial
+Basado en función hash
+Secuencial implementado mediante acceso directo
+-
+
+Supongamos que en UNIX queremos obtener el tamaño de un archivo determinado ¿qué campo de la estructura de tipo dirent que se obtiene mediante la primitiva readdir debemos consultar?
+Esta información no está contenida en la estructura dirent
+El campo I_ISIZE
+El campo st_mode
+El campo st_size
+-
+
+Considere un sistema de memoria paginada de un nivel con TBL. El acceso a esta caché TLB conlleva 1 nanosegundo, mientras que cada acceso a memoria principal cuesta 10 nanosegundos. Si la tasa de éxito en el TLB es del 70% ¿Cuánto tiempo promedio (en nanosegundos), costará acceder a una posición concreta a través de una dirección de memoria paginada?
+14
+16
+10,5
+10
+-
+
+Supongamos que el tiempo medio que el brazo tarda en cambiar de posición desde una pista a otra adyacente es 3ms. El disco tiene 500 pistas numeradas de 0 a 499. El brazo del disco se encuentra colocado sobre la pista 200 y la última vez se ha movido en sentido ascencente (hacia las pistas de índice mayor). Al manejador de disco le han llegado, por este orden peticiones para operaciones en las pistas siguientes: 150, 300, 290, 200 y 400. ¿Qué algoritmo de planificación de los siguientes tiene el menor tiempo total necesario para satisfacer todas las soluciones?
+LOOK
+SCAN
+SJF
+FCFS
+-
+
+¿En UNIX, qué primitiva se utiliza para suspender la ejecución de un proceso hasta que reciba una señal?
+pause()
+sleep()
+sigwait()
+wait()
+-
+
+La primitiva stst a diferencia de fstat
+Recoge como parámetro el puntero a la cadena de caracteres con el nombre del archivo
+Tiene como parámetro un puntero a la estructura de tipo stat donde se proporcionarán los datos del archivo
+Recoge como parámetro el descriptor del archivo
+Tiene como parámetro un puntero a la estructura de tipo stat donde se escribirán los datos del archivo
+-
+
+Trabajando con UNIX, cuando un proceso quiere hacer uso de un dispositivo de entrada/salida, ¿cuál de las siguientes llamadas al sistema debería solicitar en primer lugar?
+open
+create
+ioctl
+Ninguna de las otras respuestas es correcta
+-
+
+Considere la carga de trabajo de la siguiente tabla: PID{1, 2, 3, 4}, Instante de llegada{0, 0, 3, 4}, CPU 1{2, 1, 3, 1}, E/S 1{1, 2, 1, 2}, CPU 2{1, 2, 3, 1}, E/S 2{3, 2, 1, 2}, CPU 3{1, 1, 1, 2}. Donde las unidades de tiempo son arbitrarias y el sistema tiene un procesador. La entrada/salida (E/S) puede ser realizada por varios procesos simultáneamente y, en caso de empate, siempre se elige el trabajo con PID menor. Si se utiliza una planificación SJF no apropiativa, ¿cuál es el tiempo de retorno del trabajo con PID 3?
+16
+11
+7
+17
+-
+
+Los bits de permisos de los nodos del sistema de archivos UNIX:
+Es el mecanismo que permite definir las políticas de acceso autorizado y no autorizado
+Ofrecen una protección de todo o nada
+Tienen el mismo significado para archivos que para directorios
+Sólo pueden definirse en octal
+-
+
+¿Cuándo puede provocarse el bloqueo de un proceso en UNIX como consecuencia de solicitar una operación de escritura en una tubería?
+Cuando la tubería está llena
+Cuando la tubería está vacía
+Cuando la tubería está desbordada
+Cuando la tubería la ha creado otro proceso
+-
+
+¿Cómo se elimina la información de un archivo de la tabla de archivos abiertos de un proceso?
+Mediante la llamada al sistema close
+Mediante la llamada al sistema erase
+Mediante la llamada al sistema sync
+Mediante la llamada al sistema clear
+-
+
+En un sistema de E/S, ¿a qué elemento debe notificar directamente el manejador de interrupciones cunado se produce una?
+Al manejador del dispositivo de E/S
+Al proceso de usuario que solicitó la operación
+Al sistema operativo
+Al controlador de dispositivos de E/S
+-
+
+Mantener una estructura con información de los archivos abiertoss permite:
+Reducir el problema de las búsquedas continuas en directorios
+Utilizar una caché intermedia para leer menos frecuentemente el archivo
+Habilitar la lectura y escritura sin necesidad de abrir previamente los archivos
+Ninguna de las otras respuestas es correcta
+-
+
+La directiva SEEK_CUR de la llamada al sistema lseek:
+Ninguna de las otras respuestas es correcta
+Establece la posición del puntero interno desde la posición inicial del archivo
+Determina que el desplazamiento se calcula desde la posición final 
+Determina que el puntero al usar la directiva lseek se desplaza hasta el final del archivo
+-
+
+Considere la carga de trabajo de la siguiente tabla: PID{1, 2, 3, 4}, Instante de llegada{0, 0, 3, 4}, CPU 1{2, 1, 3, 1}, E/S 1{1, 2, 1, 2}, CPU 2{1, 2, 3, 1}, E/S 2{3, 2, 1, 2}, CPU 3{1, 1, 1, 2}. Donde las unidades de tiempo son arbitrarias y el sistema tiene un procesador. La entrada/salida (E/S) puede ser realizada por varios procesos simultáneamente y, en caso de empate, siempre se elige el trabajo con PID menor. Si se utiliza una planificación SJF no apropiativa, ¿cuál es la tasa de utilización del procesador?
+100%
+Mayor del 90% y menor del 100%
+Mayor del 70% y menor del 90%
+Mayor del 80% y menor del 90%
+-
+
+La eliminación del bucle de espera activa es un objetivo fundamental de la entrada/salida...
+Controlada por interrupción
+Controlada por manejador
+Controlada por programa
+Controlada por el driver correspondiente
+-
+
+¿Cuál de los siguientes comandos se utiliza para listar todas las variables de entorno de UNIX?
+env
+set
+echo $PATH
+ls
+-
+
+Suponga que estamos trabajando con un sistema con UNIX y queremos obtener un archivo denominado resultado.txt en el directorio de trabajo. Dicho archivo debe contener el número de líneas del listado en formato largo del directorio /home, sin incluir los nodos ocultos que pueda tener. ¿Qué orden ejecutaría?
+ls -l /home | wc -l > resultado.txt
+ls -la /home | wc -l > resultado.txt
+ls -la /home | wc -a > resultado.txt
+ls -a /home | wc -l > resultado.txt
+-
+
+En un algoritmo Round Robin de planificación de uso de la CPU se puede provocar efecto convoy si:
+Se aumenta de forma muy elevada el valor del quantum de tiempo
+Se reduce al mínimo el valor del quantum de tiempo
+Se acepta la entrada de muchos procesos para su planificación
+Se calcula el valor de su quantum mediante un promedio exponencial
+-
+
+Si en un sistema de memoria paginada, varias entradas de la tabla de páginas de dos procesos diferentes apuntan a los mismos marcos de página, ¿qué podemos interpretar?
+Que los dos procesos están compartiendo memoria
+Que uno de los procesos ha invadido el espacio de memoria del otro
+Que la información es inconsistente
+Que se ha producido un fallo de "segmentation fault"
+-
+
+Proporcionar una interfaz uniforme para los manejadores de dispositivos de E/S es responsabilidad del:
+Software independiente de los dispositivos de E/S
+Gestor de interrupciones
+El controlador del dispositivo de E/S
+Proceso del usuario que hace la petición de E/S
+-
+
+La memoria no asignada a procesos y que no puede ser utilizada porque está dispersa es un caso particularde lo que denominamos
+Fragmentación externa
+Fragmentación interna
+Necesidad de compactación de la tabla de segmentos
+Exceso de procesos en el sistema
+-
+
+En UNIX, para obtener la información sobre los atributos de un nodo del sistema de archivos se emplea la llamada al sistema:
+stat
+sync
+readdir
+getattr
+-
+
+¿Qué macro del procesador de C podemos emplear para determinar si un nodo del sistema de archivos es un archivo de directorio?
+S_ISDIR
+IF_ISDIR
+S_DIR
+No es posible hacerlo
+-
+
+Considere la carga de trabajo de la siguiente tabla: PID{1, 2, 3, 4}, Instante de llegada{0, 0, 3, 4}, CPU 1{2, 1, 3, 1}, E/S 1{1, 2, 1, 2}, CPU 2{1, 2, 3, 1}, E/S 2{3, 2, 1, 2}, CPU 3{1, 1, 1, 2}. Donde las unidades de tiempo son arbitrarias y el sistema tiene un procesador. La entrada/salida (E/S) puede ser realizada por varios procesos simultáneamente y, en caso de empate, siempre se elige el trabajo con PID menor. Si se utiliza una planificación SJF no apropiativa, ¿cuál es el tiempo de espera total?
+17
+11
+18
+7
+-
+
+Considere la carga de trabajo de la siguiente tabla: PID{1, 2, 3, 4}, Instante de llegada{0, 0, 3, 4}, CPU 1{2, 1, 3, 1}, E/S 1{1, 2, 1, 2}, CPU 2{1, 2, 3, 1}, E/S 2{3, 2, 1, 2}, CPU 3{1, 1, 1, 2}. Donde las unidades de tiempo son arbitrarias y el sistema tiene un procesador. La entrada/salida (E/S) puede ser realizada por varios procesos simultáneamente y, en caso de empate, siempre se elige el trabajo con PID menor. Si se utiliza una planificación SJF no apropiativa, ¿cuál es el tiempo de espera del trabajo 4?
+6
+4
+0
+3
+-
+
+Interrupciones y excepciones, a diferencia de las llamadas a función:
+Se gestionan en modo supervisor
+Se producen típicamente por iniciativa de la aplicación en ejecución
+Frecuentemente suponen abortar la ejecución del programa actual
+Frecuentemente suponen completar la ejecución de la instrucción en curso
+-
+
+¿Dónde se especifica la interfaz de las llamadas a un sistema operativo para lograr interoperabilidad?
+En la norma POSIX
+En las bibliotecas estándar del Lenguaje C
+En el LPIC-1
+En los documentos técnicos de los desarrolladores del núcleo del sistema operativo
+-
+
+Es cierto, respecto a los sistemas de memoria paginada y segmentada, que...
+Tanto en memoria paginada como en memoria segmentada es posible que los procesos puedan compartir partes de la memoria
+En ambos casos se almacena en la tabla la longitud de cada segmento y de cada página
+Ambos son incompatibles con sistemas de memoria virtual
+No es posible combinar ambos métodos en un mismo sistema
+-
+
+¿Qué opción del gestor de compilación gcc nos permite detectar todas las advertencias que indican condiciones inusuales en el código fuente que podrían indicar un problema, aunque la compilación puede (y de heho lo hace) continuar y finalizar?
+-Wall
+No es necesaria ninguna opción ya que, por defecto, gcc ya lo hace
+-o
+-ansi
+-
+
+¿Qué función de la biblioteca estándar puede utilizarse para leer una línea de texto desde la entrada estándar en C?
+fgets()
+sscanf()
+getLine()
+readLine()
+-
+
+En UNIX, para suspender la ejecución del proceso que actualmente está en ejecución hasta que termine uno de sus hijos del que se conoce su pid, lo más adecuado y preciso es usar la llamada al sistema denominada:
+waitpid
+wait
+pause
+fork
+-
+
+¿Cuál de las siguientes afirmaciones sobre los sistemas operativos es cierta?
+El sistema operativo protege al sistema de cómputo frente al uso indebido de los recursos por parte de las aplicaciones
+El sistema operativo permite el acceso libre al hardware por parte de las aplicaciones
+El sistema operativo debe lograr que los recursos del sistema se aprovechen de forma segura, no necesariamente eficiente
+El sistema operativo ejecuta las instrucciones de la máquina extendida a petición del hardware
+-
+
+Supongamos que el tiempo medio que el brazo de un disco tarda en cambiar de posición desde una pista a otra adyacente en 3ms. El disco tiene 500 pistas numeradas de 0 a 499. El brazo del disco se encuentra colocado sobre la pista 200 y la última vez se ha movido en sentido ascendente (hacia las pistas de indice mayor). Al manejador de disco le han llegado, por este orden, peticiones para operaciones en las pistas siguientes: 150, 300, 290, 200 y 400. ¿Cuál es el tiempo total necesario para satisfacer todas las solicitudes con el algoritmo de planificación C-SCAN?
+2844
+1944
+1350
+1500
+-
+
+De forma general, la solución del problema de inanición en planificación de CPU:
+Requiere del uso de técnicas de prioridad dinámicos (envejecimiento)
+Requiere de sistemas de prioridad estáticos pero que nunca den prioridades bajas
+Requiere de sistemas apropiativos que cambien el proceso actual de ejecución
+Requiere de sistemas cooperativos que no fuercen el cambio de contexto salvo que el proceso en ejecución lo solicite
+-
+
+¿Cuál de las siguientes afirmaciones sobre la primitiva opendir es correcta?
+Si opendir falla, devuelve NULL y establece errno para indicar el error
+opendir no necesita incluir el archivo de cabecera <dirent.h>
+opendir puede ser utilizada para abrir archivos regulares
+opendir devuelve un puntero a un entero que representa el descriptor del directorio
+-
+
+Un sistema operativo que delega en procesos auxiliares la realización de tareas típicas del sistema operativo se dice que tiene una estructura de tipo:
+Micronúcleo
+Monolítico
+Multiservicio
+Multinivel
+-
+
+En el sistema operativo UNIX los nombres de los archivos se almacenan en:
+En los directorios
+En la tabla de archivos abiertos
+En el propio archivo
+En los i-nodos
+-
+
+La orden de Shell para obtener el tamaño total del directorio practicas en Kilobytes seria: 
+du –h practicas 
+df –h practicas 
+ls –a practicas 
+sort –u practicas 
+ls –l practicas 
+
+No es posible la construcción de ningún sistema operativo 
+Ninguna de las otras respuestas es correcta 
+Sin un mecanismo de interrupciones hardware 
+Sin un dispositivo de almacenamiento secundario (por ejemplo, un disco magnético) 
+Sin un procesador con modo dual de ejecución (usuario/supervisor) 
+Sin un mecanismo de protección de memoria principal 
+
+La orden de Shell para obtener el nombre completo del directorio actual seria 
+pwd
+ls  
+passwd   
+dir  
+ls -d
+
+Un proceso necesita escribir secuencialmente un archivo byte por byte siendo el tamaño del bloque del disco utilizado 512 bytes. La escritura física del archivo se producirá:
+Cuando el proceso haya solicitado al sistema operativo la escritura de un mínimo de 512 bytes  
+Cuando el proceso haya solicitado al sistema operativo la escritura de un mínimo de 512 bytes o bien cuando se agote el temporizador de escritura del disco 
+Depende de si el archivo es utilizado concurrentemente por otros procesos 
+Cuando se agote el temporizador de escritura del disco 
+Depende de la prioridad asociada al proceso 
+
+¿Cuál es el objetivo principal de diseño del sistema operativo para un ordenador personal? 
+Facilidad de uso prestando cierta atención al rendimiento (del usuario) y ninguna a la utilización de recursos 
+La facilidad de uso para interactuar fácilmente con el computador con el fin de ejecutar programas 
+Ofrecer soporte para la multiprogramación 
+Llegar a un compromiso entre la usabilidad individual y la utilización de recursos 
+La eficiencia en el uso del hardware 
+
+Una interrupción hardware es producida
+Por solicitud de un dispositivo de entrada/salida  
+Por la ejecución incorrecta de una instrucción-máquina de un programa ejecutándose en modo supervisor del procesador 
+Por la ejecución incorrecta de una instrucción-máquina de un programa de usuario 
+Por la solicitud de un dispositivo de entrada/salida o por la ejecución incorrecta de una instrucción-maquina 
+Por solicitud de un programa de usuario 
+
+Si al ejecutar el gestor de compilación gcc utilizamos la opción –std=c89 
+El efecto será el mismo que si usamos la opción -ansi 
+Obtendremos un error si no usamos a la vez la opción -o 
+Tendremos que usar a la vez la opción -I 
+Obtendremos un error porque esa opción no existe 
+Tendremos que usar a la vez la opción -c 
+
+La orden gcc –g –L ldirectory –o nuevo fuente.c problema.o –lmymath  
+Permite generar, si no hay errores un ejecutable de nombre nuevo buscando las bibliotecas necesarias en primer lugar en el directorio ldirectory 
+Es incorrecta porque no especifica el directorio en el que deben buscarse las cabeceras necesarias para compilar fuente.c 
+Permite generar, si no hay errores, un ejecutable de nombre nuevo compilando el archivo fuente.c y enlazando con problema.o y con todos los archivos objeto del directorio ldirectory 
+Permite generar, si no hay errores, una biblioteca con nombre mymath en el directorio ldirectory a partir de la compilación de fuente.c y del código contenido en problema.o y en nuevo 
+No es correcta porque no se puede especificar la opción .g junto con la opción -L 
+
+La tendencia en la utilización de lenguajes de implementación de sistemas operativos es utilizar el 
+Lenguaje C
+Lenguaje C++ 
+Lenguaje-maquina 
+Lenguaje Java 
+Lenguaje ensamblador
+
+Para poder ejecutar una sesión de depuración de un programa ¿con que opción debemos compilarlo y enlazarlo? 
+–g 
+–o 
+–c  
+–h  
+–u
+
+El sistema operativo: 
+Oculta al programador los detalles del hardware y le proporciona una interfaz cómoda para utilizar el sistema 
+Ofrece un lenguaje de alto nivel para su uso por los programadores 
+Implementa instrucciones especiales en el procesador para su uso por las aplicaciones 
+Activa la aceleración de instrucciones-máquina del procesador 
+Usa los servicios ofrecidos por las aplicaciones servidoras del sistema 
+
+Si al utilizar el gestor de compilación gcc para procesar un archivo fuente programa.c necesitamos especificar un directorio en el que buscar ciertas cabeceras, debemos usar la(s) opción(es): 
+–I 
+–S  
+–l –o  
+–c –L  
+–L  
+
+Un esquema de recolección de basura permite:
+Recuperar el espacio en disco ocupado por archivos que ya no pueden ser accedidos 
+Obtener la lista de bloques defectuosos de un dispositivo de almacenamiento por bloques 
+Recuperar el espacio no ocupado en la tabla de i-nodos de un sistema UNIX 
+Recuperar el espacio utilizado en directorios por archivos que han sido eliminados 
+Recuperar el espacio interno de los archivos que no se está utilizando 
+
+El concepto de directorio actual es común en las siguientes estructuras de directorio:
+Estructura de árbol, de grafo acíclico y de grafo general 
+Estructura de dos niveles y estructura de árbol 
+Estructura de árbol 
+Estructura de grafo acíclico y de grafo general 
+En todas las estructuras de directorio
+
+Si al utilizar el gestor de compilación gcc para procesar un archivo fuente programa.c necesitamos especificar un directorio en el que buscar ciertas bibliotecas deberíamos usar las(s) opción(es):
+–L
+–c –I    
+–S  
+–I  
+–l –o
+
+Una partición de un sistema de archivos no puede 
+Ninguna de las otras respuestas es correcta
+Coexistir en el mismo disco con otras particiones lógicamente independientes 
+Unir dos discos en una única entidad lógica 
+Contener un área con metadatos de los archivos incluidos en la partición 
+Contener un área con los datos de los archivos incluidos en la partición 
+
+¿Cuál es el objetivo principal de diseño del sistema operativo para una estación de trabajo? 
+Llegar a un compromiso entre la usabilidad individual y la utilización de recursos 
+Ofrecer soporte para la multiprogramación 
+La facilidad de uso para interactuar fácilmente con el computador con el fin de ejecutar programas 
+La eficiencia en el uso del hardware 
+Facilidad de uso prestando cierta atención al rendimiento (del usuario) y ninguna a la utilización de recursos 
+
+Todo sistema operativo 
+Facilita la ejecución de programas de usuario 
+Mantiene una tabla con los nombres y claves de acceso de los usuarios autorizados 
+Gestiona el modo dual de ejecución del procesador 
+Ninguna de las otras respuestas es correcta 
+Gestiona terminales para interacción con los usuarios 
+
+¿Qué son los demonios de un sistema? 
+Son procesos especiales correspondientes a programas de sistema que reciben conexiones de otros procesos 
+Es el interfaz de llamadas al sistema operativo en UNIX 
+Es el componente del sistema encargado de la gestión de los periféricos 
+Son los procesos que el administrador utiliza para monitorizar el sistema 
+Es una clase de software malicioso
+
+Si tenemos un archivo de código fuente HolaMundo.c que, una vez compilado, queremos depurar con el gdb, ¿Qué opción tendremos que incluir en la compilación? 
+–g  
+–o  
+–dep  
+–Wall  
+–c  
+
+¿Qué orden debemos ejecutar para salir del gdb? 
+quit
+stop  
+–c  
+Ninguna de las otras respuestas es correcta 
+exit 
+
+Una partición de un sistema de archivos
+Es una división lógica de las unidades de almacenamiento de memoria secundaria que no requiere de ningún soporte hardware especial
+Permite tener varios nombres asociados a un mismo archivo 
+No puede contener un área con los datos de los archivos incluidos en la partición 
+Permite acelerar los accesos secuenciales de datos dentro de los archivos 
+Permite tener archivos de tamaño ilimitado
+
+La orden de Shell rmdir –p practicas/p3 && echo ‘Error de concepto’
+Escribirá en la salida estándar Error de concepto si se ha logrado eliminar los directorios practicas/p3 y practicas 
+Escribirá en la salida estándar Error de concepto si se ha logrado eliminar el directorio practicas/p3 
+No escribirá nada en la salida estándar en ningún caso 
+Escribirá en la salida estándar Error de concepto si no se ha logrado eliminar los directorios practicas/p3 y practicas 
+Escribirá en la salida estándar Error de concepto tanto si se eliminan los directorios practicas/p3 y practicas como si no
+ 
+Una biblioteca de interfaz de llamadas al sistema
+Permite que una aplicación utilice una función del lenguaje de la aplicación para realizar una llamada al sistema
+Permite ejecutar una aplicación cambiando la arquitectura del sistema (no el sistema operativo) sin tener que modificar la aplicación 
+Ninguna de las otras respuestas es correcta 
+Es la implementación de las llamadas al sistema operativo en un computador 
+Es la definición de funciones en lenguaje de alto nivel con el mismo servicio que las llamadas al sistema 
+
+Queremos que el número de líneas del archivo texto.c, que está situado en el directorio actual, se escriba en otro archivo del directorio actual llamado n-lineas. La orden de Shell adecuada es 
+wc –l texto.c > n-lineas 
+wc –n texto.c > n-lineas 
+wc texto.c < n-lineas 
+lc texto.c < n-lineas 
+cw –l texto.c n-lineas
+
+La adaptación del sistema a las distintas velocidades de los dispositivos de entrada/salida se consigue con  
+La técnica de buffering
+El monitor residente por primera vez  
+El mecanismo de excepciones del procesador 
+Los sistemas de operación fuera de línea 
+Un sistema operativo multiprogramado
+
+La técnica buffering consiste 
+En tomar los datos de un área de memoria que el sistema operativo se encarga de llenar 
+En eliminar los retrasos producidos por el mecanismo de interrupciones 
+En retrasar las transferencias de entrada/salida respecto a las peticiones 
+En un interfaz de servicio delos dispositivos de entrada/salida 
+En permitir que un programa pueda acceder a los puertos de entrada/salida
+
+Una partición de un sistema de archivos
+Puede coexistir en el mismo disco con otras particiones lógicamente independientes 
+Necesita de un temporizador hardware para su implementación 
+No permite tener varios nombres asociados a un mismo archivo  
+No permite tener archivos con varios métodos de acceso 
+No puede contener un área con los metadatos de los archivos incluidos en la partición 
+
+Una diferencia entre una interrupción hardware y una excepción es 
+En una excepción se aborta la instrucción-maquina en ejecución y en una interrupción no 
+Ninguna de las otras respuestas es correcta 
+En una interrupción hardware se almacena el registro de estado del procesador en la pila y en una excepción no 
+En una excepción se almacena el registro de estado del procesador en l apila y en una interrupción no 
+En una interrupción se cambia automáticamente al modo supervisor de ejecución del procesador y en una excepción no
+
+Considérese que la siguiente línea de órdenes se ejecuta desde el Shell  ./ejemplo linea de ordenes Suponiendo que argv es el segundo argumento recibido por la función main del programa ejemplo escrito en C y que su valor no ha sido modificado, el valor de la expresión *++argv 
+Es un puntero que apunta a una posición de memoria que contiene el carácter ‘l’ 
+Es el carácter ‘i’ 
+No puede calcularse porque es una expresión sintácticamente incorrecta 
+Es la cadena de caracteres ‘’de’’ 
+Es el carácter contenido en la posición de memoria siguiente a la apuntada por argv[0]
+
+¿En qué consiste la generación de un sistema operativo? 
+En la configuración y generación de un sistema operativo para su utilización en un computador concreto 
+En el diseño de un sistema operativo para ser portable entre distintas arquitecturas hardware 
+En el diseño y la codificación de la distribución del sistema operativo 
+En la configuración y generación de la inicialización de un sistema operativo 
+En el diseño y la codificación del núcleo del sistema operativo 
+
+Las llamadas al sistema operativo 
+Permiten a un programa realizar peticiones al sistema
+Permiten escribir un sistema operativo 
+Son los comandos de un sistema operativo 
+Permiten al usuario realizar peticiones al sistema operativo desde el intérprete de comandos 
+No se pueden hacer desde lenguajes de alto nivel 
+ 
+Supóngase que estamos ejecutando cierto programa en una sesión de depuración y la siguiente línea a ejecutar es una llamada a una función. Si quisiéramos entrar a depurar la función deberemos introducir el comando 
+s
+c 
+i 
+n 
+l 
+
+Típicamente, ¿Qué servicios ofrece un microkernel? 
+Gestión de memoria y procesos mínima, además de un mecanismo de comunicaciones 
+Exclusivamente un cargador de programas 
+Un cargador de programas y un intérprete de comandos 
+Una abstracción del hardware de la computadora formando varios entornos de ejecución diferentes 
+Exclusivamente un mecanismo de comunicaciones 
+
+Un sistema con múltiples tipos de archivos permite 
+Adecuar el proceso del archivo con la finalidad de este 
+Un acceso concurrente a los archivos más eficiente 
+Asignar múltiples nombres a un archivo 
+Cambiar la estructura interna del archivo según las necesidades de los procesos 
+Simplificar la implementación del sistema de archivos 
+
+Queremos imprimir en pantalla el número de líneas del listado de nuestro directorio de trabajo, incluyendo los nodos ocultos, en formato largo. La orden de Shell adecuada es 
+ls –al | wc -l 
+wc > ls -l 
+ls | wc 
+cl | ls -l 
+ls > wc -l 
+
+Que archivo genera la orden gcc –S prueba.c 
+Un archivo llamado prueba.s pero no ensambla 
+No genera ningún archivo. Solo analiza el archivo fuente 
+Un archivo llamado a.s 
+Un error, porque no le damos el nombre de salida 
+Un archivo llamado prueba.o pero no enlaza 
+
+¿Dónde está el código de las órdenes que el intérprete de comandos tiene que ejecutar? 
+Algunos interpretes contienen el código de las ordenes a ejecutar y otros sistemas implementan la mayoría de las ordenes a través de una serie de programas del sistema 
+En el intérprete de comandos 
+En el núcleo del sistema operativo 
+En la distribución del sistema operativo 
+En programas del sistema que son llamadas por el interprete 
+
+Para ejecutar directamente un programa compilado, que está escrito en el lenguaje A y para el sistema operativo X, en otra máquina de la misma arquitectura hardware pero con sistema operativo Y, es necesario que 
+El sistema operativo Y tenga el mismo interfaz de llamadas al sistema que X 
+Utilicemos una biblioteca de portabilidad del sistema operativo X en el sistema operativo Y 
+Utilicemos un programa interprete 
+El compilador del lenguaje A tenga un modo dual de ejecución para los dos sistemas operativos 
+Ningún cambio es necesario pues tienen la misma arquitectura hardware 
+
+El método de acceso directo a los archivos 
+Permite acceder aleatoriamente a los registros del archivo 
+Permite el acceso a los registros del archivo a través de un índice 
+Obliga a incluir un nº de registro en los archivos creados para usar este método 
+Solo es utilizado en sistemas operativos multiprogramados 
+Es unja simulación del acceso secuencial en archivos con almacenamiento en disco 
+
+La orden del Shell find salida –type f –a ( -perm 755 –o –size +256c ) –exec chmod 444 {} \;
+Explorara recursivamente el directorio salida y concederá permiso de lectura a todos los usuarios del sistemas para cada archivo cuyo tamaño sea mayor de 256 bytes 
+Explorara recursivamente el directorio salida y concederá permiso de escritura al propietario para cada archivo cuyo tamaño sea igual a 256 bytes 
+No podrá ejecutarse porque contiene errores sintácticos 
+Explorara recursivamente el directorio salida y concederá permiso de lectura a todos los usuarios del sistema para los archivos en los cuales los usuarios del grupo del archivo respectivo tengan permiso de escritura y además el archivo ocupe más de 256 bytes  
+Explorara recursivamente el directorio salida y concederá permiso de lectura al propietario para cada archivo cuyo tamaño sea menor de 256 Kilobytes 
+
+Una excepción es producida
+Por la ejecución incorrecta de una instrucción-maquina  
+Por la solicitud incorrecta de un servicio al sistema operativo 
+Por la ejecución incorrecta de una instrucción-maquina o por el mal funcionamiento de un dispositivo de entrada/salida 
+Por el mal funcionamiento de un dispositivo de entrada/salida 
+Ninguna de las otras respuestas es correcta
+
+El diseño de sistema operativo con mayor rapidez en suministrar servicios corresponde a 
+Un sistema operativo monolítico 
+Un sistema operativo multiprogramado 
+Un sistema operativo mono-programado 
+Un sistema operativo basado en un micro-núcleo 
+El diseño no influye en el tiempo necesario para suministrar servicios
+
+Si ejecutamos la orden gcc ejemplo.o –lm y no hay errores 
+Se generara un ejecutable enlazando ejemplo.o con la biblioteca matemática estándar 
+Ninguna de las otras respuestas es correcta 
+Se actualizara la biblioteca libm.a con el contenido del archivo ejemplo.o 
+Se generara un archivo ejecutable denominado ejemplo.exe sin usar la biblioteca estándar 
+Se obtendrá un nuevo archivo objeto incorporando el modulo m al archivo ejemplo.o 
+
+Al ejecutar la orden gcc –E prueba.c 
+Se produce (si no hay errores) a partir de un archivo fuente prueba.c un archivo preprocesado que se envía a la salida estándar 
+Se realiza una compilación de prueba.c produciendo un archivo objeto si no hay errores 
+Se crea un archivo ensamblador con módulos de la biblioteca estándar que sean necesarios ya incorporados 
+Se produce (si no hay errores) un archivo de cabecera denominado prueba.h 
+Se genera un archivo ejecutable a partir de prueba.c sin enlazar
+
+Una llamada al sistema operativo para la apertura de un archivo permite 
+Evitar múltiples búsquedas del nombre del archivo en el directorio 
+La lectura/escritura de un archivo utilizando el método de acceso secuencial 
+Cargar el archivo en memoria principal para su lectura/escritura 
+Establecer el puntero de lectura/escritura en el inicio del archivo si estaba apuntando a otro lugar 
+Compartir el archivo entre múltiples procesos 
+
+Un sistema operativo con diseño monolítico 
+Permite la mayor rapidez en sus servicios 
+Solo se puede utilizar en sistemas monoprogramados 
+Permite una mayor protección en el mal funcionamiento de programas 
+No permite la utilización de buffering e interrupciones en la gestión de dispositivos de entrada/salida 
+Solo se puede utilizar en sistemas monousuario 
+
+Un programa de sistema se define como 
+Una aplicación de utilidad que se suministra con el sistema operativo pero no forma parte de él 
+Cualquier programa que permita desarrollar otros programas (por ejemplo, un compilador, un enlazador, un depurador, etc.) 
+Un interfaz de programación del sistema operativo para las aplicaciones 
+El cargador de programas del sistema operativo 
+Una biblioteca de subrutinas que permite a las aplicaciones solicitar servicios al sistema operativo 
+
+La independencia de dispositivos 
+Permite cambiar los dispositivos de un sistema sin cambiar el código de las aplicaciones 
+Es la capacidad del sistema de gestionar dispositivos semejantes de distintos fabricantes 
+Es la capacidad del sistema de instalar o desinstalar dispositivos sin apagar el sistema 
+Es la adaptación del sistema a las distintas velocidades de los dispositivos 
+Permite utilizar dispositivos de otros sistemas como dispositivos locales 
+
+Un sistema operativo distribuido 
+Opera en un sistema con múltiples procesadores que no comparten un reloj común 
+Necesita obligatoriamente de una red de comunicaciones de alta velocidad 
+Necesita obligatoriamente de una red de comunicaciones de área extensa 
+Opera obligatoriamente en un sistema con múltiples procesadores idénticos 
+Necesita obligatoriamente de procesadores con un diseño específico para estos sistemas 
+
+Si se desea eliminar un directorio que no está vacio debe usarse la orden de Shell 
+rm 
+tar  
+tail  
+mv   
+rmdir  
+
+¿Es posible que un programa este asociado simultáneamente a dos procesos? 
+Sí
+Solo es posible en sistemas operativos con soporte de procesos con múltiples hilos 
+Sí pero el programa debe estar diseñado para su utilización simultanea por dos procesos 
+Sí pero el sistema debe tener dos procesadores 
+No 
+
+Los primeros sistemas utilizaban una planificación por hojas de reserva, y por tanto 
+Tenían una alta ineficiencia en la utilización del sistema 
+Tenían una baja velocidad del procesador respecto a los dispositivos de entrada/salida 
+Utilizaban un sistema automático rudimentario de carga de programas en el sistema 
+Solo podían gestionar un número reducido de terminales alfanuméricos 
+Tenían un tiempo medio entre fallos hardware mucho menor que los sistemas actuales 
+
+Si necesitamos que se impriman en la salida estándar los 100 primeros caracteres del archivo ejemplo.txt presente en nuestro directorio de trabajo actual, la orden de Shell que debemos usar es 
+head –c100 ejemplo.txt 
+cab –n100 ejemplo.txt 
+head –n100 ejemplo.txt 
+tail –c100 ejemplo.txt 
+head -100 ejemplo.txt 
+
+En la orden gcc, la opción –L permite 
+Especificar directorios en los que se deben buscar las bibliotecas 
+Indicar que la biblioteca debe ser usada para realizar el proceso de enlace 
+Especificar en qué directorio deben ponerse los archivos objeto resultantes de las compilaciones 
+Indicar en que directorios se encuentran los archivos objeto necesarios para enlazar 
+Indicar los directorios en los que se encuentran los archivos de cabecera 
+
+Para ejecutar un programa y pasarle como argumento las cadenas “tierra” y “mar” ¿Qué orden deberíamos ejecutar en el gdb? 
+run tierra mar 
+run arg[1] = tierra arg[2] = mar 
+Llamar al gdb desde el Shell en la forma gdb a.out tierra mar 
+run arg[1] = tierra arg[2] = mar argc = 3 
+Ninguna de las otras respuestas es correcta
+
+Un objetivo de la tabla de archivos abiertos es
+Evitar los múltiples accesos a la estructura de directorios en las operaciones con un archivo  
+Implementar el método de acceso indexado a los archivos 
+Evitar que se asignen dos nombres de archivos idénticos en un mismo directorio 
+Evitar que varios procesos accedan simultáneamente a un archivo 
+Gestionar el espacio libre de los dispositivos de almacenamiento
+
+Actualmente, la mayoría de sistemas operativos 
+Se escriben en lenguajes de alto nivel, excepto aquellas partes que manipulan directamente el hardware, que se escriben en lenguaje ensamblador 
+Tienen el núcleo escrito en lenguaje ensamblador y el resto del sistema operativo escrito en lenguajes de alto nivel 
+Se escriben en lenguaje ensamblador excepto el intérprete de comandos 
+Se escriben en su totalidad en lenguajes de alto nivel 
+Se escriben en su totalidad en lenguaje ensamblador
+ 
+Una diferencia entre una instrucción de llamada a función y una llamada al sistema es
+Las instrucciones de llamada al sistema no conocen la dirección de la subrutina llamada 
+Las instrucciones de llamada a función no alteran la pila 
+Las instrucciones de llamada al sistema alteran el contador de programa y las de llamada a función no 
+Las instrucciones de llamada a función son más lentas que las de llamada al sistema  
+Ninguna de las otras respuestas es correcta 
+
+Un sistema operativo multiprocesador
+Tiene una mayor sobrecarga de trabajo que un sistema operativo monoprocesador 
+Tiene una menor sobrecarga de trabajo que un sistema operativo monoprocesador  
+Opera en un computador con múltiples procesadores que no comparten un reloj común 
+Sigue el modelo de multiprocesamiento simétrico o multiprocesamiento multisimétrico 
+Necesita obligatoriamente de múltiples procesadores con memoria exclusiva para cada procesador 
+
+¿Cuál de los siguientes elementos no es típico del componente de gestión del sistema de entrada/salida de un sistema operativo? 
+Gestión del espacio libre en los discos magnéticos 
+Manejadores para dispositivos hardware concretos 
+Un sistema de almacenamiento temporal 
+Ninguna de las otras respuestas es correcta 
+Un interfaz general de manejadores de dispositivos 
+
+¿Cuál es la orden de Shell que nos permitiría obtener un archivo denominado cuenta.txt en el que aparezca el número de palabras del archivo Prueba junto al nombre de este ultimo archivo? 
+wc –w Prueba > cuenta.txt
+wc –w name Prueba > cuenta.txt 
+wc –w –n cuenta.txt | Prueba 
+wx –w –name Prueba | cuenta.txt 
+wc –w Prueba < cuenta.txt 
+
+La operación sobre archivos conocida como truncar consiste en 
+Hacer que el archivo tenga una longitud cero 
+Añadir información al final del archivo 
+Reducir el tamaño del archivo a una cantidad de bytes determinados 
+Eliminar el archivo y todos los enlaces simbólicos al mismo 
+Ninguna de las otras respuestas es correcta 
+
+¿Qué nos proporciona el comando du –b /etc/passwd? 
+El número de bytes del contenido del archivo /etc/passwd 
+El número de usuarios actualmente registrados en el sistema 
+El uid del usuario actual, así como su gid 
+El espacio en disco en KBytes ocupado por el archivo /etc/passwd 
+El número de usuarios y grupos en el sistema 
+
+3. Un sistema operativo no tiene necesariamente un componente de 
+e) Comunicaciones de red 
+a) Gestión de procesos 
+b) Gestión de memoria principal 
+c) Interprete de comandos 
+d) Gestión de entrada/salida 
+
+Para que el compilador gcc muestre la mayor cantidad posible de warnings al compilar archivos de código fuente es necesario utilizar la opción 
+–Wall
+–g 
+–t  
+–o 
+–ansi 
+
+En el sistema de archivos típico en UNIX 
+El grupo del archivo no es necesario que coincida con el grupo del usuario propietario 
+Existen varias jerarquías, una por dispositivo de almacenamiento 
+Se puede utilizar cualquier carácter ASCII en el nombre de un archivo 
+No existe límite para el nº de caracteres a utilizar en el nombre de un archivo 
+Se tiene un sistema no jerárquico 
+
+En UNIX, se puede crear un archivo regular mediante el uso de 
+Las primitivas open y creat 
+Solamente mediante el uso de la primitiva creat 
+Mediante las primitivas creat y stat 
+Mediante las primitivas creat y link 
+Mediante las primitivas creat y dup 
+
+La organización lógica de directorios tiene como objetivo importante 
+Facilitar la eficiencia en la búsqueda de archivos 
+Determinar la relación de directorios en los que se pueden realizar búsquedas de archivos 
+Lograr una única jerarquía independientemente del número de dispositivos 
+Facilitar la clasificación automática de los archivos 
+Abstraer las propiedades físicas de los dispositivos de almacenamiento 
+
+En relación con las particiones del sistema de archivos, es falso que:
+Varias particiones pueden compartir el mismo directorio o tabla de contenidos  
+Las particiones también son conocidas como volúmenes 
+Una partición puede encontrarse en varios discos físicos 
+Pueden coexistir varias particiones en el mismo disco 
+Un disco físico pueden tener varias particiones, cada una de ellas con su tabla de contenidos o directorio 
+
+Los programas de sistema 
+Ofrecen un entorno útil para el desarrollo y ejecución de programas 
+Forman parte del núcleo del sistema operativo 
+Son utilidades del sistema que forman parte del intérprete de comandos 
+Son aplicaciones del sistema que se ejecutan utilizando obligatoriamente un terminal alfanumérico 
+Son programas que manipulan el sistema a bajo nivel y se desarrollan en lenguaje C 
+
+En un sistema operativo distribuido 
+El usuario no conoce donde se ejecutan sus programas
+Se necesita de un reloj global para la coordinación de todos los computadores del sistema  
+Se necesita de computadores multiprocesador 
+No se gestiona obligatoriamente la red de comunicaciones 
+Las aplicaciones son construidas en un lenguaje orientado a objetos distribuidos 
+
+¿Cuál de los siguientes comandos NO habilitara el permiso para entrar en el directorio dir1 a todos los usuarios? 
+chmod 666 dir1
+chmod 777 dir1 
+chmod ugo+x dir1 
+chmod ugo=x dir1  
+chmod 333 dir1  
+
+¿Qué valor obtenemos en la variable entera var1 al utilizar la sentencia var1 = atoi(“69-68”); 
+El valor 69 
+El valor 1 
+El valor 6968 
+Se produce un error de compilación 
+Se produce un error de ejecución 
+
+En relación a las llamadas a función y las llamadas al sistema 
+Las aplicaciones saben dónde está situado el código de las funciones pero no saben dónde está situada la rutina de servicio de una llamada al sistema 
+Las llamadas a función no requieren de pila del sistema y las llamadas al sistema no requieren de pila de la aplicación 
+Cada sistema operativo implementa un repertorio diferente de llamadas de cada tipo 
+Las primeras pueden tener un interfaz funcional pero las segundas no 
+En ambas no se cambia el modo de operación o ejecución del procesador 
+
+Si pretendiese determinar cuántos archivos regulares con extensión .conf contiene el directorio /etc y sus subdirectorios recorridos de forma recursiva, ¿Qué secuencia de comandos utilizaría? 
+find /etc –name ‘*.conf’ –type f | wc -l 
+tail /etc ‘*.conf’ 
+grep /etc ‘*.conf’ –type f 
+find etc –name ‘*.conf’ |wc -l 
+grep /etc ‘*.conf’ | wc -l 
+
+¿Cuál será la salida del siguiente fragmento de código? \n1 int *p=1; \n2 p--; \n3 printf("%d",*p);
+Violación de segmento en la línea 3
+Violación de segmento en la línea 1 
+0 
+Violación de segmento en la línea 2 
+NULL 
+
+Supongamos que escribimos en la línea de órdenes de Shell prb uno dos tres, asumiendo que argv es el segundo argumento recibido por la función main del programa escrito en lenguaje C, ¿Qué valor devolvería la expresión **++argv calculada justo antes de la ejecución de cualquier otra sentencia? 
+El carácter ‘u’ 
+El carácter ‘p’ 
+La cadena de caracteres “uno” 
+Devolvería un valor de error 
+El carácter ‘d’ 
+
+Después de finalizar una llamada al sistema
+Ninguna de las otras respuestas es correcta 
+Se actualiza la tabla del vector de interrupciones 
+El dispositivo que realizo la llamada al sistema puede iniciar otra operación  
+Se ejecuta código del sistema operativo 
+Se produce una excepción si no se ha podido atender la solicitud 
+
+Maximizar la funcionalidad en el mínimo espacio es una característica fundamental de la clase de sistemas operativos conocidos como 
+Sistemas monolíticos
+Sistemas distribuidos 
+Sistemas estructurados en niveles 
+Sistemas basados en máquinas virtuales  
+Sistemas basados en micro núcleos
+ 
+Las aplicaciones 
+Deben usar los servicios del sistema operativo para acceder a servicios específicos 
+Pueden utilizar ilimitadamente los dispositivos de entrada y salida 
+Pueden usar ilimitadamente el hardware del sistema 
+Usan libremente todo el repertorio de instrucciones máquina del procesador 
+A nivel de arquitectura, se sitúan entre el hardware y el sistema operativo 
+
+El concepto de archivo corresponde a 
+Una abstracción para almacenar información cuyo tipo siempre queda definido por el sistema operativo 
+La unidad básica de almacenamiento que es definida por los programas de usuario 
+La unidad básica de almacenamiento que es definida por los programas de sistema 
+La unidad física básica de almacenamiento secundario 
+La unidad lógica básica de almacenamiento secundario 
+
+En relación a las aplicaciones, el sistema operativo y el hardware, ¿Cuál de las siguientes afirmaciones es falsa? 
+Las aplicaciones pueden utilizar directamente los dispositivos de entrada/salida como el teclado y la pantalla
+Las aplicaciones pueden utilizar limitadamente le hardware 
+El sistema operativo puede utilizar libremente el hardware  
+Las aplicaciones pueden usar los servicios del sistema operativo 
+Las aplicaciones pueden usar el procesador pero limitado a un conjunto de instrucciones 
+
+¿Qué hace el siguiente script bash? \n#/bin/bash \nfor i in $@ \ndo \n \t if[${#i}-gt 10] \n \t then \n \t \t rm $i \n \t fi \n done
+Eliminar los nodos del sistema de archivos suministrados en la línea de ordenes con un nombre mayor de 10 caracteres 
+No hace nada pues la condición del if nunca es verdadera 
+Eliminar los 10 primeros nodos del sistema de archivos suministrados en la línea de ordenes 
+Eliminar los nodos del sistema de archivos suministrados en la línea de ordenes con un nombre que corresponda a un número mayor de 10 
+Tiene un bucle infinito pues la condición del if siempre es verdadera
+
+En un sistema operativo 
+Los mecanismos determinan como realizar algo y las políticas deciden que hacer en cada momento 
+El administrador del sistema o el usuario definen mecanismos 
+Los mecanismos son la implementación de las políticas 
+Se suministran políticas 
+Las políticas determinan como realizar algo y los mecanismos deciden que hacer en cada momento 
+
+Con una estructura de directorios de tipo grafo acíclico se facilita 
+La compartición de archivos y directorios mediante la asignación de varios nombres para referenciarlos 
+La utilización de un único camino absoluto para cada archivo 
+La detección de ciclos 
+La organización de archivos según su tipo 
+La liberación del espacio asignado a un archivo
+
+¿Cuál de las siguientes afirmaciones es falsa en relación al sistema de archivos? 
+La existencia de diversos tipos de archivos simplifica la implementación del sistema de archivos 
+UNIX define un único tipo de archivo, compuesto por una secuencia de registros de 1 byte cada uno 
+Un sistema puede ofrecer varios métodos de acceso al mismo archivo 
+Las llamadas al sistema para el proceso de un archivo depende de su tipo 
+El sistema de archivo independientemente de su contenido
