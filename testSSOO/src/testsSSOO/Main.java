@@ -12,8 +12,6 @@ import java.util.*;
 import java.awt.event.ActionEvent;
 
 public class Main {
-	private static final String LICENSE_FILE = "license.dat";
-    private static final String SECRET_KEY = "i)cz#GY#y6Q94WpU:13KPB&B?!-hSs";
     private static int preguntaActual = 0;
     private static int aciertos = 0;
     private static boolean[] respondidas;
@@ -60,7 +58,7 @@ public class Main {
         }
         panelPrincipal.add(panelOpciones, BorderLayout.CENTER);
 
-        // Panel para las flechas de navegaci髇
+        // Panel para las flechas de navegaci贸n
         JPanel panelNavegacion = new JPanel(new FlowLayout());
         JButton botonAtras = new JButton("<-");
         JButton botonSiguiente = new JButton("->");
@@ -77,7 +75,7 @@ public class Main {
         panelNavegacion.add(botonFin);
         panelPrincipal.add(panelNavegacion, BorderLayout.SOUTH);
 
-        // A馻dir acciones a los botones de navegaci髇
+        // A帽adir acciones a los botones de navegaci贸n
         botonAtras.addActionListener(e -> {
             if (preguntaActual > 0) {
                 preguntaActual--;
@@ -90,7 +88,7 @@ public class Main {
                 preguntaActual++;
                 mostrarPregunta(etiquetaPregunta, botonesOpciones,etiquetaNum);
             } else {
-                int opcion = JOptionPane.showConfirmDialog(frame, "縌uieres finalizar el test?", "Finalizar Test", JOptionPane.YES_NO_OPTION);
+                int opcion = JOptionPane.showConfirmDialog(frame, "驴Quieres finalizar el test?", "Finalizar Test", JOptionPane.YES_NO_OPTION);
                 if (opcion == JOptionPane.YES_OPTION) {
                     frame.dispose();
                     mostrarPantallaFinal();
@@ -98,13 +96,13 @@ public class Main {
             }
         });
         botonFin.addActionListener(e -> {
-        	int opcion = JOptionPane.showConfirmDialog(frame, "縌uieres finalizar el test?", "Finalizar Test", JOptionPane.YES_NO_OPTION);
+        	int opcion = JOptionPane.showConfirmDialog(frame, "驴Quieres finalizar el test?", "Finalizar Test", JOptionPane.YES_NO_OPTION);
             if (opcion == JOptionPane.YES_OPTION) {
                 frame.dispose();
                 mostrarPantallaFinal();
             }
         });
-        // A馻dir acciones a los botones de opciones
+        // A帽adir acciones a los botones de opciones
         for (int i = 0; i < 5; i++) {
             int indice = i;
             botonesOpciones[i].addActionListener(e -> {
@@ -130,11 +128,11 @@ public class Main {
             });
         }
 
-        // A馻dir KeyBindings para flechas direccionales
+        // A帽adir KeyBindings para flechas direccionales
         InputMap inputMap = panelPrincipal.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
         ActionMap actionMap = panelPrincipal.getActionMap();
 
-        // Asignar acci髇 para flecha izquierda
+        // Asignar acci贸n para flecha izquierda
         inputMap.put(KeyStroke.getKeyStroke("LEFT"), "moveLeft");
         actionMap.put("moveLeft", new AbstractAction() {
             @Override
@@ -146,7 +144,7 @@ public class Main {
             }
         });
 
-        // Asignar acci髇 para flecha derecha
+        // Asignar acci贸n para flecha derecha
         inputMap.put(KeyStroke.getKeyStroke("RIGHT"), "moveRight");
         actionMap.put("moveRight", new AbstractAction() {
             @Override
@@ -165,7 +163,7 @@ public class Main {
         frame.add(panelPrincipal);
         frame.setVisible(true);
 
-        // Finalizaci髇 del test
+        // Finalizaci贸n del test
         frame.addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
@@ -181,7 +179,7 @@ public class Main {
         long tiempoFinal = System.nanoTime();
         long tiempoTotal = tiempoFinal - tiempoInicial;
 
-        // C醠culo del tiempo en minutos y segundos
+        // C谩lculo del tiempo en minutos y segundos
         long minutos = tiempoTotal / 60_000_000_000L;
         long segundos = (tiempoTotal / 1_000_000_000L) % 60;
 
@@ -211,7 +209,7 @@ public class Main {
         }
         panel.add(etiquetaEstado, BorderLayout.NORTH);
 
-        // Texto con el n鷐ero de aciertos, nota y tiempo tardado
+        // Texto con el n煤mero de aciertos, nota y tiempo tardado
         JLabel etiquetaResultado = new JLabel(
             "<html>Aciertos: " + aciertos + " de " + totalPreguntas + 
             "<br>Nota: " + String.format("%.2f", notaFinal) + 
@@ -222,7 +220,7 @@ public class Main {
         etiquetaResultado.setFont(new Font("Arial", Font.PLAIN, 16));
         panel.add(etiquetaResultado, BorderLayout.CENTER);
 
-        // Bot髇 de reiniciar test
+        // Bot贸n de reiniciar test
         JButton botonReiniciar = new JButton("Reiniciar Test");
         botonReiniciar.addActionListener(e -> {
             frameFinal.dispose();
